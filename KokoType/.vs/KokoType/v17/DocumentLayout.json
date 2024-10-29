@@ -1,0 +1,640 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D650868-9A20-42D6-81EC-4F8E358E2D03}|KokoType_BLL_User\\KokoType_BLL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_bll_user\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D650868-9A20-42D6-81EC-4F8E358E2D03}|KokoType_BLL_User\\KokoType_BLL_User.csproj|solutionrelative:kokotype_bll_user\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B77B451-AF3E-4716-8156-4242088A0C11}|KokoType_BLL_Test\\KokoType_BLL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_bll_test\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B77B451-AF3E-4716-8156-4242088A0C11}|KokoType_BLL_Test\\KokoType_BLL_Test.csproj|solutionrelative:kokotype_bll_test\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\models\\lessonpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\models\\lessonpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\models\\lessonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\models\\lessonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\models\\statistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\models\\statistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Migrations\\20241029201817_MigrationBdTestService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KokoType_DAL_Test\\Migrations\\20241029201817_MigrationBdTestService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3501D549-33EF-4D1C-9B11-CC6C2CD1E242}|KokoType_SeviceTest\\KokoType_ServiceTest.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_sevicetest\\kokotype_servicetest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3501D549-33EF-4D1C-9B11-CC6C2CD1E242}|KokoType_SeviceTest\\KokoType_ServiceTest.csproj|solutionrelative:kokotype_sevicetest\\kokotype_servicetest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3501D549-33EF-4D1C-9B11-CC6C2CD1E242}|KokoType_SeviceTest\\KokoType_SeviceTest.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_sevicetest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3501D549-33EF-4D1C-9B11-CC6C2CD1E242}|KokoType_SeviceTest\\KokoType_SeviceTest.csproj|solutionrelative:kokotype_sevicetest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D24B7F4-A84A-4AE3-A7F4-ECCAD8AAD10C}|KokoType_ServiceUser\\KokoType_ServiceUser.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_serviceuser\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D24B7F4-A84A-4AE3-A7F4-ECCAD8AAD10C}|KokoType_ServiceUser\\KokoType_ServiceUser.csproj|solutionrelative:kokotype_serviceuser\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Migrations\\20241029201424_MigrationBdUserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KokoType_DAL_User\\Migrations\\20241029201424_MigrationBdUserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Migrations\\20241029201157_BdUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KokoType_DAL_User\\Migrations\\20241029201157_BdUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\models\\achivement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\models\\achivement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\configurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\configurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\context\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\context\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\configurations\\achivementconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\configurations\\achivementconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99CC241C-B26F-4B46-92AC-0BE8E578B06D}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{99CC241C-B26F-4B46-92AC-0BE8E578B06D}|D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\Directory.Packages.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{99CC241C-B26F-4B46-92AC-0BE8E578B06D}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{99CC241C-B26F-4B46-92AC-0BE8E578B06D}|solutionrelative:Directory.Packages.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\context\\testcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\context\\testcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\context\\unitofwork_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\context\\unitofwork_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\context\\unitofwork_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\context\\unitofwork_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\repositories\\lessonpagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\repositories\\lessonpagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\repositories\\statisticrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\repositories\\statisticrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\repositories\\achivementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\repositories\\achivementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3501D549-33EF-4D1C-9B11-CC6C2CD1E242}|KokoType_SeviceTest\\KokoType_SeviceTest.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_sevicetest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3501D549-33EF-4D1C-9B11-CC6C2CD1E242}|KokoType_SeviceTest\\KokoType_SeviceTest.csproj|solutionrelative:kokotype_sevicetest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D24B7F4-A84A-4AE3-A7F4-ECCAD8AAD10C}|KokoType_ServiceUser\\KokoType_ServiceUser.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_serviceuser\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6D24B7F4-A84A-4AE3-A7F4-ECCAD8AAD10C}|KokoType_ServiceUser\\KokoType_ServiceUser.csproj|solutionrelative:kokotype_serviceuser\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_test\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5FC653-1ABA-436C-BDF6-16499D4E4DA9}|KokoType_DAL_Test\\KokoType_DAL_Test.csproj|solutionrelative:kokotype_dal_test\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\kokotype_dal_user\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDDE6347-9CDA-4F70-BEE9-A34ACCFBD6C4}|KokoType_DAL_User\\KokoType_DAL_User.csproj|solutionrelative:kokotype_dal_user\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_BLL_User\\Class1.cs",
+              "RelativeDocumentMoniker": "KokoType_BLL_User\\Class1.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_BLL_User\\Class1.cs",
+              "RelativeToolTip": "KokoType_BLL_User\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:22:35.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_BLL_Test\\Class1.cs",
+              "RelativeDocumentMoniker": "KokoType_BLL_Test\\Class1.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_BLL_Test\\Class1.cs",
+              "RelativeToolTip": "KokoType_BLL_Test\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:21:51.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20241029201817_MigrationBdTestService.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Migrations\\20241029201817_MigrationBdTestService.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Migrations\\20241029201817_MigrationBdTestService.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Migrations\\20241029201817_MigrationBdTestService.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Migrations\\20241029201817_MigrationBdTestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:18:18.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Lesson.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Models\\Lesson.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Models\\Lesson.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Models\\Lesson.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Models\\Lesson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:51:29.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_ServiceUser\\Program.cs",
+              "RelativeDocumentMoniker": "KokoType_ServiceUser\\Program.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_ServiceUser\\Program.cs",
+              "RelativeToolTip": "KokoType_ServiceUser\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T22:51:27.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_SeviceTest\\Program.cs",
+              "RelativeDocumentMoniker": "KokoType_SeviceTest\\Program.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_SeviceTest\\Program.cs",
+              "RelativeToolTip": "KokoType_SeviceTest\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:34:52.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "KokoType_SeviceTest.csproj",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_SeviceTest\\KokoType_ServiceTest.csproj",
+              "RelativeDocumentMoniker": "KokoType_SeviceTest\\KokoType_ServiceTest.csproj",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_SeviceTest\\KokoType_ServiceTest.csproj",
+              "RelativeToolTip": "KokoType_SeviceTest\\KokoType_ServiceTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-26T16:53:20.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LessonResult.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Models\\LessonResult.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Models\\LessonResult.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Models\\LessonResult.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Models\\LessonResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:52:26.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Statistic.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Models\\Statistic.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Models\\Statistic.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Models\\Statistic.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Models\\Statistic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:31:44.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LessonPage.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Models\\LessonPage.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Models\\LessonPage.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Models\\LessonPage.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Models\\LessonPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:50:19.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20241029201424_MigrationBdUserService.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Migrations\\20241029201424_MigrationBdUserService.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Migrations\\20241029201424_MigrationBdUserService.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Migrations\\20241029201424_MigrationBdUserService.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Migrations\\20241029201424_MigrationBdUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:14:24.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20241029201157_BdUpdate.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Migrations\\20241029201157_BdUpdate.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Migrations\\20241029201157_BdUpdate.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Migrations\\20241029201157_BdUpdate.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Migrations\\20241029201157_BdUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:11:57.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Models\\User.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Models\\User.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Models\\User.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Models\\User.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T18:56:56.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Models\\Role.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Models\\Role.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T19:05:51.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RoleConfiguration.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Configurations\\RoleConfiguration.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Configurations\\RoleConfiguration.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Configurations\\RoleConfiguration.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Configurations\\RoleConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:02:43.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AchivementConfiguration.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Configurations\\AchivementConfiguration.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Configurations\\AchivementConfiguration.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Configurations\\AchivementConfiguration.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Configurations\\AchivementConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T19:44:47.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Achivement.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Models\\Achivement.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Models\\Achivement.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Models\\Achivement.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Models\\Achivement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T19:26:53.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Directory.Packages.props",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\Directory.Packages.props",
+              "RelativeDocumentMoniker": "Directory.Packages.props",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\Directory.Packages.props",
+              "RelativeToolTip": "Directory.Packages.props",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-10-29T06:05:47.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T16:13:41.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserContext.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Context\\UserContext.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Context\\UserContext.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Context\\UserContext.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Context\\UserContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T17:29:04.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LessonPageRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Repositories\\LessonPageRepository.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Repositories\\LessonPageRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Repositories\\LessonPageRepository.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Repositories\\LessonPageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:53:56.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TestContext.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Context\\TestContext.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Context\\TestContext.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Context\\TestContext.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Context\\TestContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:24:26.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UnitOfWork_Test.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Context\\UnitOfWork_Test.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Context\\UnitOfWork_Test.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Context\\UnitOfWork_Test.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Context\\UnitOfWork_Test.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAABBwDMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:24:43.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UnitOfWork_User.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Context\\UnitOfWork_User.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Context\\UnitOfWork_User.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Context\\UnitOfWork_User.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Context\\UnitOfWork_User.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAABBwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T17:29:28.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Repositories\\BaseRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:28:28.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StatisticRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Repositories\\StatisticRepository.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Repositories\\StatisticRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Repositories\\StatisticRepository.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Repositories\\StatisticRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:38:12.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Repositories\\BaseRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAABBwDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T22:42:31.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AchivementRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Repositories\\AchivementRepository.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Repositories\\AchivementRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Repositories\\AchivementRepository.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Repositories\\AchivementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T20:41:44.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_SeviceTest\\appsettings.json",
+              "RelativeDocumentMoniker": "KokoType_SeviceTest\\appsettings.json",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_SeviceTest\\appsettings.json",
+              "RelativeToolTip": "KokoType_SeviceTest\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-27T12:34:43.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:24:07.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_Test\\Interfaces\\IRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_Test\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "KokoType_DAL_Test\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:23:35.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_ServiceUser\\appsettings.json",
+              "RelativeDocumentMoniker": "KokoType_ServiceUser\\appsettings.json",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_ServiceUser\\appsettings.json",
+              "RelativeToolTip": "KokoType_ServiceUser\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-26T22:51:29.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T17:28:43.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Interfaces\\IRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T17:28:22.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Repositories\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Repositories\\RoleRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Repositories\\RoleRepository.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Repositories\\RoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T20:41:26.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "KokoType_DAL_User\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\KokoType_DAL_User\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "KokoType_DAL_User\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T20:41:04.741Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

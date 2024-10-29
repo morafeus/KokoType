@@ -1,0 +1,15 @@
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\bin\Debug\net8.0\KokoType_DAL_User.deps.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\bin\Debug\net8.0\KokoType_DAL_User.runtimeconfig.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\bin\Debug\net8.0\KokoType_DAL_User.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\bin\Debug\net8.0\KokoType_DAL_User.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\KokoType_DAL_User.csproj.AssemblyReference.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\KokoType_DAL_User.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\KokoType_DAL_User.AssemblyInfoInputs.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\KokoType_DAL_User.AssemblyInfo.cs
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\KokoType_DAL_User.csproj.CoreCompileInputs.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\KokoType_DAL_User.sourcelink.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\KokoType_DAL_User.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\refint\KokoType_DAL_User.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\KokoType_DAL_User.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\KokoType_DAL_User.genruntimeconfig.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_DAL_User\obj\Debug\net8.0\ref\KokoType_DAL_User.dll
