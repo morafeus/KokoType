@@ -131,3 +131,4 @@ D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_ServiceUser\obj\Debug\net8.0
 D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_ServiceUser\obj\Debug\net8.0\KokoType_ServiceUser.pdb
 D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_ServiceUser\obj\Debug\net8.0\KokoType_ServiceUser.genruntimeconfig.cache
 D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_ServiceUser\obj\Debug\net8.0\ref\KokoType_ServiceUser.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\KokoType_ServiceUser\bin\Debug\net8.0\RabbitMQ.Client.dll
