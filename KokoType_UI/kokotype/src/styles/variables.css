@@ -1,0 +1,11 @@
+:root {
+    --main-color: #12141b;
+    --second-color: #1f2833;
+    --main-font-color: #66fcf1;
+    --test-font-color: #285956;
+    --test-type-font-color: #c5c6c7;
+    --test-invalid-font-color: #f76c6c;
+
+    --hover-color: #00fae9;
+    /*EDA592*/
+}

@@ -1,6 +1,7 @@
 import AuthPage from "../pages/AuthPage";
 import LeaderBoradPage from "../pages/LeaderBoardPage";
 import ProfilePage from "../pages/ProfilePage";
+import SettingsPage from "../pages/SettingsPage";
 import TestPage from "../pages/TestPage";
 
 import All_Routes from './consts'
@@ -28,5 +29,9 @@ export const guestRoutes = [
     {
         path: All_Routes.AUTH_PAGE,
         Component: AuthPage
+    },
+    {
+        path: All_Routes.SETTINGS_PAGE,
+        Component: SettingsPage
     }
 ]

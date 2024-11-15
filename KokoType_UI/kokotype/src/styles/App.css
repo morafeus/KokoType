@@ -1,10 +1,4 @@
-:root {
-    --main-color: #12141b;
-    --second-color: #1f2833;
-    --main-font-color: #66fcf1;
-    --test-font-color: #45a29e;
-    --test-type-font-color: #c5c6c7;
-}
+@import './variables.css';
 
 /*main configuration*/
 
@@ -28,6 +22,13 @@ html, body {
     font-style: normal; /* Выберите нужный стиль */
   }
 
+  @font-face {
+    font-family: 'MyTestFont'; /* Имя вашего шрифта */
+    src: url('../assets/fonts/Poppins-SemiBold.ttf') format('opentype'); /* Путь к вашему шрифту */
+    font-weight: normal; /* Выберите нужный вес */
+    font-style: normal; /* Выберите нужный стиль */
+  }
+
   a.nav-link {
     text-decoration: none; /* Убираем подчеркивание */
     color: var(--test-font-color);
@@ -42,20 +43,9 @@ html, body {
     align-items: center; 
 }
 
-.koko-type-custom-font {
-    font-family: 'MyLogoFont', sans-serif; 
-    font-size: 32px; 
-    color: var(--main-font-color); 
-  }
 
-.nav-bar {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 25px 80px;
-}
 
-.nav-bar-icon svg {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: var(--test-font-color);
-}
+
+
+
+

@@ -5,23 +5,35 @@ import LogoButton from './UI/LogoButton/LogoButton'
 import All_Routes from "../utils/consts";
 import AuthContext from "../context";
 
+import { ReactComponent as ProfileIcon } from '../assets/icons/ProfileIcon.svg';
+import { ReactComponent as SettingsIcon } from '../assets/icons/SettingsIcon.svg';
+import { ReactComponent as LeaderBoardIcon } from '../assets/icons/LeaderBoardIcon.svg';
+
+import '../styles/component/NavBar.css'
 
 const NavBar = observer(() => {
     const {user} = useContext(AuthContext);
     return (
       <nav className="nav-bar">
+      <div style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
         <NavLink to={All_Routes.TEST_PAGE}>
-          <LogoButton>KokoType</LogoButton>
+            <LogoButton disableAnimation={true} disableCursor={true}>KokoType</LogoButton>
         </NavLink>
+        <NavLink className="nav-bar-icon" to={All_Routes.LEADERBOARD_PAGE}>
+            <LeaderBoardIcon />
+        </NavLink>
+        <NavLink className="nav-bar-icon" to={All_Routes.SETTINGS_PAGE}>
+            <SettingsIcon />
+        </NavLink>
+      </div>
+        
         {user.isAuth ?
         <NavLink to={All_Routes.PROFILE_PAGE}>
           Profile
         </NavLink>
         :
         <NavLink className="nav-bar-icon" to={All_Routes.AUTH_PAGE}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-3.31 0-10 1.67-10 5v2h20v-2c0-3.33-6.69-5-10-5z"/>
-          </svg>
+            <ProfileIcon />
         </NavLink>
         }
       </nav>

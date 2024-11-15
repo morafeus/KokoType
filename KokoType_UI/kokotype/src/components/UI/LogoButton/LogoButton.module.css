@@ -1,3 +1,7 @@
+@import '../../../styles/variables.css';
 
+ .logo-button {
+    position: relative; /* Для абсолютного позиционирования меню */
+    display: inline-block; /* Чтобы элемент занимал только необходимое место */
+}
 
- 
