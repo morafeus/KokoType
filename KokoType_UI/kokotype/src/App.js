@@ -11,7 +11,7 @@ const App = observer(() => {
   const {user} = useContext(AuthContext);
 
   useEffect(() => {
-    user.setIsAuth(true); // Установите значение только при монтировании
+    user.setIsAuth(false); // Установите значение только при монтировании
   }, [user]);
 
   return (
