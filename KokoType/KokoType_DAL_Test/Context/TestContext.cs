@@ -1,0 +1,14 @@
+﻿
+
+using KokoType_DAL_Test.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace KokoType_DAL_Test.Context
+{
+    public class TestContext : DbContext
+    {
+        DbSet<Statistic> Statistics { get; set; }
+
+        public TestContext(DbContextOptions<TestContext> options) : base(options) { }
+    }
+}
