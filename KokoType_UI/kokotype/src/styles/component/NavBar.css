@@ -3,6 +3,7 @@
     justify-content: space-between; 
     align-items: center;
     padding: 25px 80px;
+    margin-bottom: 40px;
 }
 
 .nav-bar-icon {
@@ -25,14 +26,18 @@
 }
 
 .typing-container {
-    font-family: 'MyLogoFont', sans-serif; /* Замените на свой шрифт */
+    font-family: 'MyLogoFont', sans-serif; 
     font-size: 36px;
-    color: var(--main-font-color); /* Замените на ваш цвет */
+    color: var(--main-font-color); 
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 4px solid var(--main-font-color); /* Курсор как граница */
+    border-right: 4px solid var(--main-font-color); 
     animation: blink-caret .5s step-end infinite;
+}
+
+.typing-text {
+    font-family: 'MyLogoFont', sans-serif; 
 }
 
 .typing-border {

@@ -1,0 +1,50 @@
+.test-settings-sections {
+    display: flex; /* Используем Flexbox для горизонтального расположения секций */
+    justify-content: space-between; /* Распределяем пространство между секциями */
+    align-items: center; /* Вертикальное выравнивание элементов */
+    font-size: 14px;
+}
+
+.test-settings-section {
+    display: flex; /* Используем Flexbox для горизонтального расположения элементов */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    border-radius: 4px; /* Скругление */
+    margin: 0 10px; /* Отступ между секциями */
+    transition: color 0.3s;
+}
+
+.setting-item {
+    flex: 1; 
+    margin: 0 5px; 
+    padding: 5px;
+    border-radius: 4px; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: color 0.3s;
+}
+
+.setting-item:hover {
+    color: var(--test-type-font-color);
+}
+
+/* Стили для выделенного элемента */
+.setting-item.selected {
+    color: var(--main-font-color); /* Замените на вашу переменную для цвета текста */
+}
+
+.section-divider {
+    height: 26px; /* Высота разделителя */
+    background-color: var(--test-font-color); /* Цвет разделителя */
+    margin-top: 2px;
+    width: 3px;
+}
+
+/* Стили для кнопок */
+.languageButton, .customButton {
+    padding: 10px; /* Отступы внутри кнопок */
+    margin: 0 5px; /* Отступы между кнопками */
+    cursor: pointer; /* Указатель при наведении */
+    height: 34px; /* Фиксированная высота для выравнивания */
+    display: flex; /* Flexbox для выравнивания содержимого */
+    align-items: center; /* Центрируем содержимое */
+}

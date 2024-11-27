@@ -1,0 +1,33 @@
+/* AuthWindow.module.css */
+.authWindow {
+    display: flex;
+    height: 60vh; /* Занять всю высоту окна */
+}
+
+.textContainer {
+    flex: 0.4; /* Занять половину ширины */
+    display: flex;
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+    background-color: transparent; /* Цвет фона для текстовой части */
+    padding: 20px;
+}
+
+.formContainer {
+    flex: 1; /* Занять половину ширины */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+    background-color: transparent; /* Цвет фона для формы */
+    padding: 20px;
+    border-right: 1px solid var(--test-font-color); /* Разделительная линия */
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.button {
+    margin-top: 10px;
+}

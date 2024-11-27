@@ -1,0 +1,78 @@
+.textContainer {
+    position: relative;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    font-size: 1.5em;
+    display: inline-block;
+  }
+  
+  .typingText {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .word {
+    display: inline;
+  }
+  
+  .char {
+    opacity: 1;
+  }
+  
+  .untyped {
+    color: var(--test-font-color); /* Цвет для символов до их "напечатания" */
+  }
+  
+  .typed {
+    color: var(--test-type-font-color); /* Цвет для символов, которые напечатаны */
+  }
+  
+  .correct {
+    color: var(--test-type-font-color); /* Зеленый для правильно напечатанных символов */
+  }
+  
+  .incorrect {
+    color: var(--test-invalid-font-color); /* Красный для неправильных символов */
+  }
+  
+  .cursor {
+    position: absolute;
+    width: 2px;
+    height: 36px;
+    background-color: var(--main-font-color);
+    transition: left 0.05s, top 0.05s;
+    animation: blink-caret 1s step-end infinite; /* Добавляем анимацию */
+}
+
+@keyframes blink-caret {
+    0%, 100% {
+        background-color: transparent; 
+    }
+    50% {
+        background-color: var(--main-font-color);
+    }
+}
+
+.hidden {
+    animation: none; /* Убираем анимацию, когда курсор скрыт */
+}
+
+  .textContainer {
+    opacity: 0; /* Начальное значение непрозрачности */
+    transition: opacity 2s ease-in; /* Плавное изменение непрозрачности */
+  }
+  
+  .fadeIn {
+    opacity: 1; /* Значение непрозрачности при появлении */
+  }
+  
+  .fadeOut {
+    opacity: 0; /* Значение непрозрачности при скрытии */
+  }
+
+  .space {
+    display: inline-block;
+    width: 10px; /* Настройте ширину пробела в зависимости от нужного эффекта */
+  }
+  

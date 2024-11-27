@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html, body {
@@ -32,7 +33,13 @@ html, body {
   a.nav-link {
     text-decoration: none; /* Убираем подчеркивание */
     color: var(--test-font-color);
+  }
+
+  .nav-bar .nav-link {
+    text-decoration: none; /* Убираем подчеркивание */
 }
+
+ 
 /*clsses*/
 
 .App {

@@ -1,27 +1,32 @@
 import { observer } from "mobx-react-lite";
-import React, { useState } from "react";
-
+import React, { useState, useRef } from "react";
 import { ReactComponent as ResetIcon } from '../../../assets/icons/ResetIcon.svg';
-import './ResetButton.css'; // Убедитесь, что этот путь правильный
+import styles from './ResetButton.module.css'; // Импортируем CSS-модуль
 
-const ResetButton = observer(() => {
+const ResetButton = observer((props) => {
     const [isRotating, setIsRotating] = useState(false);
+    const buttonRef = useRef(null);
 
     const handleClick = () => {
+        if (buttonRef.current) {
+            buttonRef.current.blur(); // Убираем фокус с кнопки
+        }
+        props.onClick();
         setIsRotating(true);
-        // Удаляем вращение через 1 секунду (или любое другое время анимации)
         setTimeout(() => {
             setIsRotating(false);
-        }, 1000); // Длительность анимации
+        }, 1000);
     };
 
     return (
-        <div 
-            className={`icon-button-class ${isRotating ? 'rotate' : ''}`}
+        <button
+            style={props.style}
+            ref={buttonRef}
             onClick={handleClick}
+            className={`${styles.iconButton} ${isRotating ? styles.rotate : ''}`} // Используем стили из модуля
         >
             <ResetIcon />
-        </div>
+        </button>
     );
 });
 

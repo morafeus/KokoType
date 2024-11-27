@@ -1,0 +1,56 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none; /* Скрыто по умолчанию */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.active {
+    display: flex; /* Показываем модальное окно, когда активно */
+}
+
+.modalBackground {
+    position: fixed; /* Используем fixed, чтобы занять всю область */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон для затемнения */
+    backdrop-filter: blur(4px); /* Применяем блюр на фоне */
+    z-index: 999; /* Устанавливаем ниже модального окна */
+}
+
+.modalContent {
+    padding: 25px;
+    background: var(--second-color); /* Непрозрачный фон для содержимого */
+    border-radius: 5px;
+    max-width: 450px;
+    min-height: 350px;
+    max-height: 400px;
+    position: relative; /* Позиционируем относительно родителя */
+    z-index: 1000; /* Устанавливаем выше фонового слоя */
+    
+}
+
+.acceptButton {
+    margin-top: 20px; /* Отступ сверху */
+    padding: 10px 20px; /* Отступ внутри кнопки */
+    background-color: var(--second-color); /* Зеленый фон */
+    color: var(--main-font-color); /* Белый текст */
+    border-bottom: 2px solid var(--main-font-color); /* Убираем рамки */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background 0.5s; /* Плавный переход цвета фона */
+    transition: color  0.5s; /* Плавный переход цвета фона */
+    font-size: 16px; /* Размер шрифта */
+    min-width: 100%;
+}
+
+.acceptButton:hover {
+    background-color: var(--main-font-color); /* Темнее при наведении */
+    color: var(--second-color);
+}

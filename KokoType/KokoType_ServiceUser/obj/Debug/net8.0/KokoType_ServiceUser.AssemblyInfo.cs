@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KokoType_ServiceUser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9455bb429f6bf7053987c19bcad2f689d46035c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eee0aab0a74bbd446d437e452a014a602a3e74d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("KokoType_ServiceUser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KokoType_ServiceUser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,26 @@
+.mainContainer {
+    display: flex; /* Используем Flexbox для вертикального расположения */
+    flex-direction: column; /* Располагаем элементы в столбик */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    padding: 10px; /* Отступы вокруг контейнера */
+    width: 100%; /* Убедитесь, что контейнер занимает 80% ширины родителя */
+}
+
 .test-settings-container {
-    margin: 30px;
+    margin: 10px;
     background-color: var(--second-color);
+    border-radius: 8px; /* Скругление */
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание */
+    transition: width 0.5s ease; /* Плавная анимация изменения ширины */
+    overflow: hidden; /* Скрыть переполнение */
+    width: auto; /* Автоматическая ширина для динамического изменения */
+    visibility: visible;
+}
+
+.section-divider {
+    height: 26px; /* Высота разделителя */
+    background-color: var(--test-font-color); /* Цвет разделителя */
+    margin-top: 2px;
+    width: 3px;
 }

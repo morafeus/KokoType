@@ -4,16 +4,18 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    border-bottom: 2px solid var(--test-font-color);
+  
 }
 
 .test-window {
     position: relative;
     width: 100%;
-    height: 215px;
+    height: 230px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 5px;
+
 }
 
 .textarea {
@@ -26,6 +28,7 @@
     color: var(--main-font-color);
     font-size: 36px;
     opacity: 0; /* Скрываем поле ввода */
+    
 }
 
 .cursor {
@@ -35,7 +38,7 @@
     background-color: var(--main-font-color);
     transition: left 0.05s, top 0.05s;
   }
-  
+
 
 
 .template-text {
@@ -53,6 +56,7 @@
     word-wrap: break-word; /* Включаем перенос слов */
     display: flex;
     flex-wrap: wrap;
+    border-bottom: 2px solid var(--test-font-color);
 }
 
 .word {
@@ -63,6 +67,7 @@
     display: inline-block;
     margin-right: 2px;
     white-space: pre; /* Важно: сохраняем пробелы и символы новой строки */
+    transition: 0.15s color;
 }
 
 /* Цвет для правильно введенных символов */
@@ -88,4 +93,11 @@
 /* Скрытие скроллбара */
 .template-text::-webkit-scrollbar {
     display: none;
+}
+
+
+/* Counter */
+
+.counter-container {
+    align-self: flex-start;
 }

@@ -1,0 +1,13 @@
+/* RegisterForm.module.css */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formItem {
+    margin-bottom: 10px;
+}
+
+button {
+    color: var(--test-type-font-color)
+}

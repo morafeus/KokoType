@@ -1,0 +1,14 @@
+.iconButton {
+    align-items: center;
+    cursor: pointer;
+    color: var(--test-font-color);
+    transition: color 0.3s ease; /* Плавный переход цвета */
+    display: flex; /* Используем Flexbox для горизонтального расположения элементов */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    margin-right: 10px;
+}
+
+.iconButton:hover {
+    color: var(--main-font-color); /* Цвет при наведении */
+}
+

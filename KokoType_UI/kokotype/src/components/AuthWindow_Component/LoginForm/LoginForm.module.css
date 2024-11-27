@@ -1,0 +1,14 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    background: var(--sectond-color);
+}
+
+.formItem {
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+button {
+    color: var(--test-type-font-color)
+}
