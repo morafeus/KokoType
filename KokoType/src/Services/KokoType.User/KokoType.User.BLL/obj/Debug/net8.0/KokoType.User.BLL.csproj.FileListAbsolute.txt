@@ -1,0 +1,16 @@
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\bin\Debug\net8.0\KokoType.User.BLL.deps.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\bin\Debug\net8.0\KokoType.User.BLL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\bin\Debug\net8.0\KokoType.User.BLL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\KokoType.User.BLL.csproj.AssemblyReference.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\KokoType.User.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\KokoType.User.BLL.AssemblyInfoInputs.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\KokoType.User.BLL.AssemblyInfo.cs
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\KokoType.User.BLL.csproj.CoreCompileInputs.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\KokoType.User.BLL.sourcelink.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\KokoType.User.BLL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\refint\KokoType.User.BLL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\KokoType.User.BLL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\ref\KokoType.User.BLL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\bin\Debug\net8.0\KokoType.User.DAL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\bin\Debug\net8.0\KokoType.User.DAL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.BLL\obj\Debug\net8.0\KokoType.F51B487E.Up2Date

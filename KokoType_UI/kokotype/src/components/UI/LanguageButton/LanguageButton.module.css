@@ -1,0 +1,15 @@
+@import '../../../styles/variables.css';
+
+.LanguageButton{
+    color: var(--test-font-color);
+    font-weight: bold;
+    transition: 0.5s ease;
+    font-size: 14px;
+    display: flex; /* Используем Flexbox для горизонтального расположения элементов */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    margin: 0 10px; /* Отступ между секциями */
+}
+
+.LanguageButton:hover{
+    color: var(--main-font-color);
+}

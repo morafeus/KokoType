@@ -1,0 +1,41 @@
+.wordCountSelector {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%; /* Ширина инпута */
+    padding: 10px; /* Отступ внутри */
+    margin-bottom: 15px; /* Отступ снизу */
+    border: none; /* Убираем рамки */
+    border-radius: 0; /* Убираем закругление углов */
+    background: transparent; /* Фон прозрачный */
+    font-size: 18px;
+    color: var(--test-type-font-color); /* Цвет текста унаследован от родительского элемента */
+    outline: none; /* Убираем стандартный контур при фокусе */  
+    border-bottom: 2px solid var(--second-color); /* Нижняя рамка */
+    transition: border 0.3s; /* Плавный переход для изменения тени */
+    /* Убираем стрелочки */
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari, Edge */
+    margin: 0; /* Убираем отступы */
+}
+
+.input:focus {
+    border-bottom: 2px solid var(--test-type-font-color); /* Изменяем цвет рамки при фокусе */
+}
+
+.input::placeholder {
+    color: #aaa; /* Цвет плейсхолдера */
+}

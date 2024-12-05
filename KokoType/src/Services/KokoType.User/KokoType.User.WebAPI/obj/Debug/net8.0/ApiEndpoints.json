@@ -1,0 +1,24 @@
+[
+  {
+    "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
+    "Method": "SignUp",
+    "RelativePath": "api/User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userModel",
+        "Type": "KokoType.User.BLL.DTO.UserModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

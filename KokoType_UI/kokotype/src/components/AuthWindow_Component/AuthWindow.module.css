@@ -1,0 +1,24 @@
+.authWindow {
+    display: flex;
+    height: 60vh; /* Занять всю высоту окна */
+    width: 100%; /* Занимает всю ширину контейнера */
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+    background-color: transparent; /* Цвет фона для формы */
+    width: 100%; /* Занимает 100% ширины */
+    border-right: 1px solid var(--test-font-color); /* Разделительная линия */
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.button {
+    margin-top: 10px;
+    color: var(--test-type-font);
+}

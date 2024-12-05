@@ -1,0 +1,13 @@
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\bin\Debug\net8.0\KokoType.Tests.BLL.deps.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\bin\Debug\net8.0\KokoType.Tests.BLL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\bin\Debug\net8.0\KokoType.Tests.BLL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\KokoType.Tests.BLL.csproj.AssemblyReference.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\KokoType.Tests.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\KokoType.Tests.BLL.AssemblyInfoInputs.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\KokoType.Tests.BLL.AssemblyInfo.cs
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\KokoType.Tests.BLL.csproj.CoreCompileInputs.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\KokoType.Tests.BLL.sourcelink.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\KokoType.Tests.BLL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\refint\KokoType.Tests.BLL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\KokoType.Tests.BLL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\ref\KokoType.Tests.BLL.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "31LDX1/sZc+AC/EQZOB1psw6G5Pip4ZwOS4W6RFXEtY=",
+  "Source": "KokoType.Tests.WebAPI",
+  "BasePath": "_content/KokoType.Tests.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

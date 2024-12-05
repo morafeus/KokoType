@@ -1,0 +1,59 @@
+/* LoadingAnimation.module.css */
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    font-family: Arial, sans-serif;
+}
+
+.typingAnimation {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    margin: 5px 0; /* Отступ между рядами */
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: var(--second-color);
+    border: 1px solid var(--main-font-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.active {
+    background-color: var(--main-font-color); /* Цвет для активной клавиши */
+    color: var(--second-color);
+}
+
+.highlight {
+    color: var(--main-font-color); /* Цвет для подсвеченной буквы */
+    font-weight: bold;
+}
+
+.spaceKey {
+    width: 220px; /* Увеличиваем ширину клавиши пробела */
+    text-align: center;
+}
+
+.text {
+    font-size: 32px;
+}

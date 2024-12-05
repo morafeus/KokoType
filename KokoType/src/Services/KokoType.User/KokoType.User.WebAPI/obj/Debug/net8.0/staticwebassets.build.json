@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Nn8KndwYLv4ug87lpkJkDhOVT4V6FMp7AX+coJHC6eQ=",
+  "Source": "KokoType.User.WebAPI",
+  "BasePath": "_content/KokoType.User.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

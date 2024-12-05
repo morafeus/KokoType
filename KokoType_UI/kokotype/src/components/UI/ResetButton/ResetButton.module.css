@@ -1,0 +1,44 @@
+.iconButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--test-font-color);
+    transition: transform 1s ease, color 0.3s ease; /* Плавный переход */
+}
+
+.iconButton svg {
+    color: var(--test-font-color);
+    transition: color 0.3s ease; 
+}
+
+.iconButton:hover svg {
+    color: var(--main-font-color); /* Цвет при наведении */
+    transform: scale(1.1);
+}
+
+/* Эффект подсветки при фокусе на кнопке */
+.iconButton:focus svg {
+    animation: spin 1s linear infinite; /* Запускаем анимацию вращения */
+    color: var(--main-font-color); /* Цвет при фокусе */
+    transform: scale(1.1); /* Увеличение при фокусе */
+}
+
+.rotate {
+    animation: spin 1s forwards; /* Анимация вращения по умолчанию */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    background: none; /* Убираем фоновый цвет */
+    border: none;  
+    outline: none; /* Убираем стандартный контур */
+}

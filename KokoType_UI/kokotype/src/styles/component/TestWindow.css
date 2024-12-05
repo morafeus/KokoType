@@ -1,0 +1,103 @@
+.test-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  
+}
+
+.test-window {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+.textarea {
+    width: 100%;
+    height: 215px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-font-color);
+    font-size: 36px;
+    opacity: 0; /* Скрываем поле ввода */
+    
+}
+
+.cursor {
+    position: absolute;
+    width: 2px;
+    height: 36px;
+    background-color: var(--main-font-color);
+    transition: left 0.05s, top 0.05s;
+  }
+
+
+
+.template-text {
+    position: absolute;
+    font-size: 36px;
+    color: var(--test-font-color);
+    pointer-events: none;
+    z-index: 3;
+    font-family: 'MyTestFont', sans-serif;
+    font-weight: 100;
+    max-height: 175px;
+    overflow-y: auto;
+    width: 100%;
+    line-height: 1.2;
+    word-wrap: break-word; /* Включаем перенос слов */
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--test-font-color);
+}
+
+.word {
+    display: inline;
+}
+
+.char {
+    display: inline-block;
+    margin-right: 2px;
+    white-space: pre; /* Важно: сохраняем пробелы и символы новой строки */
+    transition: 0.05s color;
+}
+
+/* Цвет для правильно введенных символов */
+.typed {
+    color: var(--test-type-font-color); /* Зеленый для правильно введенных символов */
+}
+
+/* Цвет для неправильно введенных символов */
+.incorrect {
+    color: var(--test-invalid-font-color); /* Красный для неправильно введенных символов */
+}
+
+/* Цвет для символов, которые еще не введены */
+.untyped {
+    color: var(--test-font-color); /* Стандартный цвет для не введенных символов */
+}
+
+.incorrect-space {
+    background-color: rgba(255, 0, 0, 0.5); /* Полупрозрачный красный фон для неверных пробелов */
+    color: white; /* Белый цвет для текста */
+}
+
+/* Скрытие скроллбара */
+.template-text::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Counter */
+
+.counter-container {
+    align-self: flex-start;
+}

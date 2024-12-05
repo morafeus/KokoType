@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\bin\Debug\net8.0\KokoType.Lesson.BLL.deps.json
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\bin\Debug\net8.0\KokoType.Lesson.BLL.dll
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\bin\Debug\net8.0\KokoType.Lesson.BLL.pdb
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\obj\Debug\net8.0\KokoType.Lesson.BLL.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\obj\Debug\net8.0\KokoType.Lesson.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\obj\Debug\net8.0\KokoType.Lesson.BLL.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\obj\Debug\net8.0\KokoType.Lesson.BLL.AssemblyInfo.cs
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\obj\Debug\net8.0\KokoType.Lesson.BLL.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\obj\Debug\net8.0\KokoType.Lesson.BLL.dll
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\obj\Debug\net8.0\refint\KokoType.Lesson.BLL.dll
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\obj\Debug\net8.0\KokoType.Lesson.BLL.pdb
+C:\Users\User\source\repos\KokoType.Lesson\KokoType.Lesson.BLL\obj\Debug\net8.0\ref\KokoType.Lesson.BLL.dll

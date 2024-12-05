@@ -1,0 +1,15 @@
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\KokoType.Tests.DAL.csproj.AssemblyReference.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\KokoType.Tests.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\KokoType.Tests.DAL.AssemblyInfoInputs.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\KokoType.Tests.DAL.AssemblyInfo.cs
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\KokoType.Tests.DAL.csproj.CoreCompileInputs.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\KokoType.Tests.DAL.sourcelink.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\bin\Debug\net8.0\KokoType.Tests.DAL.deps.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\bin\Debug\net8.0\KokoType.Tests.DAL.runtimeconfig.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\bin\Debug\net8.0\KokoType.Tests.DAL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\bin\Debug\net8.0\KokoType.Tests.DAL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\KokoType.Tests.DAL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\refint\KokoType.Tests.DAL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\KokoType.Tests.DAL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\KokoType.Tests.DAL.genruntimeconfig.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.DAL\obj\Debug\net8.0\ref\KokoType.Tests.DAL.dll

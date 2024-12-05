@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KokoType.Tests.WebAPI.props" />
+</Project>

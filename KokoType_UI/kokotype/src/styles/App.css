@@ -1,0 +1,58 @@
+@import './variables.css';
+
+/*main configuration*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; /* Убираем отступы по умолчанию */
+    background-color: var(--main-color);
+    color: var(--test-font-color);
+}
+
+@font-face {
+    font-family: 'MyLogoFont'; /* Имя вашего шрифта */
+    src: url('../assets/fonts/Primal.otf') format('opentype'); /* Путь к вашему шрифту */
+    font-weight: normal; /* Выберите нужный вес */
+    font-style: normal; /* Выберите нужный стиль */
+  }
+
+  @font-face {
+    font-family: 'MyTestFont'; /* Имя вашего шрифта */
+    src: url('../assets/fonts/Poppins-SemiBold.ttf') format('opentype'); /* Путь к вашему шрифту */
+    font-weight: normal; /* Выберите нужный вес */
+    font-style: normal; /* Выберите нужный стиль */
+  }
+
+  a.nav-link {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: var(--test-font-color);
+  }
+
+  .nav-bar .nav-link {
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+ 
+/*clsses*/
+
+.App {
+    height: 100%; 
+    width: 100%;  
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+
+
+
+
+

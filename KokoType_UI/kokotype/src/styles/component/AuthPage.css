@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    height: 60vh; /* Высота на весь экран */
+}
+
+.textContainer {
+    flex: 0 0 25%; /* Занимает 40% ширины */
+    display: flex;
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+    background-color: transparent; /* Цвет фона для текстовой части */
+    padding: 20px; /* Отступы */
+}
+
+.formContainer {
+    flex: 0 0 75%; /* Занимает 60% ширины */
+    display: flex;
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+    background-color: transparent; /* Цвет фона для формы */
+    padding: 20px; /* Отступы */
+}

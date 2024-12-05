@@ -1,0 +1,15 @@
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\bin\Debug\net8.0\KokoType.User.DAL.deps.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\bin\Debug\net8.0\KokoType.User.DAL.runtimeconfig.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\bin\Debug\net8.0\KokoType.User.DAL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\bin\Debug\net8.0\KokoType.User.DAL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\KokoType.User.DAL.csproj.AssemblyReference.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\KokoType.User.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\KokoType.User.DAL.AssemblyInfoInputs.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\KokoType.User.DAL.AssemblyInfo.cs
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\KokoType.User.DAL.csproj.CoreCompileInputs.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\KokoType.User.DAL.sourcelink.json
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\KokoType.User.DAL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\refint\KokoType.User.DAL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\KokoType.User.DAL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\KokoType.User.DAL.genruntimeconfig.cache
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.DAL\obj\Debug\net8.0\ref\KokoType.User.DAL.dll
