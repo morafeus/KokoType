@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cNsE7OjnsmXLihYHfmz0X2LouapqZMzPwXkzyfyo5Sk=",
+  "Source": "KokoType.Gateway",
+  "BasePath": "_content/KokoType.Gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

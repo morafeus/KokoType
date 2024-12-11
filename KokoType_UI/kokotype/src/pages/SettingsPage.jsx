@@ -1,9 +1,19 @@
 import { observer } from 'mobx-react-lite'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { fetchBoard } from '../http/leaderBoardAPI';
+import {useNavigate} from "react-router-dom"
 
+const SettingsPage = observer(() => {
+    const navigate = useNavigate();
 
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await fetchBoard(navigate);
+            console.log(data);
+        };
+        
+    }, []);
 
-const SettingsPage = observer(()=> {
     return (
         <div>
             Settings

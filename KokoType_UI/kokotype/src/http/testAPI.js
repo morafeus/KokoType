@@ -4,7 +4,7 @@ export const fetchTest = async (options) => {
     try {
         await new Promise(resolve => setTimeout(resolve, 100));
         
-        const { data } = await $host.post('api/Test', options);
+        const { data } = await $host.post('api/Test/getTest', options);
         return data;
     } catch (e) {
         console.log('Invalid fetch test', e);

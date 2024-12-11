@@ -1,9 +1,14 @@
 ﻿using KokoType.User.BLL.DTO;
+using KokoType.User.DAL.Models;
 
 namespace KokoType.User.BLL.Interfaces
 {
     public interface IUserService
     {
-        Task CreateUserAsync(UserModelDTO user);
+        public Task CreateUserAsync(UserModelDTO user);
+        public Task DeleteUserAsync(DeleteUserModelDTO user);
+        public Task<TokenModel> SignIn(LoginUserModelDTO userModel);
+        public Task<TokenModel> RefreshToken(RefreshDTO refreshDTO);
+        public Task LogoutUser(DeleteUserModelDTO user);
     }
 }

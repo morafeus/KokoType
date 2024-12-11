@@ -11,8 +11,8 @@ export default class UserStore {
         this._isAuth = bool
     }
 
-    setUser(user){
-        this._user = user;
+    setUser(userData) {
+        this._user = { ...this._user, ...userData }; // Обновляем только поля, которые приходят
     }
 
     get isAuth() {

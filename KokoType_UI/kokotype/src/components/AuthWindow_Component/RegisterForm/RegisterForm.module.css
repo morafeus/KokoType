@@ -24,6 +24,12 @@
     border-bottom: 2px solid var(--main-font-color); /* Цвет нижней границы при фокусе */
 }
 
+/* Стили для инпутов с ошибками */
+.input.error {
+    border-bottom: 2px solid red; /* Красная нижняя граница для ошибок */
+    background-color: #ffe6e6; /* Светлый фон для ошибок */
+}
+
 .button {
     padding: 10px; /* Отступы внутри кнопки */
     background-color: var(--highlight-color); /* Цвет фона кнопки */

@@ -13,6 +13,8 @@ namespace KokoType.Tests.DAL.Configuration
                  options.UseMySQL("Server=localhost;Database=KokoType_TestServiceDB;Uid=root;Pwd=1234;");
              });
 
+            
+
             return services;
         }
     }

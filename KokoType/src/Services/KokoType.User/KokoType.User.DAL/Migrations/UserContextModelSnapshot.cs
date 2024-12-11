@@ -73,7 +73,12 @@ namespace KokoType.User.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("char(36)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Roles");
                 });
@@ -108,6 +113,10 @@ namespace KokoType.User.DAL.Migrations
                     b.Property<DateTime>("RegistrateDate")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<byte[]>("Salt")
+                        .IsRequired()
+                        .HasColumnType("longblob");
+
                     b.Property<int>("UserExp")
                         .HasColumnType("int");
 
@@ -121,22 +130,10 @@ namespace KokoType.User.DAL.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserName")
+                        .IsUnique();
+
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("RoleUserModel", b =>
-                {
-                    b.Property<Guid>("RolesId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<Guid>("UsersId")
-                        .HasColumnType("char(36)");
-
-                    b.HasKey("RolesId", "UsersId");
-
-                    b.HasIndex("UsersId");
-
-                    b.ToTable("RoleUserModel");
                 });
 
             modelBuilder.Entity("AchivementUserModel", b =>
@@ -154,19 +151,20 @@ namespace KokoType.User.DAL.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("RoleUserModel", b =>
+            modelBuilder.Entity("KokoType.User.DAL.Models.Role", b =>
                 {
-                    b.HasOne("KokoType.User.DAL.Models.Role", null)
-                        .WithMany()
-                        .HasForeignKey("RolesId")
+                    b.HasOne("KokoType.User.DAL.Models.UserModel", "User")
+                        .WithMany("Roles")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("KokoType.User.DAL.Models.UserModel", null)
-                        .WithMany()
-                        .HasForeignKey("UsersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("KokoType.User.DAL.Models.UserModel", b =>
+                {
+                    b.Navigation("Roles");
                 });
 #pragma warning restore 612, 618
         }

@@ -10,6 +10,7 @@ import { ReactComponent as SettingsIcon } from '../assets/icons/SettingsIcon.svg
 import { ReactComponent as LeaderBoardIcon } from '../assets/icons/LeaderBoardIcon.svg';
 
 import '../styles/component/NavBar.css'
+import ProfileButton from "./UI/ProfileButton/ProfileButton";
 
 const NavBar = observer(() => {
     const {user} = useContext(AuthContext);
@@ -29,7 +30,7 @@ const NavBar = observer(() => {
         
         {user.isAuth ?
         <NavLink to={All_Routes.PROFILE_PAGE} style={{textDecoration: 'none'}}>
-          Profile
+          <ProfileButton/>
         </NavLink>
         :
         <NavLink className="nav-bar-icon" to={All_Routes.AUTH_PAGE}>

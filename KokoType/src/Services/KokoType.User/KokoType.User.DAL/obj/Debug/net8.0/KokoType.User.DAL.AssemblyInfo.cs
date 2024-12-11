@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KokoType.User.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b33a5e447a13a0f2c646e165acf47442a7105df9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cda5fa2ab97779ba92555bf9f9738826880358da")]
 [assembly: System.Reflection.AssemblyProductAttribute("KokoType.User.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KokoType.User.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

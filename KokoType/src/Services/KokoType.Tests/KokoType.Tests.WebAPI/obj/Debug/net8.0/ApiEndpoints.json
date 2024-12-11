@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "KokoType.Tests.WebAPI.Controllers.TestController",
+    "Method": "GetTestAcync",
+    "RelativePath": "api/Test/getTest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "testParams",
+        "Type": "KokoType.Tests.DAL.Models.TestParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,15 +1,15 @@
 [
   {
     "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
-    "Method": "SignUp",
-    "RelativePath": "api/User",
+    "Method": "DeleteUser",
+    "RelativePath": "api/User/delete",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "userModel",
-        "Type": "KokoType.User.BLL.DTO.UserModelDTO",
+        "Type": "KokoType.User.BLL.DTO.DeleteUserModelDTO",
         "IsRequired": true
       }
     ],
@@ -20,5 +20,79 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
+    "Method": "Logout",
+    "RelativePath": "api/User/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userModel",
+        "Type": "KokoType.User.BLL.DTO.DeleteUserModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/User/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenModel",
+        "Type": "KokoType.User.BLL.DTO.RefreshDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
+    "Method": "SignIn",
+    "RelativePath": "api/User/signin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userModel",
+        "Type": "KokoType.User.BLL.DTO.LoginUserModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
+    "Method": "SignUp",
+    "RelativePath": "api/User/signup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userModel",
+        "Type": "KokoType.User.BLL.DTO.UserModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
+    "Method": "testUser",
+    "RelativePath": "api/User/test",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

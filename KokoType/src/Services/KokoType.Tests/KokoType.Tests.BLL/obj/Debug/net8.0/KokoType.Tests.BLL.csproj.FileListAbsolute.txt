@@ -11,3 +11,6 @@ D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.
 D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\refint\KokoType.Tests.BLL.dll
 D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\KokoType.Tests.BLL.pdb
 D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\ref\KokoType.Tests.BLL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\bin\Debug\net8.0\KokoType.Tests.DAL.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\bin\Debug\net8.0\KokoType.Tests.DAL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.Tests\KokoType.Tests.BLL\obj\Debug\net8.0\KokoType.8F972F91.Up2Date

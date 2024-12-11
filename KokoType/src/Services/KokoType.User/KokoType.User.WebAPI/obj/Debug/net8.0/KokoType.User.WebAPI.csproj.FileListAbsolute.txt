@@ -133,3 +133,11 @@ D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.U
 D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\KokoType.User.BLL.dll
 D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\KokoType.User.BLL.pdb
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\BSTU\kursov\7sem_TRPV\KokoType\KokoType\src\Services\KokoType.User\KokoType.User.WebAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

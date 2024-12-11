@@ -4,7 +4,6 @@
     {
         public Guid Id { get; set; }
         public string RoleName { get; set; }
-
-        public List<UserModel> Users { get; set; }
+        public UserModel User { get; set; }
     }
 }

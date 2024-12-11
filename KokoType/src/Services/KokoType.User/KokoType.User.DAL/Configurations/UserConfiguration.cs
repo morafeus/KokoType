@@ -12,6 +12,8 @@ namespace KokoType.User.DAL.Configurations
             builder.Property(x => x.UserName).HasMaxLength(50);
             builder.Property(x => x.Email).IsRequired().HasMaxLength(50);
             builder.Property(x => x.Password).IsRequired();
+
+            builder.HasIndex(x => x.UserName).IsUnique();
         }
     }
 }

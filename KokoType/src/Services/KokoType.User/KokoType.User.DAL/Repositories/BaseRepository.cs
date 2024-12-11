@@ -7,7 +7,7 @@ namespace KokoType.User.DAL.Repositories
     {
 
         private DbContext _context;
-        private DbSet<T> _table;
+        public DbSet<T> _table { get; }
 
         public BaseRepository(DbContext context)
         {
@@ -32,7 +32,7 @@ namespace KokoType.User.DAL.Repositories
             return await _table.AsNoTracking().ToListAsync<T>();
         }
 
-        public async Task<T> GetById(int id)
+        public async Task<T> GetById(Guid id)
         {
             var item = await _table.FindAsync(id);
             if (item == null)

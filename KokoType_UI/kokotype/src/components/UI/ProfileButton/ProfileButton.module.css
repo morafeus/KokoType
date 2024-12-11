@@ -1,0 +1,36 @@
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    width: 200px; /* Задаем ширину контейнера */
+    color: var(--main-font-color);
+}
+
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.userLevel {
+    font-weight: bold;
+}
+
+.userName {
+    font-size: 14px;
+}
+
+.progressBar {
+    background-color: var(--test-font-color); /* Цвет фона полоски прогресса */
+    border-radius: 5px;
+    width: 100%;
+    height: 6px; /* Уменьшено до 6px */
+    margin-top: 5px;
+}
+
+.progress {
+    background-color: var(--main-font-color); /* Цвет полоски прогресса */
+    height: 100%;
+    border-radius: 5px;
+}

@@ -11,6 +11,12 @@ namespace KokoType.User.BLL.Configuration
         {
             services.AddScoped<IHashService, HashService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddSingleton<ITokenService, TokenService>();
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Admin"));
+            });
 
             return services;
         }
