@@ -8,10 +8,10 @@ export const refreshToken = async () => {
         const RefreshToken = localStorage.getItem('refresh-token');
         const decoded = jwtDecode(RefreshToken);
         const Id = decoded.Id;
-        console.log('token : ' +decoded.RefreshToken)
         const {data} = await $host.post('api/User/refresh', {Id, RefreshToken});
         localStorage.setItem('token', data.accessToken);
         localStorage.setItem('refresh-token', data.refreshToken);
+        return jwtDecode(data.accessToken);
     }
     catch
     {

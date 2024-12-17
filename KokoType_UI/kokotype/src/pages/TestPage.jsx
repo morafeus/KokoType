@@ -1,12 +1,14 @@
 import { observer } from 'mobx-react-lite'
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import TestWindow from '../components/TestWindow_Components/TestWindow';
 import LoadingAnimation from '../components/UI/LoadingAnimation/LoadingAnimation';
+import Context from '../context';
 import { fetchTest } from '../http/testAPI';
 
 import '../styles/page/TestPage.css';
 
 const TestPage = observer(() => {
+    const context = useContext(Context);
     const [text, setText] = useState('');
     const [selectedItems, setSelectedItems] = useState({
         section1: [],
@@ -24,9 +26,14 @@ const TestPage = observer(() => {
             Language: selectedItems.selectedLanguage,
             Difficulty: selectedItems.selectedDifficulty
         };
-        
-        console.log(options);
-        const data = await fetchTest(options); 
+        let data;
+        console.log(context.test);
+        if(context.test.testStats.text != null){
+            data = context.test.testStats.text;
+        }
+        else {
+            data = await fetchTest(options); 
+        }
     
         // Проверяем, является ли data массивом и преобразуем его в строку с пробелами
         if (Array.isArray(data)) {

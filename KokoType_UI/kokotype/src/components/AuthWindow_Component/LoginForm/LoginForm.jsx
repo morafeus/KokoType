@@ -12,13 +12,6 @@ const LoginForm = observer(() => {
     const { user } = useContext(AuthContext);
     const navigate = useNavigate();
 
-    toastr.options = {
-        positionClass: "toast-bottom-right", // Позиция уведомления
-        timeOut: 5000, // Время отображения уведомления в миллисекундах
-        closeButton: true, // Кнопка закрытия уведомления
-        progressBar: true // Полоска прогресса
-    };
-
     const handleLogin = async (e) => {
         e.preventDefault(); // Предотвращаем перезагрузку страницы
 

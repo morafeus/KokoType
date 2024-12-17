@@ -58,6 +58,15 @@
     border-right: none; /* Убираем курсор, когда отключен */
 }
 
+.text-default {
+    color: var(--main-font-color);
+    transition: color 0.3s ease;
+}
+
+.text-alternative {
+    color: var(--test-font-color); /* Замените на ваш альтернативный цвет */
+}
+
 @keyframes typing {
     from {
         width: 0;

@@ -1,0 +1,35 @@
+/* ResultPage.css */
+.result-container {
+    display: flex;
+    flex-direction: column; /* Элементы располагаются вертикально */
+    align-items: center; /* Выравнивание по центру по горизонтали */
+    justify-content: center; /* Выравнивание по центру по вертикали */
+    height: 70vh; /* Занимает всю высоту экрана */
+    background-color: var(--second-color); /* Цвет фона */
+}
+
+.result-row {
+    display: flex; /* Используем flex для горизонтального выравнивания */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    width: 100%; /* Занимает всю ширину */
+}
+
+.result-block {
+    background: var(--main-color); /* Цвет фона блока */
+    border: 1px solid var(--test-main-color); /* Граница блока */
+    border-radius: 8px; /* Скругление углов */
+    padding: 20px; /* Отступы внутри блока */
+    margin: 10px; /* Отступы между блоками */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для блока */
+    width: auto; /* Автоматическая ширина */
+    max-width: 900px; /* Максимальная ширина блока */
+    min-width: 500px;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.panel {
+    width: 100%; /* Занимает всю ширину */
+    padding: 20px; /* Отступы внутри блока */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 10px; /* Отступ сверху */
+}

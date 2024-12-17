@@ -18,7 +18,7 @@ const NavBar = observer(() => {
       <nav className="nav-bar">
       <div style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
         <NavLink to={All_Routes.TEST_PAGE} style={{textDecoration: 'none'}}>
-            <LogoButton disableAnimation={true} disableCursor={true}>KokoType</LogoButton>
+            <LogoButton>KokoType</LogoButton>
         </NavLink>
         <NavLink className="nav-bar-icon" to={All_Routes.LEADERBOARD_PAGE}>
             <LeaderBoardIcon />

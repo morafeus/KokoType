@@ -24,3 +24,37 @@
     margin-top: 2px;
     width: 3px;
 }
+
+.counter-container {
+    display: flex; /* Используем Flexbox для размещения элементов в строку */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px; /* Отступ сверху, если нужно */
+    animation: errorMessageFadeIn 1s forwards; 
+}
+
+.error-message {
+    margin-left: 10px;
+    font-size: 20px;
+    color: var(--test-invalid-font-color);
+    opacity: 0; /* Скрываем ошибку по умолчанию */
+    animation: errorMessageFadeIn 1s forwards; /* Анимация для появления */
+}
+
+/* Анимация появления */
+@keyframes errorMessageFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px); /* Начальная позиция для эффекта появления */
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Окончательная позиция */
+    }
+}
+
+

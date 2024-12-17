@@ -1,6 +1,7 @@
 import AuthPage from "../pages/AuthPage";
 import LeaderBoradPage from "../pages/LeaderBoardPage";
 import ProfilePage from "../pages/ProfilePage";
+import ResultPage from "../pages/ResultPage";
 import SettingsPage from "../pages/SettingsPage";
 import TestPage from "../pages/TestPage";
 
@@ -33,5 +34,9 @@ export const guestRoutes = [
     {
         path: All_Routes.SETTINGS_PAGE,
         Component: SettingsPage
+    },
+    {
+        path: All_Routes.RESULT_PAGE,
+        Component: ResultPage
     }
 ]

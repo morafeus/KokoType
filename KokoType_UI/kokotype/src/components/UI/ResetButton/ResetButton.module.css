@@ -24,6 +24,13 @@
     transform: scale(1.1); /* Увеличение при фокусе */
 }
 
+.buttonText {
+    margin-left: 8px; /* Отступ между иконкой и текстом */
+    font-size: 16px; /* Размер текста */
+    color: var(--test-font-color); /* Цвет текста */
+    transition: color 0.3s ease; /* Плавный переход цвета текста */
+}
+
 .rotate {
     animation: spin 1s forwards; /* Анимация вращения по умолчанию */
 }
@@ -41,4 +48,12 @@ button {
     background: none; /* Убираем фоновый цвет */
     border: none;  
     outline: none; /* Убираем стандартный контур */
+}
+
+.iconButton:hover .buttonText {
+    color: var(--main-font-color); /* Цвет текста при наведении */
+}
+
+.iconButton:focus .buttonText {
+    color: var(--main-font-color); /* Цвет текста при фокусе */
 }

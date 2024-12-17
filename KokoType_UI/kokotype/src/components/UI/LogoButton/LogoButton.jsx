@@ -1,32 +1,57 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState, useLayoutEffect } from 'react';
+import Context from '../../../context';
 import '../../../styles/component/NavBar.css';
 
-const LogoButton = ({ children, disableAnimation, disableCursor }) => {
+const LogoButton = ({ children }) => {
     const [animationClass, setAnimationClass] = useState('typing');
+    const [dynamicState, setDynamicState] = useState({
+        disableAnimation: true,
+        disableCursor: true,
+        changeColor: true,
+    });
 
-    useEffect(() => {
-        if (!disableAnimation) return; // Если анимация отключена, выходим
+    const context = useContext(Context);
+    let timeoutId; // Переменная для хранения идентификаторов тайм-аутов
 
-        const typingDuration = 1500; // Длительность анимации печати
+    // Используем useLayoutEffect для мгновенного применения изменений
+    useLayoutEffect(() => {
+      
+            setDynamicState({
+                disableAnimation: true,
+                disableCursor: true,
+                changeColor: true, // Восстанавливаем цвет
+            });
+            startAnimation(); // Запускаем анимацию снова
+        
+    }, [context.test.isTyping]);
+
+    const startAnimation = () => {
         const deletingDuration = 1500; // Длительность анимации удаления
         const waitDuration = 6000; // Время ожидания перед удалением
 
         const cycleAnimation = () => {
             setAnimationClass('typing');
-            setTimeout(() => {
+            timeoutId = setTimeout(() => {
                 setAnimationClass('deleting');
-                setTimeout(cycleAnimation, deletingDuration); // Запускаем следующий цикл после удаления
+                timeoutId = setTimeout(cycleAnimation, deletingDuration); // Запускаем следующий цикл
             }, waitDuration);
         };
 
-        const initialTimeout = setTimeout(cycleAnimation, 0); // Запускаем первый цикл
+        cycleAnimation(); // Запускаем первый цикл
+    };
 
-        return () => clearTimeout(initialTimeout);
-    }, [disableAnimation]); // Добавляем зависимость
+    useEffect(() => {
+        return () => clearTimeout(timeoutId); // Очищаем таймеры при размонтировании
+    }, []);
+
+    // Условное присваивание классов
+    const textClass = dynamicState.changeColor ? 'text-default' : 'text-alternative';
 
     return (
         <div className='typing-border'>
-            <div className={`typing-container ${disableAnimation ? animationClass : ''} ${disableCursor ? '' : 'no-cursor' }`}>
+            <div
+                className={`typing-container ${dynamicState.disableAnimation ? animationClass : ''} ${dynamicState.disableCursor ? '' : 'no-cursor'} ${textClass}`}
+            >
                 <div className="typing-text">{children}</div>
             </div>
         </div>

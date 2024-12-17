@@ -1,3 +1,4 @@
+// ResetButton.js
 import { observer } from "mobx-react-lite";
 import React, { useState, useRef } from "react";
 import { ReactComponent as ResetIcon } from '../../../assets/icons/ResetIcon.svg';
@@ -26,6 +27,7 @@ const ResetButton = observer((props) => {
             className={`${styles.iconButton} ${isRotating ? styles.rotate : ''}`} // Используем стили из модуля
         >
             <ResetIcon />
+            {props.children && <span className={styles.buttonText}>{props.children}</span>} {/* Отображаем текст */}
         </button>
     );
 });

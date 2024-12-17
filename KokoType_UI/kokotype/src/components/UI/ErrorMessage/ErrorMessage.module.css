@@ -1,0 +1,33 @@
+/* ErrorMessage.module.css */
+.errorMessage {
+    margin-left: 10px;
+    font-size: 20px;
+    color: var(--test-invalid-font-color);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(255, 0, 0, 0); /* Начальная тень */
+    transition: opacity 0.6s ease-out, text-shadow 0.6s ease-out; /* Плавное исчезновение и тени */
+}
+
+/* Класс для активной анимации */
+.flash {
+    animation: burnEffect 1.5s ease-out forwards; /* Длительность анимации появления */
+}
+
+@keyframes burnEffect {
+    0% {
+        opacity: 0;
+        text-shadow: 0 0 0 rgba(255, 0, 0, 0); /* Начальная тень */
+    }
+    30% {
+        opacity: 0.5;
+        text-shadow: 0 0 12px rgba(255, 0, 0, 0.5), 0 0 20px rgba(255, 0, 0, 0.3); /* Легкая вспышка */
+    }
+    85% {
+        opacity: 1;
+        text-shadow: 0 0 25px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.6); /* Яркая тень */
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 25px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.5); /* Стабильная яркая тень */
+    }
+}

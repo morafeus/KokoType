@@ -8,15 +8,16 @@ import LanguageSelector from "../UI/LanguageSelector/LanguageSelector";
 import CustomButton from "../UI/CustomButton/CustomButton"; 
 import TestCounter from "../UI/TestCounter/TestCounter";
 import WordCountSelector from "../UI/WordCountSelector/WordCountSelector"; 
+import ErrorMessage from "../UI/ErrorMessage/ErrorMessage";
 
-const TestSettings = observer(({ wordCount, refreshText, testStatus, startTyping, selectedItems, setSelectedItems }) => {
+const TestSettings = observer(({ wordCount, refreshText,finishText, testStatus, selectedItems, setSelectedItems, errorCount }) => {
     const [modal, setModal] = useState(false);
     const [wordCountModal, setWordCountModal] = useState(false);
     const [localWordCount, setLocalWordCount] = useState('');
 
     // Состояние для языка и уровня сложности
     const [languageDifficulty, setLanguageDifficulty] = useState({
-        selectedLanguage: null,
+        selectedLanguage: "",
         selectedDifficulty: "easy",
     });
 
@@ -52,22 +53,28 @@ const TestSettings = observer(({ wordCount, refreshText, testStatus, startTyping
         console.log("Выбранный элемент:", item);
     };
 
-    const handleLanguageAndDifficultySelect = (language, difficulty) => {
-        setLanguageDifficulty({ selectedLanguage: language, selectedDifficulty: difficulty });
-        setSelectedItems(prev => ({
-            ...prev,
-            selectedLanguage: language,
-            selectedDifficulty: difficulty
-        }));
-    };
+   
 
     const LanguageButtonClick = () => {
+        console.log(selectedItems.selectedDifficulty);
+        setLanguageDifficulty({selectedLanguage: selectedItems.selectedLanguage, 
+            selectedDifficulty: selectedItems.selectedDifficulty});
         setModal(true);
     };
 
     const handleWordCountButtonClick = () => {
         setLocalWordCount(selectedItems.wordCount || ''); // Устанавливаем текущее значение
         setWordCountModal(true);
+    };
+
+    const handleLanguageAndDifficultySelect = () => {
+        setSelectedItems(prev => ({
+            ...prev,
+            selectedLanguage: languageDifficulty.selectedLanguage,
+            selectedDifficulty: languageDifficulty.selectedDifficulty
+        }));
+        setModal(false);
+
     };
 
     const handleWordCountAccept = () => {
@@ -94,49 +101,53 @@ const TestSettings = observer(({ wordCount, refreshText, testStatus, startTyping
     return (
         <div className="mainContainer">
             <div className='test-settings-container'>
-                <div className="test-settings-sections">
-                    <LanguageButton onClick={LanguageButtonClick}>Language</LanguageButton>
-                    <MyModal visible={modal} setVisible={setModal} onAccept={() => handleLanguageAndDifficultySelect(languageDifficulty.selectedLanguage, languageDifficulty.selectedDifficulty)}>
-                        <LanguageSelector 
-                            selectedLanguage={selectedItems.selectedLanguage || languageDifficulty.selectedLanguage}
-                            selectedDifficulty={selectedItems.selectedDifficulty || languageDifficulty.selectedDifficulty}
-                            setLanguageDifficulty={setLanguageDifficulty}
-                        />
-                    </MyModal>
-                    <div className="section-divider"></div>
-                    <TestSettingsSection 
-                        section="section1" 
-                        items={sectionConfig.section1.items} 
-                        selectedItem={selectedItems.section1}
-                        onSelectItem={handleSelectItem} 
-                        isMultiple={sectionConfig.section1.multiple} 
+                <LanguageButton onClick={LanguageButtonClick}>Language</LanguageButton>
+                <MyModal visible={modal} setVisible={setModal} onAccept={handleLanguageAndDifficultySelect}>
+                    <LanguageSelector 
+                        selectedLanguage={languageDifficulty.selectedLanguage}
+                        selectedDifficulty={languageDifficulty.selectedDifficulty}
+                        setLanguageDifficulty={setLanguageDifficulty}
                     />
+                </MyModal>
+                <div className="section-divider"></div>
+                {selectedItems.section2 != "text" && 
+                <TestSettingsSection 
+                    section="section1" 
+                    items={sectionConfig.section1.items} 
+                    selectedItem={selectedItems.section1}
+                    onSelectItem={handleSelectItem} 
+                    isMultiple={sectionConfig.section1.multiple} 
+                />
+                }
+                {selectedItems.section2 != "text" && 
                     <div className="section-divider"></div>
-                    <TestSettingsSection 
-                        section="section2" 
-                        items={sectionConfig.section2.items} 
-                        selectedItem={selectedItems.section2}
-                        onSelectItem={handleSelectItem} 
-                    />
-                    <div className="section-divider"></div> 
-                    <TestSettingsSection 
-                        section="section3" 
-                        items={getSection3Items()} 
-                        selectedItem={selectedItems.section3}
-                        onSelectItem={handleSelectItem} 
-                    /> 
-                    {!isTextSelected && (
-                        <CustomButton onClick={handleWordCountButtonClick} isActive={isButtonActive()} />
-                    )}
-                </div>
+                }
+                <TestSettingsSection 
+                    section="section2" 
+                    items={sectionConfig.section2.items} 
+                    selectedItem={selectedItems.section2}
+                    onSelectItem={handleSelectItem} 
+                />
+                <div className="section-divider"></div> 
+                <TestSettingsSection 
+                    section="section3" 
+                    items={getSection3Items()} 
+                    selectedItem={selectedItems.section3}
+                    onSelectItem={handleSelectItem} 
+                /> 
+                {!isTextSelected && (
+                    <CustomButton onClick={handleWordCountButtonClick} isActive={isButtonActive()} />
+                )}
             </div>
-            <TestCounter 
-                selectedItems={selectedItems}
-                wordCount={wordCount}
-                refreshText={refreshText}
-                testStatus={testStatus}
-                startTyping={startTyping}
-            />
+            <div className="counter-container">
+                <TestCounter 
+                    selectedItems={selectedItems}
+                    wordCount={wordCount}
+                    finishText={finishText}
+                    testStatus={testStatus}
+                />
+                <ErrorMessage errorCount={errorCount} /> 
+            </div>
             <MyModal visible={wordCountModal} setVisible={setWordCountModal} onAccept={handleWordCountAccept}>
                 <WordCountSelector wordCount={localWordCount} setWordCount={setLocalWordCount} />
             </MyModal>

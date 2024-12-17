@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import AuthContext from './context';
+import Context from './context';
+import TestStore from './store/TestStore';
 import UserStore from './store/UserStore';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-    <AuthContext.Provider value={{
+    <Context.Provider value={{
         user: new UserStore(),
+        test: new TestStore(),
     }}>
         <App />
-    </AuthContext.Provider>
+    </Context.Provider>
     
 );
 

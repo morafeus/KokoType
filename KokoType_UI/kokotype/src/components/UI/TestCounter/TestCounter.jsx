@@ -1,40 +1,40 @@
 import { observer } from "mobx-react-lite";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import Context from "../../../context";
 import classes from './TestCounter.module.css';
 
-const TestCounter = observer(({ selectedItems, wordCount, refreshText, resetTimer, startTyping }) => {
+const TestCounter = observer(({ selectedItems, wordCount, finishText, resetTimer }) => {   
+    const context = useContext(Context);
+
     const [timeRemaining, setTimeRemaining] = useState(null);
     const section2 = selectedItems.section2;
     const section3Value = selectedItems.section3;
 
     useEffect(() => {
         let timer;
-        if (startTyping && section2 === "time" && section3Value) {
+        if (context.test.isTyping === 1 && section2 === "time" && section3Value) {
+            console.log('rest timer');
             const timerValue = parseInt(section3Value, 10);
             setTimeRemaining(timerValue);
             timer = setInterval(() => {
                 setTimeRemaining(prev => {
                     if (prev <= 1) {
                         clearInterval(timer);
-                        refreshText();
+                        finishText();
                         return 0;
                     }
                     return prev - 1;
                 });
             }, 1000);
-        } else {
-            setTimeRemaining(null);
-        }
+        } 
         
-        return () => clearInterval(timer); // Очистка интервала при размонтировании или изменении зависимостей
-    }, [startTyping, section2, section3Value, refreshText, resetTimer]);
+    }, [context.test.isTyping, section2, section3Value]);
 
     useEffect(() => {
         if (section3Value && wordCount >= parseInt(section3Value, 10)) {
-            refreshText();
-            resetTimer(); // Сброс таймера
+            finishText();
         }
-    }, [wordCount, section3Value, refreshText, resetTimer]);
+    }, [wordCount, section3Value, finishText, resetTimer]);
 
     const renderCounter = () => {
         if (section2 === "words") {

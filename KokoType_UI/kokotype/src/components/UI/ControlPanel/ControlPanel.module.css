@@ -1,0 +1,27 @@
+/* ControlPanel.module.css */
+.controlPanel {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    margin-top: 20px;
+    gap: 15px; /* Добавляем отступ между кнопками */
+}
+
+.controlButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.controlButton:hover {
+    background-color: #0056b3;
+}
+
+.resetButton {
+    margin-top: 30px;
+}

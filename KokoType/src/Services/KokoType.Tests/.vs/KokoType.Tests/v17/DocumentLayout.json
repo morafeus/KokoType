@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{13BF159A-1F1B-4742-A4C9-C416568A7FBA}|KokoType.Tests.DAL\\KokoType.Tests.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.tests\\kokotype.tests.dal\\models\\testparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BF159A-1F1B-4742-A4C9-C416568A7FBA}|KokoType.Tests.DAL\\KokoType.Tests.DAL.csproj|solutionrelative:kokotype.tests.dal\\models\\testparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FFF3569C-3867-4A74-BE36-A56792A41710}|KokoType.Tests.WebAPI\\KokoType.Tests.WebAPI.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.tests\\kokotype.tests.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFF3569C-3867-4A74-BE36-A56792A41710}|KokoType.Tests.WebAPI\\KokoType.Tests.WebAPI.csproj|solutionrelative:kokotype.tests.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{13BF159A-1F1B-4742-A4C9-C416568A7FBA}|KokoType.Tests.DAL\\KokoType.Tests.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.tests\\kokotype.tests.dal\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13BF159A-1F1B-4742-A4C9-C416568A7FBA}|KokoType.Tests.DAL\\KokoType.Tests.DAL.csproj|solutionrelative:kokotype.tests.dal\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13BF159A-1F1B-4742-A4C9-C416568A7FBA}|KokoType.Tests.DAL\\KokoType.Tests.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.tests\\kokotype.tests.dal\\models\\testparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13BF159A-1F1B-4742-A4C9-C416568A7FBA}|KokoType.Tests.DAL\\KokoType.Tests.DAL.csproj|solutionrelative:kokotype.tests.dal\\models\\testparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FFF3569C-3867-4A74-BE36-A56792A41710}|KokoType.Tests.WebAPI\\KokoType.Tests.WebAPI.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.tests\\kokotype.tests.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.BLL\\Configuration\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "KokoType.Tests.BLL\\Configuration\\DependencyInjection.cs",
@@ -102,12 +102,11 @@
               "RelativeToolTip": "KokoType.Tests.BLL\\Configuration\\DependencyInjection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T16:31:13.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T16:31:13.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TestService.cs",
               "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.BLL\\Service\\TestService.cs",
               "RelativeDocumentMoniker": "KokoType.Tests.BLL\\Service\\TestService.cs",
@@ -115,12 +114,11 @@
               "RelativeToolTip": "KokoType.Tests.BLL\\Service\\TestService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T16:15:59.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T16:15:59.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ITestService.cs",
               "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.BLL\\Interfaces\\ITestService.cs",
               "RelativeDocumentMoniker": "KokoType.Tests.BLL\\Interfaces\\ITestService.cs",
@@ -128,12 +126,11 @@
               "RelativeToolTip": "KokoType.Tests.BLL\\Interfaces\\ITestService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T15:10:49.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T15:10:49.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TestController.cs",
               "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.WebAPI\\Controllers\\TestController.cs",
               "RelativeDocumentMoniker": "KokoType.Tests.WebAPI\\Controllers\\TestController.cs",
@@ -141,20 +138,32 @@
               "RelativeToolTip": "KokoType.Tests.WebAPI\\Controllers\\TestController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAowCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T09:01:53.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T09:01:53.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "KokoType.Tests.WebAPI\\Program.cs",
               "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.WebAPI\\Program.cs",
               "RelativeToolTip": "KokoType.Tests.WebAPI\\Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADsAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T06:02:14.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestParams.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.DAL\\Models\\TestParams.cs",
+              "RelativeDocumentMoniker": "KokoType.Tests.DAL\\Models\\TestParams.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.DAL\\Models\\TestParams.cs",
+              "RelativeToolTip": "KokoType.Tests.DAL\\Models\\TestParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T06:11:57.611Z",
               "EditorCaption": ""
             },
             {
@@ -164,18 +173,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "TestParams.cs",
-              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.DAL\\Models\\TestParams.cs",
-              "RelativeDocumentMoniker": "KokoType.Tests.DAL\\Models\\TestParams.cs",
-              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.DAL\\Models\\TestParams.cs",
-              "RelativeToolTip": "KokoType.Tests.DAL\\Models\\TestParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T06:11:57.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Tests\\KokoType.Tests.DAL\\Configuration\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "KokoType.Tests.DAL\\Configuration\\DependencyInjection.cs",
