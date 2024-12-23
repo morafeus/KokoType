@@ -1,78 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\",
+  "WorkspaceRootPath": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Migrations\\20241204193133_MyMigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KokoType.Lesson.DAL\\Migrations\\20241204193133_MyMigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|solutionrelative:kokotype.lesson.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\context\\lessoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\context\\lessoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\context\\unitofwork_lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\context\\unitofwork_lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\repositories\\lessonresultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\repositories\\lessonresultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\repositories\\lessonresultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\repositories\\lessonpagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\repositories\\lessonpagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.bll\\service\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|solutionrelative:kokotype.lesson.bll\\service\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\repositories\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\repositories\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.bll\\dto\\completelessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|solutionrelative:kokotype.lesson.bll\\dto\\completelessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.bll\\dto\\deletelessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|solutionrelative:kokotype.lesson.bll\\dto\\deletelessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\models\\lessonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\models\\lessonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\models\\lessonpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\models\\lessonpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\models\\lessonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\models\\lessonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\models\\lessonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\models\\lessonpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\models\\lessonpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\models\\lessonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\models\\lessonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.webapi\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|solutionrelative:kokotype.lesson.webapi\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.bll\\interfaces\\ilessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|solutionrelative:kokotype.lesson.bll\\interfaces\\ilessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\repositories\\lessonpagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\repositories\\lessonpagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\repositories\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\repositories\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.bll\\dto\\lessonmodeldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|solutionrelative:kokotype.lesson.bll\\dto\\lessonmodeldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.webapi\\kokotype.lesson.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.bll\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|solutionrelative:kokotype.lesson.bll\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|solutionrelative:kokotype.lesson.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.webapi\\kokotype.lesson.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|solutionrelative:kokotype.lesson.webapi\\kokotype.lesson.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.dal\\kokotype.lesson.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\kokotype.lesson.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.bll\\kokotype.lesson.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|solutionrelative:kokotype.lesson.bll\\kokotype.lesson.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7814C952-18BE-400F-8E54-20C101BA3CC3}|KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj|solutionrelative:kokotype.lesson.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|c:\\users\\user\\source\\repos\\kokotype.lesson\\kokotype.lesson.bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|solutionrelative:kokotype.lesson.bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\context\\unitofwork_lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\context\\unitofwork_lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Migrations\\20241221164500_UpdateLesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KokoType.Lesson.DAL\\Migrations\\20241221164500_UpdateLesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\context\\lessoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\context\\lessoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.dal\\kokotype.lesson.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D9539E4F-EEB2-4D99-AB6F-B7E1276125E5}|KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj|solutionrelative:kokotype.lesson.dal\\kokotype.lesson.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|d:\\bstu\\kursov\\7sem_trpv\\kokotype\\kokotype\\src\\services\\kokotype.lesson\\kokotype.lesson.bll\\kokotype.lesson.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3EA0E73F-96C2-4BE6-88A9-01DB3817F0FC}|KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj|solutionrelative:kokotype.lesson.bll\\kokotype.lesson.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Interfaces\\IUnitOfWork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KokoType.Lesson.DAL\\Interfaces\\IUnitOfWork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,30 +110,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241204193133_MyMigrationName.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Migrations\\20241204193133_MyMigrationName.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Migrations\\20241204193133_MyMigrationName.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Migrations\\20241204193133_MyMigrationName.cs",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\Migrations\\20241204193133_MyMigrationName.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "LessonService.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\Service\\LessonService.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.BLL\\Service\\LessonService.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\Service\\LessonService.cs",
+              "RelativeToolTip": "KokoType.Lesson.BLL\\Service\\LessonService.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFMAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:31:33.845Z",
+              "WhenOpened": "2024-12-21T22:29:58.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LessonModel.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonModel.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Models\\LessonModel.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonModel.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Models\\LessonModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:23:55.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "LessonPage.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonPage.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Models\\LessonPage.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonPage.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Models\\LessonPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:24:22.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeleteLessonDTO.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\DTO\\DeleteLessonDTO.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.BLL\\DTO\\DeleteLessonDTO.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\DTO\\DeleteLessonDTO.cs",
+              "RelativeToolTip": "KokoType.Lesson.BLL\\DTO\\DeleteLessonDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:40:25.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompleteLessonDTO.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\DTO\\CompleteLessonDTO.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.BLL\\DTO\\CompleteLessonDTO.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\DTO\\CompleteLessonDTO.cs",
+              "RelativeToolTip": "KokoType.Lesson.BLL\\DTO\\CompleteLessonDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T21:35:51.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "LessonResultRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonResultRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonResultRepository.cs",
               "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Repositories\\LessonResultRepository.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonResultRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonResultRepository.cs",
               "RelativeToolTip": "KokoType.Lesson.DAL\\Repositories\\LessonResultRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAMwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T19:27:00.647Z",
               "EditorCaption": ""
@@ -113,218 +193,236 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "LessonPageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonPageRepository.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Repositories\\LessonPageRepository.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonPageRepository.cs",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\Repositories\\LessonPageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:26:38.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UnitOfWork_Lesson.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Context\\UnitOfWork_Lesson.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Context\\UnitOfWork_Lesson.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Context\\UnitOfWork_Lesson.cs",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\Context\\UnitOfWork_Lesson.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:22:44.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LessonContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Context\\LessonContext.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Context\\LessonContext.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Context\\LessonContext.cs",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\Context\\LessonContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:22:23.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Configuration\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Configuration\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Configuration\\DependencyInjection.cs",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\Configuration\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:18:06.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.WebAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\Program.cs",
-              "RelativeToolTip": "KokoType.Lesson.WebAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:15:55.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LessonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonRepository.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Repositories\\LessonRepository.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonRepository.cs",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\Repositories\\LessonRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:25:26.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Repositories\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\BaseRepository.cs",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\Repositories\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:25:40.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "LessonResult.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonResult.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonResult.cs",
               "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Models\\LessonResult.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonResult.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonResult.cs",
               "RelativeToolTip": "KokoType.Lesson.DAL\\Models\\LessonResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T19:24:52.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LessonPage.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonPage.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Models\\LessonPage.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonPage.cs",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\Models\\LessonPage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "LessonController.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\Controllers\\LessonController.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.WebAPI\\Controllers\\LessonController.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\Controllers\\LessonController.cs",
+              "RelativeToolTip": "KokoType.Lesson.WebAPI\\Controllers\\LessonController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwC0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:24:22.432Z",
+              "WhenOpened": "2024-12-21T22:24:54.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ILessonService.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\Interfaces\\ILessonService.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.BLL\\Interfaces\\ILessonService.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\Interfaces\\ILessonService.cs",
+              "RelativeToolTip": "KokoType.Lesson.BLL\\Interfaces\\ILessonService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T22:29:41.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LessonPageRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonPageRepository.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Repositories\\LessonPageRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonPageRepository.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Repositories\\LessonPageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:26:38.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LessonRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonRepository.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Repositories\\LessonRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\LessonRepository.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Repositories\\LessonRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:25:26.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "LessonModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonModel.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Models\\LessonModel.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Models\\LessonModel.cs",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\Models\\LessonModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Title": "LessonModelDTO.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\DTO\\LessonModelDTO.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.BLL\\DTO\\LessonModelDTO.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\DTO\\LessonModelDTO.cs",
+              "RelativeToolTip": "KokoType.Lesson.BLL\\DTO\\LessonModelDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:23:55.307Z",
+              "WhenOpened": "2024-12-22T12:54:32.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Repositories\\BaseRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACIAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:23:27.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T19:25:40.744Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "KokoType.Lesson.WebAPI",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj",
-              "RelativeDocumentMoniker": "KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj",
-              "RelativeToolTip": "KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-04T19:19:04.012Z",
-              "EditorCaption": ""
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Interfaces\\IRepository.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:23:27.826Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "KokoType.Lesson.DAL",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj",
-              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj",
-              "RelativeToolTip": "KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-04T19:18:36.453Z",
-              "EditorCaption": ""
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Configuration\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Configuration\\DependencyInjection.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Configuration\\DependencyInjection.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Configuration\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:18:06.151Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "KokoType.Lesson.BLL",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj",
-              "RelativeDocumentMoniker": "KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj",
-              "RelativeToolTip": "KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-04T19:18:23.383Z",
-              "EditorCaption": ""
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\Configuration\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.BLL\\Configuration\\DependencyInjection.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\Configuration\\DependencyInjection.cs",
+              "RelativeToolTip": "KokoType.Lesson.BLL\\Configuration\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T22:29:16.505Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "KokoType.Lesson.WebAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\appsettings.json",
-              "RelativeToolTip": "KokoType.Lesson.WebAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-04T19:16:51.506Z",
-              "EditorCaption": ""
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.WebAPI\\Program.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\Program.cs",
+              "RelativeToolTip": "KokoType.Lesson.WebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:15:55.352Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.BLL\\Class1.cs",
-              "RelativeDocumentMoniker": "KokoType.Lesson.BLL\\Class1.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\KokoType.Lesson\\KokoType.Lesson.BLL\\Class1.cs",
-              "RelativeToolTip": "KokoType.Lesson.BLL\\Class1.cs",
+              "Title": "KokoType.Lesson.WebAPI.csproj",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj",
+              "RelativeDocumentMoniker": "KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj",
+              "RelativeToolTip": "KokoType.Lesson.WebAPI\\KokoType.Lesson.WebAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-04T19:19:04.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "KokoType.Lesson.WebAPI\\appsettings.json",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.WebAPI\\appsettings.json",
+              "RelativeToolTip": "KokoType.Lesson.WebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-04T19:16:51.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UnitOfWork_Lesson.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Context\\UnitOfWork_Lesson.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Context\\UnitOfWork_Lesson.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Context\\UnitOfWork_Lesson.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Context\\UnitOfWork_Lesson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:22:44.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T11:53:11.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20241221164500_UpdateLesson.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Migrations\\20241221164500_UpdateLesson.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Migrations\\20241221164500_UpdateLesson.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Migrations\\20241221164500_UpdateLesson.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Migrations\\20241221164500_UpdateLesson.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:16:40.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T16:45:00.421Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LessonContext.cs",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Context\\LessonContext.cs",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\Context\\LessonContext.cs",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\Context\\LessonContext.cs",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\Context\\LessonContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:22:23.307Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "KokoType.Lesson.DAL.csproj",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj",
+              "RelativeDocumentMoniker": "KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj",
+              "RelativeToolTip": "KokoType.Lesson.DAL\\KokoType.Lesson.DAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-04T19:18:36.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "KokoType.Lesson.BLL.csproj",
+              "DocumentMoniker": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj",
+              "RelativeDocumentMoniker": "KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj",
+              "ToolTip": "D:\\BSTU\\kursov\\7sem_TRPV\\KokoType\\KokoType\\src\\Services\\KokoType.Lesson\\KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj",
+              "RelativeToolTip": "KokoType.Lesson.BLL\\KokoType.Lesson.BLL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-04T19:18:23.383Z"
             }
           ]
         }

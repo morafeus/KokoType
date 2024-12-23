@@ -10,7 +10,8 @@
           "Port": 7273
         }
       ],
-      "HttpMethod": "Post"    },
+      "HttpMethod": "Post"    
+    },
     {
       "DownstreamPathTemplate": "/api/Test/{everything}",
       "UpstreamPathTemplate": "/api/Test/{everything}",
@@ -19,6 +20,18 @@
         {
           "Host": "localhost",
           "Port": 7286
+        }
+      ],
+      "HttpMethod": "Post"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Lesson/{everything}",
+      "UpstreamPathTemplate": "/api/Lesson/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7288
         }
       ],
       "HttpMethod": "Post"

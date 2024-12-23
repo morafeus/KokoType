@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Context from "../../context";
+import { updateLvl } from "../../http/authAPI";
+import { setResult } from "../../http/testAPI";
 import '../../styles/component/TestWindow.css';
 import All_Routes from "../../utils/consts";
 import TestSettings from "../TestSettings_Components/TestSettings";
@@ -14,15 +16,16 @@ const TestWindow = ({ template }) => {
     const [cursorIndex, setCursorIndex] = useState(0);
     const [isFinished, setIsFinished] = useState(false);
     const [wordCount, setWordCount] = useState(0);
-    const [timerId, setTimerId] = useState(null);
-    const [elapsedTime, setElapsedTime] = useState(0);
     const [errorCount, setErrorCount] = useState(0);
-    const [errorWords, setErrorWords] = useState([]); 
+    const [errorWords, setErrorWords] = useState([]);
 
     const cursorRef = useRef(null);
     const textareaRef = useRef(null);
     const charRefs = useRef([]);
     const textContainerRef = useRef(null);
+    
+    const elapsedTimeRef = useRef(0); // Ссылаемся на время через useRef
+    const timerIdRef = useRef(null);  // Храним идентификатор таймера
 
     useEffect(() => {
         const textarea = textareaRef.current;
@@ -33,9 +36,9 @@ const TestWindow = ({ template }) => {
 
     const handleKeyDown = (e) => {
         if (isFinished) return;
-    
+
         const currentWord = getCurrentWord();
-    
+
         if (e.key === 'Backspace') {
             if (cursorIndex > 0 && cursorIndex > currentWord.startIndex) {
                 setUserInput((prev) => prev.slice(0, -1));
@@ -45,19 +48,16 @@ const TestWindow = ({ template }) => {
             const currentTypingCount = context.test.isTyping; // Получаем текущее значение
             const newTypingCount = updateTypingCount(currentTypingCount);
             context.test.setIsTyping(newTypingCount); // Устанавливаем новое значение
-    
+
             const correctChar = template.text[cursorIndex];
             const inputChar = e.key;
-    
-            // Проверяем, введен ли пробел
+
             if (inputChar === ' ') {
                 if (correctChar === ' ') {
-                    // Правильный ввод пробела
                     setUserInput((prev) => prev + inputChar);
                     setCursorIndex((prev) => prev + 1);
                     setWordCount((prev) => prev + 1);
                 } else {
-                    // Неверный ввод пробела
                     setErrorCount((prev) => prev + 1);
                     setUserInput((prev) => prev + inputChar);
                     setCursorIndex((prev) => prev + 1);
@@ -67,7 +67,6 @@ const TestWindow = ({ template }) => {
                     }
                 }
             } else {
-                // Проверка для других символов
                 if (inputChar === correctChar) {
                     setUserInput((prev) => prev + inputChar);
                     setCursorIndex((prev) => prev + 1);
@@ -75,14 +74,14 @@ const TestWindow = ({ template }) => {
                     setErrorCount((prev) => prev + 1); // Увеличиваем счетчик ошибок
                     setUserInput((prev) => prev + inputChar);
                     setCursorIndex((prev) => prev + 1);
-    
+
                     const currentErrorWord = currentWord.word;
                     if (!errorWords.includes(currentErrorWord)) {
                         setErrorWords((prev) => [...prev, currentErrorWord]);
                     }
                 }
             }
-    
+
             e.preventDefault();
         }
     };
@@ -90,25 +89,24 @@ const TestWindow = ({ template }) => {
     const updateTypingCount = (prev) => {
         const newValue = prev + 1; 
         if (newValue === 1) {
-           startTimer();
+            startTimer(); // Начинаем таймер при первом вводе
         }
-        return newValue; // Возвращаем новое значение
+        return newValue;
     };
 
     const startTimer = () => {
         const startTime = Date.now();
-        const id = setInterval(() => {
-            setElapsedTime(Date.now() - startTime);
+        timerIdRef.current = setInterval(() => {
+            elapsedTimeRef.current = Date.now() - startTime; // Обновляем время с использованием useRef
         }, 100);
-        setTimerId(id);
     };
 
     const stopTimer = () => {
-        if (timerId) {
-            clearInterval(timerId);
-            setTimerId(null);
+        if (timerIdRef.current) {
+            clearInterval(timerIdRef.current);
+            timerIdRef.current = null;
         }
-        console.log(`Time taken: ${elapsedTime / 1000} seconds`);
+        console.log(`Time taken: ${elapsedTimeRef.current / 1000} seconds`);
     };
 
     const getCurrentWord = () => {
@@ -150,38 +148,38 @@ const TestWindow = ({ template }) => {
         });
     };
 
-  const checkInput = () => {
-    const words = getTemplateWords();
-    let userIndex = 0;
+    const checkInput = () => {
+        const words = getTemplateWords();
+        let userIndex = 0;
 
-    for (let i = 0; i < words.length; i++) {
-        const word = words[i];
-        for (let j = 0; j < word.length; j++) {
-            if (userIndex < userInput.length) {
-                const currentChar = userInput[userIndex];
+        for (let i = 0; i < words.length; i++) {
+            const word = words[i];
+            for (let j = 0; j < word.length; j++) {
+                if (userIndex < userInput.length) {
+                    const currentChar = userInput[userIndex];
 
-                // Проверка для пробелов
-                if (word[j].char === ' ' && currentChar === ' ') {
-                    word[j].isCorrect = 'typed'; // Пробел введен правильно
-                } else if (word[j].char === currentChar) {
-                    word[j].isCorrect = 'typed'; // Правильный символ
-                } else {
-                    // Если это пробел, который введен неверно
-                    if (word[j].char === ' ') {
-                        word[j].isCorrect = 'incorrect-space'; // Неверный пробел
+                    // Проверка для пробелов
+                    if (word[j].char === ' ' && currentChar === ' ') {
+                        word[j].isCorrect = 'typed'; // Пробел введен правильно
+                    } else if (word[j].char === currentChar) {
+                        word[j].isCorrect = 'typed'; // Правильный символ
                     } else {
-                        word[j].isCorrect = 'incorrect'; // Неверный символ
+                        // Если это пробел, который введен неверно
+                        if (word[j].char === ' ') {
+                            word[j].isCorrect = 'incorrect-space'; // Неверный пробел
+                        } else {
+                            word[j].isCorrect = 'incorrect'; // Неверный символ
+                        }
                     }
+                    userIndex++;
+                } else {
+                    word[j].isCorrect = 'untyped'; // Если символ еще не введен
                 }
-                userIndex++;
-            } else {
-                word[j].isCorrect = 'untyped'; // Если символ еще не введен
             }
         }
-    }
 
-    return words;
-};
+        return words;
+    };
 
     const renderText = () => {
         const words = checkInput();
@@ -245,18 +243,15 @@ const TestWindow = ({ template }) => {
         }
 
         if (cursorIndex >= template.text.length) {
-            setIsFinished(true);
-            stopTimer();
-            finishText();
+            end();
         }
 
     }, [cursorIndex, userInput]);
 
-    const resetTimer = () => {
-        if (timerId) {
-            clearInterval(timerId);
-            setTimerId(null);
-        }
+    const end = async () => {
+        setIsFinished(true);
+        stopTimer();
+        await finishText();
     };
 
     const refreshText = async () => {
@@ -265,15 +260,45 @@ const TestWindow = ({ template }) => {
         setCursorIndex(0);
         context.test.setIsTyping(0);
         setWordCount(0);
-        setElapsedTime(0); // Сбрасываем время
         setErrorCount(0); // Сбрасываем счетчик ошибок
-        resetTimer();
+        elapsedTimeRef.current = 0; // Сбрасываем время
         setIsFinished(false);
         textContainerRef.current.scrollTop = 0;
     };
 
     const finishText = async () => {
-        context.test.setTestStats({text: template.text, errors: errorCount, time: elapsedTime/1000, errorWords: errorWords});
+        context.test.setTestStats({text: template.text, errors: errorCount, time: elapsedTimeRef.current / 1000, errorWords: errorWords});
+        console.log(context.user.isAuth);
+        if (context.user.isAuth) {
+            const id = context.user.user.Id;
+            const value = template.text.length * 2 - errorCount * 5 + elapsedTimeRef.current / 1000;
+            let exp;
+            if (value < 1) {
+                exp = 0;
+            } else {
+                exp = Math.round(value);
+            }
+            const data = await updateLvl({ id, exp }, navigate);
+            if (data) {
+                context.user.setUser({
+                    Id: data.Id,
+                    UserName: data.UserName,
+                    UserLvl: data.UserLvl,
+                    UserExp: data.UserExp,
+                    MaxExp: data.MaxExp,
+                    Role: data["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"]
+                });
+            }
+
+            const totalCharacters = template.text.length;
+            const accuracy = totalCharacters > 0 ? ((totalCharacters - errorCount) / totalCharacters * 100).toFixed(2) : 0;
+            const wordsCount = template.text.split(' ').length;
+            const minutes = elapsedTimeRef.current / 1000 / 60;
+            const speed = (wordsCount / minutes).toFixed(2);
+            const decription = `${template.selectedItems.section2},${template.selectedItems.section3},${template.selectedItems.selectedLanguage},${template.selectedItems.selectedDifficulty}`;
+            const errors = errorWords.join(' ');
+            const result = await setResult({ userid: id, accuracy, speed, decription, errors }, navigate);
+        }
         navigate(All_Routes.RESULT_PAGE);
         await refreshText();
     };
@@ -283,7 +308,7 @@ const TestWindow = ({ template }) => {
             <TestSettings
                 wordCount={wordCount}
                 refreshText={refreshText}
-                finishText={finishText}
+                finishText={end}
                 testStatus={isFinished}
                 selectedItems={template.selectedItems}
                 setSelectedItems={template.setSelectedItems}

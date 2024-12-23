@@ -13,14 +13,15 @@ const TestCounter = observer(({ selectedItems, wordCount, finishText, resetTimer
     useEffect(() => {
         let timer;
         if (context.test.isTyping === 1 && section2 === "time" && section3Value) {
-            console.log('rest timer');
             const timerValue = parseInt(section3Value, 10);
             setTimeRemaining(timerValue);
             timer = setInterval(() => {
                 setTimeRemaining(prev => {
                     if (prev <= 1) {
                         clearInterval(timer);
-                        finishText();
+                        (async () => {
+                            await finishText();  // Вызов finishText с await
+                        })();
                         return 0;
                     }
                     return prev - 1;
@@ -30,11 +31,7 @@ const TestCounter = observer(({ selectedItems, wordCount, finishText, resetTimer
         
     }, [context.test.isTyping, section2, section3Value]);
 
-    useEffect(() => {
-        if (section3Value && wordCount >= parseInt(section3Value, 10)) {
-            finishText();
-        }
-    }, [wordCount, section3Value, finishText, resetTimer]);
+    
 
     const renderCounter = () => {
         if (section2 === "words") {

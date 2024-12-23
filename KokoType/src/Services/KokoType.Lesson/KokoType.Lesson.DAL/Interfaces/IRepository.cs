@@ -8,7 +8,7 @@ namespace KokoType.Lesson.DAL.Interfaces
 {
     public interface IRepository<T> where T : class
     {
-        public Task<T> GetById(int id);
+        public Task<T> GetById(Guid id);
         public Task<IEnumerable<T>> GetAll();
 
         public Task Add(T entity);

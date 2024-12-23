@@ -12,7 +12,7 @@ namespace KokoType.Tests.DAL.Repositories
     {
 
         private DbContext _context;
-        private DbSet<T> _table;
+        public DbSet<T> _table;
 
         public BaseRepository(DbContext context)
         {

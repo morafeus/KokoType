@@ -132,5 +132,62 @@ namespace KokoType.User.BLL.Service
                 throw new Exception("cant logout this user");
             }
         }
+
+        public async Task<UserModel> UpdateLvl(UpdateUserLvlDTO user)
+        {
+            try
+            {
+                UserModel userModel = await _unitOfWork.UserRepository.GetById(user.Id);
+                if (userModel.UserExp + user.Exp > userModel.UserLvl * 1000 + 1000)
+                {
+                    userModel.UserExp = userModel.UserExp + user.Exp - (userModel.UserLvl * 1000 + 1000);
+                    userModel.UserLvl += 1;
+                }
+                else
+                {
+                    userModel.UserExp += user.Exp;
+                }
+                await _unitOfWork.UserRepository.Update(userModel);
+                return userModel;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("invalid user lvl");
+            }
+        }
+
+        public async Task<UserModel> UpdateUser(UpdateUserDTO user)
+        {
+            UserModel userModel = await _unitOfWork.UserRepository.GetById(user.Id);
+            userModel.UserName = user.UserName;
+            await _unitOfWork.UserRepository.Update(userModel);
+            return userModel;
+        }
+
+        public async Task<UserModel> GetMe(DeleteUserModelDTO user)
+        {
+            try
+            {
+                UserModel userModel = await _unitOfWork.UserRepository.GetById(user.Id);
+                return userModel;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("invalid user lvl");
+            }
+        }
+
+        public async Task<List<UserModel>> GetUsers()
+        {
+            try
+            {
+                var users = await _unitOfWork.UserRepository.GetAll();
+                return users.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("invalid user lvl");
+            }
+        }
     }
 }

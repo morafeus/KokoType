@@ -16,14 +16,9 @@ const LogoButton = ({ children }) => {
     // Используем useLayoutEffect для мгновенного применения изменений
     useLayoutEffect(() => {
       
-            setDynamicState({
-                disableAnimation: true,
-                disableCursor: true,
-                changeColor: true, // Восстанавливаем цвет
-            });
             startAnimation(); // Запускаем анимацию снова
         
-    }, [context.test.isTyping]);
+    }, []);
 
     const startAnimation = () => {
         const deletingDuration = 1500; // Длительность анимации удаления

@@ -18,10 +18,6 @@ const ProfileButton = observer(() => {
             const userExp = user.user.UserExp || 0; // Добавление 100 к опыту
             const maxExp = user.user.MaxExp || 0;
 
-            console.log('User Level:', userLvl); // Логируем уровень
-            console.log('User Experience:', userExp); // Логируем опыт
-            console.log('Max Experience:', maxExp); // Логируем максимальный опыт
-
             // Расчет прогресса
             const progress = Math.min((userExp / maxExp) * 100, 100); // Ограничиваем до 100%
             setProfileInfo({
@@ -30,7 +26,7 @@ const ProfileButton = observer(() => {
                 progress
             });
         }
-    }, [user.user]); // Следим только за user.user
+    }, [user.user]); 
 
     return (
         <div className={styles.profileContainer}>

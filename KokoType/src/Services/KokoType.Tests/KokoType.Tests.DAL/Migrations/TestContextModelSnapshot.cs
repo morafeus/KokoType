@@ -32,12 +32,12 @@ namespace KokoType.Tests.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Descipline")
+                    b.Property<string>("Errors")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<DateTime>("Speed")
-                        .HasColumnType("datetime(6)");
+                    b.Property<float>("Speed")
+                        .HasColumnType("float");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("char(36)");

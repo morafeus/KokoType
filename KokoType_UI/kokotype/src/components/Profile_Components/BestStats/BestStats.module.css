@@ -1,0 +1,54 @@
+.bestStats {
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(45deg, #ffcc00, var(--main-font-color));
+    background-size: 400% 400%;  /* Увеличиваем размер градиента для плавного перемещения */
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(144, 171, 6, 0.6);
+    animation: blinkShadow 2s infinite, gradientMove 6s ease infinite;
+}
+
+/* Анимация для мигающего box-shadow */
+@keyframes blinkShadow {
+    0% {
+        box-shadow: 0 0 8px rgba(144, 171, 6, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(144, 171, 6, 1);
+    }
+    100% {
+        box-shadow: 0 0 8px rgba(144, 171, 6, 0.6);
+    }
+}
+
+/* Анимация для перемещающегося градиента */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.bestStats h3 {
+    margin-bottom: 10px;
+}
+
+.statItem {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.statItem strong {
+    font-weight: bold;
+}
+
+.statItem span {
+    margin-left: 5px;
+}

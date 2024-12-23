@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KokoType.User.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d38e77f124363510119f29e15fddf53374245de6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed4e03202cabdaf508bbe960cf18cbd1d5dd719a")]
 [assembly: System.Reflection.AssemblyProductAttribute("KokoType.User.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KokoType.User.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

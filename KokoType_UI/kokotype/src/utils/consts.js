@@ -5,6 +5,7 @@ const All_Routes = {
     LEADERBOARD_PAGE: '/leaderboard',
     SETTINGS_PAGE: '/settings',
     RESULT_PAGE: '/result',
+    LESSON_PAGE: '/lesson',
 };
 
 export default All_Routes;

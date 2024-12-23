@@ -89,11 +89,67 @@ namespace KokoType.User.WebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("test")]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> testUser()
+        [Route("updateLvl")]
+        [Authorize]
+        public async Task<IActionResult> UpdateLvlAsync(UpdateUserLvlDTO userModel)
         {
-            return Ok("hello admin");
+            try
+            {
+                UserModel user = await _userService.UpdateLvl(userModel);
+                return Ok(user);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
+
+        [HttpPost]
+        [Route("updateUser")]
+        [Authorize]
+        public async Task<IActionResult> UpdateUserAsync(UpdateUserDTO userModel)
+        {
+            try
+            {
+                UserModel user = await _userService.UpdateUser(userModel);
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        [Route("getMe")]
+        [Authorize]
+        public async Task<IActionResult> GetMeAsync(DeleteUserModelDTO userModel)
+        {
+            try
+            {
+                UserModel user = await _userService.GetMe(userModel);
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        [Route("getAll")]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                List<UserModel> user = await _userService.GetUsers();
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }

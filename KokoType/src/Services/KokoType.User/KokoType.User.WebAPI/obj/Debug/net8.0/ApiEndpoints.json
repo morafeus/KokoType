@@ -23,6 +23,32 @@
   },
   {
     "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/User/getAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
+    "Method": "GetMeAsync",
+    "RelativePath": "api/User/getMe",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userModel",
+        "Type": "KokoType.User.BLL.DTO.DeleteUserModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
     "Method": "Logout",
     "RelativePath": "api/User/logout",
     "HttpMethod": "POST",
@@ -87,12 +113,34 @@
   },
   {
     "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
-    "Method": "testUser",
-    "RelativePath": "api/User/test",
+    "Method": "UpdateLvlAsync",
+    "RelativePath": "api/User/updateLvl",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "userModel",
+        "Type": "KokoType.User.BLL.DTO.UpdateUserLvlDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.User.WebAPI.Controllers.UserController",
+    "Method": "UpdateUserAsync",
+    "RelativePath": "api/User/updateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userModel",
+        "Type": "KokoType.User.BLL.DTO.UpdateUserDTO",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

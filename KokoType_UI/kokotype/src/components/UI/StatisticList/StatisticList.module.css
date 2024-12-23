@@ -1,0 +1,117 @@
+/* Основной контейнер для статистики */
+.statisticsList {
+    width: 100%;
+    overflow-x: auto; /* Горизонтальная прокрутка для широкой таблицы */
+}
+
+/* Таблица */
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем отступы между ячейками */
+    margin-top: 0; /* Убираем отступ сверху */
+}
+
+/* Заголовок таблицы */
+.thead {
+    position: sticky; /* Закрепляем заголовок вверху */
+    top: 0; /* Привязываем его к верхней части */
+    background-color: var(--main-font-color); /* Цвет фона для заголовка */
+    z-index: 1; /* Заголовок всегда будет выше строк */
+    border-bottom: 2px solid var(--test-font-color); /* Линия под заголовком */
+}
+
+/* Контейнер с прокручиваемым телом таблицы */
+.tableWrapper {
+    height: 120px; /* Ограничиваем высоту, чтобы показывать только 2 строки */
+    overflow-y: auto; /* Вертикальная прокрутка */
+    border-bottom: solid 1px var(--main-font-color);
+}
+
+/* Стили для ячеек и заголовков */
+.th, .td {
+    padding: 8px 12px;
+    text-align: center; /* Выравнивание по центру для значений */
+    border-bottom: 1px solid var(--test-font-color); /* Линия между строками */
+}
+
+.th {
+    background-color: var(--main-font-color); /* Цвет фона для заголовков */
+    font-weight: bold; /* Сделать заголовки жирными */
+    text-align: center; /* Выравнивание по центру для заголовков */
+    font-size: 1rem;
+}
+
+/* Стили для строки таблицы при наведении */
+.tr:hover {
+    background-color: var(--main-font-color); /* Цвет фона при наведении на строку */
+}
+
+/* Стили для активной строки */
+.activeRow {
+    background-color: var(--second-color); /* Фон для активной строки */
+    font-weight: bold; /* Можно добавить жирное начертание для выделения */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход */
+}
+
+
+/* Стили для выделенной строки */
+.selectedRow {
+    background-color: var(--highlight-color); /* Цвет фона для выделенной строки */
+    color: var(--highlight-text-color); /* Цвет текста для выделенной строки */
+}
+
+/* Стили для блока ошибок (всегда видимый) */
+.errorContainer {
+    margin-top: 20px; /* Отступ сверху */
+    padding: 20px;
+    background-color: var(--main-font-color); /* Цвет фона по умолчанию */
+    border-radius: 5px;
+    max-width: 600px; 
+    width: 100%; 
+    position: relative;
+    overflow: hidden; /* Чтобы ошибки не выходили за пределы контейнера */
+    height: 120px;  /* Фиксированная высота контейнера */
+    transition: background-color 0.6s ease, color 0.6s ease; /* Плавное изменение стиля */
+}
+
+/* Стиль по умолчанию (когда элемент не выбран) */
+.errorContainerDefault {
+    background-color: var(--main-color); 
+    color: var(--test-font-color); 
+}
+
+/* Стиль при выбранном элементе */
+.errorContainerActive {
+    background-color: var(--main-font-color); 
+    color: var(--second-color); /* Темный текст */
+}
+
+/* Стили для текста ошибок (прокручиваемый контейнер) */
+.errorText {
+    max-width: 410px;
+    height: 100%;     /* Текст занимает всю высоту контейнера ошибок */
+    overflow-y: auto; /* Вертикальная прокрутка для текста ошибок */
+    font-size: 1rem;
+    color: var(--test-invalid-font-color);
+    white-space: pre-wrap; /* Сохраняем пробелы и переносы строк */
+    word-wrap: break-word; /* Слово не будет вылезать за пределы */
+    padding-right: 10px;  /* Добавляем небольшой отступ справа, чтобы текст не прижимался к краю */
+}
+
+/* Прокручиваемая полоса */
+.errorText::-webkit-scrollbar {
+    width: 6px; /* Ширина полосы прокрутки */
+}
+
+.tableWrapper::-webkit-scrollbar-thumb {
+    border-radius: 0.1px;
+}
+
+.errorText::-webkit-scrollbar-thumb {
+    background-color: var(--test-font-color); /* Цвет полосы прокрутки */
+    border-radius: 3px;
+}
+
+.errorText::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона полосы прокрутки */
+}

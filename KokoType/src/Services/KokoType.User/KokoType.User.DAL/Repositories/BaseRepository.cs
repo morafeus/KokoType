@@ -29,7 +29,7 @@ namespace KokoType.User.DAL.Repositories
 
         public async Task<IEnumerable<T>> GetAll()
         {
-            return await _table.AsNoTracking().ToListAsync<T>();
+            return await _table.AsNoTracking().ToListAsync();
         }
 
         public async Task<T> GetById(Guid id)

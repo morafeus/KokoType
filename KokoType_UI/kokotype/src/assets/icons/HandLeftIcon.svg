@@ -1,0 +1,9 @@
+<svg width="150" height="400" stroke="currentColor" viewBox="0 0 150 400" xmlns="http://www.w3.org/2000/svg">
+  <g id="hand-left">
+    <circle id="pinky" cx="30" cy="320" r="10" fill="none"/>
+    <circle id="ring-finger" cx="50" cy="280" r="10" fill="#b0bec5"/>
+    <circle id="middle-finger" cx="70" cy="240" r="10" fill="#b0bec5"/>
+    <circle id="index-finger" cx="90" cy="200" r="10" fill="#b0bec5"/>
+    <circle id="thumb" cx="120" cy="160" r="10" fill="#b0bec5"/>
+  </g>
+</svg>

@@ -29,9 +29,9 @@
     padding: 25px;
     background: var(--second-color); /* Непрозрачный фон для содержимого */
     border-radius: 5px;
-    max-width: 450px;
+    max-width: 850px;
     min-height: 150px;
-    max-height: 400px;
+    max-height: 1200px;
     position: relative; /* Позиционируем относительно родителя */
     z-index: 1000; /* Устанавливаем выше фонового слоя */
     

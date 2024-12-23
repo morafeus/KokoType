@@ -1,6 +1,38 @@
 [
   {
     "ContainingType": "KokoType.Tests.WebAPI.Controllers.TestController",
+    "Method": "GetBestAsync",
+    "RelativePath": "api/Test/getBest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getBest",
+        "Type": "KokoType.Tests.BLL.DTO.GetStatsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.Tests.WebAPI.Controllers.TestController",
+    "Method": "GetResultsAsync",
+    "RelativePath": "api/Test/getStats",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getResult",
+        "Type": "KokoType.Tests.BLL.DTO.GetResultDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.Tests.WebAPI.Controllers.TestController",
     "Method": "GetTestAcync",
     "RelativePath": "api/Test/getTest",
     "HttpMethod": "POST",
@@ -10,6 +42,22 @@
       {
         "Name": "testParams",
         "Type": "KokoType.Tests.DAL.Models.TestParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.Tests.WebAPI.Controllers.TestController",
+    "Method": "SetResultAcync",
+    "RelativePath": "api/Test/setResult",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "saveResult",
+        "Type": "KokoType.Tests.BLL.DTO.SaveResultDTO",
         "IsRequired": true
       }
     ],

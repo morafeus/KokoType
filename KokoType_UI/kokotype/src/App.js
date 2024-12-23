@@ -16,7 +16,7 @@ const App = observer(() => {
   
   toastr.options = {
     positionClass: "toast-bottom-right",
-    timeOut: 5000,
+    timeOut: 2500,
     closeButton: true, 
     progressBar: true 
 };
@@ -33,6 +33,7 @@ const App = observer(() => {
           Role: data["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] 
       });
       user.setIsAuth(true);
+      console.log(user);
       
   } else {
     console.log('invalid user');

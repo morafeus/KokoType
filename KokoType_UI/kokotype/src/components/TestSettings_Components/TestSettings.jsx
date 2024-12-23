@@ -10,12 +10,12 @@ import TestCounter from "../UI/TestCounter/TestCounter";
 import WordCountSelector from "../UI/WordCountSelector/WordCountSelector"; 
 import ErrorMessage from "../UI/ErrorMessage/ErrorMessage";
 
-const TestSettings = observer(({ wordCount, refreshText,finishText, testStatus, selectedItems, setSelectedItems, errorCount }) => {
+const TestSettings = observer(({ wordCount, refreshText, finishText, testStatus, selectedItems, setSelectedItems, errorCount }) => {
     const [modal, setModal] = useState(false);
     const [wordCountModal, setWordCountModal] = useState(false);
     const [localWordCount, setLocalWordCount] = useState('');
 
-    // Состояние для языка и уровня сложности
+    // State for language and difficulty level
     const [languageDifficulty, setLanguageDifficulty] = useState({
         selectedLanguage: "",
         selectedDifficulty: "easy",
@@ -34,53 +34,56 @@ const TestSettings = observer(({ wordCount, refreshText,finishText, testStatus, 
     const handleSelectItem = (section, item) => {
         const isMultiple = sectionConfig[section].multiple;
         setSelectedItems(prev => {
+            let newSelection;
             if (isMultiple) {
                 const currentSelection = prev[section];
                 if (currentSelection.includes(item)) {
-                    return { ...prev, [section]: currentSelection.filter(i => i !== item) };
+                    newSelection = { ...prev, [section]: currentSelection.filter(i => i !== item) };
                 } else {
-                    return { ...prev, [section]: [...currentSelection, item] };
+                    newSelection = { ...prev, [section]: [...currentSelection, item] };
                 }
             } else {
                 if (section === "section2") {
                     const firstItem = sectionConfig.section3[item][0];
-                    return { ...prev, [section]: item, section3: firstItem };
+                    newSelection = { ...prev, [section]: item, section3: firstItem };
+                } else {
+                    newSelection = { ...prev, [section]: item };
                 }
-                return { ...prev, [section]: item };
             }
+            refreshText();
+            console.log("Selected item:", item);
+            return newSelection;
         });
-        refreshText();
-        console.log("Выбранный элемент:", item);
     };
 
-   
-
     const LanguageButtonClick = () => {
-        console.log(selectedItems.selectedDifficulty);
-        setLanguageDifficulty({selectedLanguage: selectedItems.selectedLanguage, 
-            selectedDifficulty: selectedItems.selectedDifficulty});
+        setLanguageDifficulty({
+            selectedLanguage: selectedItems.selectedLanguage, 
+            selectedDifficulty: selectedItems.selectedDifficulty
+        });
         setModal(true);
     };
 
     const handleWordCountButtonClick = () => {
-        setLocalWordCount(selectedItems.wordCount || ''); // Устанавливаем текущее значение
+        setLocalWordCount(selectedItems.wordCount || ''); // Set the current word count value
         setWordCountModal(true);
     };
 
     const handleLanguageAndDifficultySelect = () => {
-        setSelectedItems(prev => ({
-            ...prev,
+        const newItems = {
+            ...selectedItems,
             selectedLanguage: languageDifficulty.selectedLanguage,
             selectedDifficulty: languageDifficulty.selectedDifficulty
-        }));
+        };
+        setSelectedItems(newItems);
         setModal(false);
-
     };
 
     const handleWordCountAccept = () => {
         if (localWordCount) {
             console.log("Word count accepted:", localWordCount);
-            setSelectedItems(prev => ({ ...prev, section3: localWordCount })); // Сохраняем значение
+            const newItems = { ...selectedItems, section3: localWordCount }; // Save the value
+            setSelectedItems(newItems);
             setWordCountModal(false);
         }
     };
@@ -110,7 +113,7 @@ const TestSettings = observer(({ wordCount, refreshText,finishText, testStatus, 
                     />
                 </MyModal>
                 <div className="section-divider"></div>
-                {selectedItems.section2 != "text" && 
+                {selectedItems.section2 !== "text" && 
                 <TestSettingsSection 
                     section="section1" 
                     items={sectionConfig.section1.items} 
@@ -119,7 +122,7 @@ const TestSettings = observer(({ wordCount, refreshText,finishText, testStatus, 
                     isMultiple={sectionConfig.section1.multiple} 
                 />
                 }
-                {selectedItems.section2 != "text" && 
+                {selectedItems.section2 !== "text" && 
                     <div className="section-divider"></div>
                 }
                 <TestSettingsSection 

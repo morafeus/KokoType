@@ -1,0 +1,23 @@
+.userStats {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--second-color);
+    border-radius: 8px;
+}
+
+.userStats h3 {
+    margin-bottom: 10px;
+}
+
+.statItem {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.statItem strong {
+    font-weight: bold;
+}
+
+.statItem span {
+    margin-left: 5px;
+}

@@ -22,6 +22,7 @@ const LoginForm = observer(() => {
         }
 
         const data = await fetchUser(userModel);
+        console.log(data);
         
         if (data) {
             user.setUser({

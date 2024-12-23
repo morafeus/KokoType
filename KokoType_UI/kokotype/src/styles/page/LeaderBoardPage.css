@@ -1,0 +1,94 @@
+/* Основной контейнер страницы */
+.leaderboard-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовок страницы */
+.leaderboard-container h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Контейнер для заголовков */
+.leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--second-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: var(--test-type-font-color);
+}
+
+.leaderboard-column {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+/* Стрелки сортировки */
+.leaderboard-header .leaderboard-column:after {
+    content: ' ▼'; /* По умолчанию показываем стрелочку вниз */
+    margin-left: 5px;
+}
+
+.leaderboard-header .leaderboard-column.sort-asc:after {
+    content: ' ▲'; /* Стрелочка вверх для сортировки по возрастанию */
+}
+
+.leaderboard-header .leaderboard-column.sort-desc:after {
+    content: ' ▼'; /* Стрелочка вниз для сортировки по убыванию */
+}
+
+/* Стили для списка пользователей */
+.leaderboard-list {
+    max-height: 400px;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Стили для каждого элемента списка */
+.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--main-font-color);
+    color: var(--main-font-color);
+    background-color: var(--second-color);
+}
+
+/* Выделение при наведении */
+.leaderboard-item:hover {
+    background-color: var(--test-font-color);
+    color: var(--main-color);
+}
+
+/* Контейнер для строк */
+.leaderboard-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Ячейки */
+.leaderboard-cell {
+    flex: 1;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+/* Дополнительный стиль для текста в ячейках */
+.leaderboard-cell span {
+    font-weight: bold;
+}

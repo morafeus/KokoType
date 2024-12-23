@@ -1,9 +1,10 @@
-﻿using KokoType.Lesson.DAL.Repositories;
+﻿using KokoType.Lesson.DAL.Interfaces;
+using KokoType.Lesson.DAL.Repositories;
 
 
 namespace KokoType.Lesson.DAL.Context
 {
-    internal class UnitOfWork_Lesson
+    internal class UnitOfWork_Lesson : IUnitOfWork
     {
         private LessonRepository lessonRepository;
         private LessonPageRepository lessonPageRepository;

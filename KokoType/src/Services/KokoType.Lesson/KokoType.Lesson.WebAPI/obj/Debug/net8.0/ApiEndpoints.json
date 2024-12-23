@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "KokoType.Lesson.WebAPI.Controllers.LessonController",
+    "Method": "AddNewLessonAsync",
+    "RelativePath": "api/Lesson/addLesson",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "KokoType.Lesson.BLL.DTO.LessonModelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.Lesson.WebAPI.Controllers.LessonController",
+    "Method": "LessonCompleteAsync",
+    "RelativePath": "api/Lesson/completeLesson",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "complete",
+        "Type": "KokoType.Lesson.BLL.DTO.CompleteLessonDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.Lesson.WebAPI.Controllers.LessonController",
+    "Method": "DeleteLessonAsync",
+    "RelativePath": "api/Lesson/deleteLesson",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lessson",
+        "Type": "KokoType.Lesson.BLL.DTO.DeleteLessonDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KokoType.Lesson.WebAPI.Controllers.LessonController",
+    "Method": "GetAllLessonsAsync",
+    "RelativePath": "api/Lesson/getLessons",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "KokoType.Lesson.BLL.DTO.DeleteLessonDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

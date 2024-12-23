@@ -1,0 +1,213 @@
+/* Основной контейнер для страницы */
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    animation: fadeIn 0.7s forwards;
+}
+
+/* Сайдбар с кнопками */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px; /* Отступ между сайдбаром и основным контентом */
+    width: 200px; /* Ширина бокового блока с кнопками */
+}
+
+/* Основной контент */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 25px;
+}
+
+/* Блок с полем ввода */
+.inputArea {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стиль для текстовой области */
+.textarea {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-font-color);
+    resize: none;
+    background-color: var(--second-color);
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textarea:focus {
+    border-color: var(--second-color);
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+.textarea:disabled {
+    background-color: var(--main-color);
+    cursor: not-allowed;
+    border-color: #ddd;
+}
+
+/* Контейнер для текста с шаблоном */
+.templateText {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    word-wrap: break-word;
+    color: var(--main-font-color);
+    z-index: 1;
+    margin-bottom: 10px;
+    position: relative;
+    max-height: 3em; /* Ограничиваем максимальную высоту (примерно 2 строки) */
+    overflow-y: auto; /* Включаем прокрутку, если текста больше */
+    padding-right: 10px; /* Добавляем отступ справа для прокрутки */
+}
+
+/* Стиль для курсора */
+.cursor {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: transparent; /* Прозрачный курсор */
+    border-left: 2px solid var(--main-font-color); /* Линия курсора */
+    transition: left 0.05s, top 0.05s;
+    visibility: visible;
+}
+
+/* Стили для символов */
+.char {
+    display: inline-block;
+    margin-right: 3px;
+    transition: 0.1s color, background-color 0.1s;
+}
+
+.typed {
+    color: var(--test-type-font-color); /* Цвет для правильно введенных символов */
+}
+
+.incorrect {
+    color: var(--test-invalid-font-color); /* Цвет для неверных символов */
+}
+
+.untyped {
+    color: var(--test-font-color); /* Цвет для невведенных символов */
+}
+
+/* Стиль для пробела между словами */
+.space {
+    display: inline-block;
+    width: 10px;
+}
+
+/* Стили для кнопок режима */
+.buttonContainer {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Контейнер для кнопок выбора режима */
+.modeButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Стиль модального окна */
+.modalTitle {
+    font-size: 1.5rem;
+    color: var(--test-invalid-font-color); /* Например, красный для ошибки */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.modalTitleGood {
+    font-size: 1.5rem;
+    color: rgb(34, 187, 100); /* Например, красный для ошибки */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Стили для кнопок режима (Training, Test) */
+.modeButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.modeButton:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Стили для кнопки назад */
+.backButton {
+    margin-top: 10px; /* Отступ сверху */
+    padding: 10px 20px; /* Отступ внутри кнопки */
+    color: var(--main-font-color); /* Белый текст */
+    border-bottom: 2px solid var(--main-font-color); /* Убираем рамки */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета фона */
+    font-size: 16px; /* Размер шрифта */
+    min-width: 100%;
+}
+
+.backButton:hover {
+    background-color: var(--main-font-color); /* Темнее при наведении */
+    color: var(--second-color);
+}
+
+.pageIndicators {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    gap: 8px; /* Расстояние между квадратиками */
+    margin-top: 20px;
+    width: 100%; /* Делаем контейнер гибким */
+    justify-content: flex-start; /* Для выравнивания по левому краю */
+}
+
+.pageIndicator {
+    width: 16.66%; /* Задаем фиксированную ширину для каждого квадратика (1/6 строки) */
+    max-width: 30px; /* Ограничиваем максимальную ширину */
+    height: 20px;
+    border-radius: 5%;
+    background-color: var(--second-color); /* Цвет для незавершенной страницы */
+    transition: background-color 0.3s;
+}
+
+.pageIndicator.completed {
+    background-color: var(--main-font-color); /* Зеленый цвет для завершенной страницы */
+}
+
+.pageIndicator.active {
+    background-color: var(--test-font-color); /* Синий цвет для активной страницы */
+}
+

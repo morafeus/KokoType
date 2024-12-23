@@ -37,6 +37,10 @@ namespace KokoType.Lesson.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.HasKey("Id");
 
                     b.ToTable("Lessons");
@@ -48,6 +52,12 @@ namespace KokoType.Lesson.DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
+                    b.Property<int>("ErrorCount")
+                        .HasColumnType("int");
+
+                    b.Property<Guid?>("LessonModelId")
+                        .HasColumnType("char(36)");
+
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -56,12 +66,15 @@ namespace KokoType.Lesson.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<Guid>("lessonId")
+                    b.Property<int>("currentErrors")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("lesson")
                         .HasColumnType("char(36)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("lessonId");
+                    b.HasIndex("LessonModelId");
 
                     b.ToTable("LessonPages");
                 });
@@ -87,13 +100,9 @@ namespace KokoType.Lesson.DAL.Migrations
 
             modelBuilder.Entity("KokoType.Lesson.DAL.Models.LessonPage", b =>
                 {
-                    b.HasOne("KokoType.Lesson.DAL.Models.LessonModel", "lesson")
-                        .WithMany()
-                        .HasForeignKey("lessonId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("lesson");
+                    b.HasOne("KokoType.Lesson.DAL.Models.LessonModel", null)
+                        .WithMany("Pages")
+                        .HasForeignKey("LessonModelId");
                 });
 
             modelBuilder.Entity("KokoType.Lesson.DAL.Models.LessonResult", b =>
@@ -105,6 +114,11 @@ namespace KokoType.Lesson.DAL.Migrations
                         .IsRequired();
 
                     b.Navigation("Lesson");
+                });
+
+            modelBuilder.Entity("KokoType.Lesson.DAL.Models.LessonModel", b =>
+                {
+                    b.Navigation("Pages");
                 });
 #pragma warning restore 612, 618
         }

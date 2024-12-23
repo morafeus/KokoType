@@ -1,0 +1,81 @@
+.container {
+    padding: 20px;
+    max-height: 500px; /* Ограничиваем высоту контейнера */
+    overflow-y: auto; /* Добавляем вертикальную прокрутку */
+    border-radius: 8px; /* Скругляем углы контейнера */
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--main-font-color);
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .listItem {
+    margin-bottom: 20px; /* Увеличим отступ между элементами списка */
+    border-left: 4px solid var(--test-font-color); /* Зеленая левая граница */
+  }
+  
+  .doneLesson {
+    border-left: 4px solid #4caf50; /* Зеленая левая граница */
+  }
+  
+  .availableLesson {
+    background-color: #fff3cd; /* Желтый фон для доступных уроков */
+    border-left: 4px solid #ffc107; /* Желтая левая граница */
+  }
+  
+  .button {
+    color: var(--test-font-color);
+    border-bottom: 2px solid transparent;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border 0.3s;
+    background: none;
+    text-align: left;
+    width: 10%; /* Ширина на всю доступную область */
+  }
+  
+  .button:hover {
+    border-bottom: 2px solid var(--main-font-color);
+    border-left: 10px solid var(--main-font-color);
+  }
+  
+  .description {
+    font-size: 14px; /* Меньший шрифт для описания */
+    color: var(--test-font-color);
+    margin-top: 5px; /* Добавим немного отступа сверху */
+    line-height: 1.5; /* Улучшаем читаемость */
+    padding-left: 20px; /* Отступ слева для лучшего визуального восприятия */
+  }
+  
+  .addButton {
+    color: #4caf50;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .addButton:hover {
+    border-bottom: 2px solid #45a049;
+  }
+  
+  .deleteButton {
+    color: var(--test-invalid-font-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .deleteButton:hover {
+    border-bottom: 2px solid var(--test-invalid-font-color);
+  }
+  

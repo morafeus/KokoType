@@ -51,6 +51,24 @@ html, body {
     align-items: center; 
 }
 
+::-webkit-scrollbar {
+  width: 10px; /* Ширина скроллбара */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Цвет фона дорожки скроллбара */
+  border-radius: 10px; /* Закругление дорожки */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--test-type-font-color); /* Цвет ползунка скроллбара */
+  border-radius: 10px; /* Закругление ползунка */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--test-font-color); /* Цвет ползунка при наведении */
+}
+
 
 
 

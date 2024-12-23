@@ -8,7 +8,7 @@ namespace KokoType.Tests.DAL.Context
     {
         private StatisticRepository statisticRepository;
 
-        private TestContext _context;
+        private TestContext _context { get; set; }
 
         public StatisticRepository StatisticRepository
         {

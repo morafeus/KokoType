@@ -10,9 +10,9 @@ namespace KokoType.Tests.DAL.Models
     {
         public Guid Id { get; set; }
         public float Accuracy { get; set; }
-        public DateTime Speed { get; set; }
-        public string Descipline { get; set; }
+        public float Speed { get; set; }
         public string Decription { get; set; }
+        public string Errors { get; set; }
 
         public Guid UserId { get; set; }
     }

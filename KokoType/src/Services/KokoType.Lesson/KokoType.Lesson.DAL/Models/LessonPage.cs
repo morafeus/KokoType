@@ -11,7 +11,9 @@ namespace KokoType.Lesson.DAL.Models
         public Guid Id { get; set; }
         public string Text { get; set; }
         public string Title { get; set; }
+        public int ErrorCount { get; set; }
+        public int currentErrors { get; set; }
 
-        public LessonModel lesson { get; set; }
+        public Guid lesson { get; set; }
     }
 }

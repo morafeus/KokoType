@@ -1,0 +1,43 @@
+/* UserInfo.module.css */
+
+.userInfo {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--second-color);
+    border-radius: 8px;
+    color: var(--test-type-font-color);
+}
+
+/* Контейнер для выравнивания элементов в одну строку */
+.header {
+    display: flex;
+    justify-content: space-between; /* Размещаем элементы по краям */
+    align-items: center; /* Выравниваем по центру по вертикали */
+    margin-bottom: 10px;
+}
+
+.userInfo h2 {
+    margin-bottom: 10px;
+}
+
+.infoItem {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.infoItem strong {
+    font-weight: bold;
+}
+
+.changeButton {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.changeButton:hover {
+    background-color: var(--test-font-color);
+}

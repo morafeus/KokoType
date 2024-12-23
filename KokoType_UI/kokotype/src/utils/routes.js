@@ -1,5 +1,6 @@
 import AuthPage from "../pages/AuthPage";
 import LeaderBoradPage from "../pages/LeaderBoardPage";
+import LessonPage from "../pages/LessonPage";
 import ProfilePage from "../pages/ProfilePage";
 import ResultPage from "../pages/ResultPage";
 import SettingsPage from "../pages/SettingsPage";
@@ -19,6 +20,10 @@ export const userRoutes = [
     {
         path: All_Routes.LEADERBOARD_PAGE,
         Component: LeaderBoradPage
+    },
+    {
+        path: All_Routes.LESSON_PAGE,
+        Component: LessonPage
     }
 ]
 

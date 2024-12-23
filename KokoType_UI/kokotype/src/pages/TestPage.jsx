@@ -1,10 +1,10 @@
-import { observer } from 'mobx-react-lite'
+import { observer } from 'mobx-react-lite';
 import React, { useContext, useEffect, useState } from 'react';
 import TestWindow from '../components/TestWindow_Components/TestWindow';
 import LoadingAnimation from '../components/UI/LoadingAnimation/LoadingAnimation';
 import Context from '../context';
 import { fetchTest } from '../http/testAPI';
-
+import Cookies from 'js-cookie'; // Импортируем js-cookie
 import '../styles/page/TestPage.css';
 
 const TestPage = observer(() => {
@@ -18,6 +18,9 @@ const TestPage = observer(() => {
         selectedDifficulty: "easy"
     });
 
+    const [isCookiesLoaded, setIsCookiesLoaded] = useState(false); // Флаг для отслеживания загрузки cookies
+
+    // Функция загрузки данных теста из API или из контекста
     const loadData = async () => {
         const options = {
             Options: selectedItems.section1, // Пример передачи данных
@@ -27,43 +30,66 @@ const TestPage = observer(() => {
             Difficulty: selectedItems.selectedDifficulty
         };
         let data;
-        console.log(context.test);
-        if(context.test.testStats.text != null){
+        if (context.test.testStats.text != null) {
             data = context.test.testStats.text;
-        }
-        else {
+            context.test.setTestStats({}); // Очищаем testStats, если текст был найден в контексте
+        } else {
             data = await fetchTest(options); 
         }
-    
-        // Проверяем, является ли data массивом и преобразуем его в строку с пробелами
+
+        // Проверяем, является ли data массивом, и объединяем его в строку
         if (Array.isArray(data)) {
-            const formattedText = data.join(' '); // Объединяем элементы массива в строку с пробелами
+            const formattedText = data.join(' '); // Объединяем элементы массива в строку
             setText(formattedText); 
         } else {
             setText(data); 
         }
     };
 
+    // Загрузка состояния из cookies
     useEffect(() => {
-        try{
-            setText(null);
-            loadData(); // Вызываем функцию для загрузки данных
+        const savedSelectedItems = Cookies.get('selectedItems');
+        if (savedSelectedItems) {
+            const parsedItems = JSON.parse(savedSelectedItems);
+            // Проверяем, отличается ли сохраненное состояние от текущего состояния
+            if (JSON.stringify(parsedItems) !== JSON.stringify(selectedItems)) {
+                setSelectedItems(parsedItems);
+            }
         }
-        catch(e){
-            console.log('invalid network');
-        }
-    }, [selectedItems]);
+        setIsCookiesLoaded(true); // Обновляем флаг после загрузки cookies
+    }, []); // Пустой массив зависимостей — этот effect выполнится только один раз
 
-    if(!text)
-    {
+    // Сохраняем selectedItems в cookies при их изменении
+    useEffect(() => {
+        if (selectedItems) {
+            Cookies.set('selectedItems', JSON.stringify(selectedItems), { expires: 7 }); // Сохраняем на 7 дней
+        }
+    }, [selectedItems]); // Этот effect выполнится только при изменении selectedItems
+
+    // Загружаем данные, если selectedItems изменились
+    useEffect(() => {
+        if (isCookiesLoaded) {  // Проверяем, что cookies загружены
+            try {
+                setText(''); // Очищаем текст перед новой загрузкой
+                loadData(); // Загружаем данные
+            } catch (e) {
+                console.log('Invalid network');
+            }
+        }
+    }, [selectedItems, isCookiesLoaded]); // Зависимость от selectedItems и флага cookiesLoaded
+
+    // Если cookies еще не загружены или текст не загружен, показываем анимацию загрузки
+    if (!isCookiesLoaded || !text) {
         return (
             <LoadingAnimation>We are typing your test right now...</LoadingAnimation>
-        )
+        );
     }
 
     return (
         <div className='testpage-main'>
-            <TestWindow template={{ text: text, selectedItems: selectedItems, setSelectedItems: setSelectedItems }} /> {/* Передаем текст в TestWindow */}
+            <TestWindow 
+                template={{ text: text, selectedItems: selectedItems, setSelectedItems: setSelectedItems }} 
+            />
         </div>
     );
 });

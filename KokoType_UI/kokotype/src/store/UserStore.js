@@ -12,7 +12,7 @@ export default class UserStore {
     }
 
     setUser(userData) {
-        this._user = { ...this._user, ...userData }; // Обновляем только поля, которые приходят
+        this._user = userData ; // Обновляем только поля, которые приходят
     }
 
     get isAuth() {
