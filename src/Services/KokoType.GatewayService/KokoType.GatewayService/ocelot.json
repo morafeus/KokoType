@@ -1,0 +1,40 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/User/{everything}",
+      "UpstreamPathTemplate": "/api/User/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "KokoType.User-1", // Имя сервиса в нижнем регистре
+          "Port": 5002
+        }
+      ],
+      "HttpMethod": "Post"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Test/{everything}",
+      "UpstreamPathTemplate": "/api/Test/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost", // Имя сервиса в нижнем регистре
+          "Port": 55003
+        }
+      ],
+      "HttpMethod": "Post"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Lesson/{everything}",
+      "UpstreamPathTemplate": "/api/Lesson/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "KokoType.Lesson-1", // Имя сервиса в нижнем регистре
+          "Port": 5004
+        }
+      ],
+      "HttpMethod": "Post"
+    }
+  ]
+}
