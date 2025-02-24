@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace KokoType.UserService.BLL.DTO
+{
+    public class DeleteUserModelDTO
+    { 
+        public Guid Id {  get; set; }
+        public string UserName { get; set; }
+    }
+}

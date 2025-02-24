@@ -6,11 +6,10 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "KokoType.User-1", // Имя сервиса в нижнем регистре
-          "Port": 5002
+          "Host": "localhost",
+          "Port": 5044
         }
-      ],
-      "HttpMethod": "Post"
+      ]
     },
     {
       "DownstreamPathTemplate": "/api/Test/{everything}",
@@ -18,11 +17,10 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost", // Имя сервиса в нижнем регистре
-          "Port": 55003
+          "Host": "localhost",
+          "Port": 5289
         }
-      ],
-      "HttpMethod": "Post"
+      ]
     },
     {
       "DownstreamPathTemplate": "/api/Lesson/{everything}",
@@ -30,11 +28,10 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "KokoType.Lesson-1", // Имя сервиса в нижнем регистре
-          "Port": 5004
+          "Host": "localhost", 
+          "Port": 5123
         }
-      ],
-      "HttpMethod": "Post"
+      ]
     }
   ]
 }

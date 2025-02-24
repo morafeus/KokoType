@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KokoType.UserService", "KokoType.UserService\KokoType.UserService.csproj", "{349F1A44-55A3-4B0C-9D12-C6BFA0839149}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KokoType.UserService.WebAPI", "KokoType.UserService.WebAPI\KokoType.UserService.WebAPI.csproj", "{0DBE0CF2-63DE-475A-8C55-16E71091AC17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0367361B-006B-47E8-B9F8-06D568E8E890} = {0367361B-006B-47E8-B9F8-06D568E8E890}
+		{21D4319E-8623-49BF-9A60-D7E4823376A6} = {21D4319E-8623-49BF-9A60-D7E4823376A6}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KokoType.UserService.DAL", "KokoType.UserService.DAL\KokoType.UserService.DAL.csproj", "{0367361B-006B-47E8-B9F8-06D568E8E890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KokoType.UserService.BLL", "KokoType.UserService.BLL\KokoType.UserService.BLL.csproj", "{21D4319E-8623-49BF-9A60-D7E4823376A6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0367361B-006B-47E8-B9F8-06D568E8E890} = {0367361B-006B-47E8-B9F8-06D568E8E890}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +22,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{349F1A44-55A3-4B0C-9D12-C6BFA0839149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{349F1A44-55A3-4B0C-9D12-C6BFA0839149}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{349F1A44-55A3-4B0C-9D12-C6BFA0839149}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{349F1A44-55A3-4B0C-9D12-C6BFA0839149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBE0CF2-63DE-475A-8C55-16E71091AC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBE0CF2-63DE-475A-8C55-16E71091AC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBE0CF2-63DE-475A-8C55-16E71091AC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBE0CF2-63DE-475A-8C55-16E71091AC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0367361B-006B-47E8-B9F8-06D568E8E890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0367361B-006B-47E8-B9F8-06D568E8E890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0367361B-006B-47E8-B9F8-06D568E8E890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0367361B-006B-47E8-B9F8-06D568E8E890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D4319E-8623-49BF-9A60-D7E4823376A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D4319E-8623-49BF-9A60-D7E4823376A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D4319E-8623-49BF-9A60-D7E4823376A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D4319E-8623-49BF-9A60-D7E4823376A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
