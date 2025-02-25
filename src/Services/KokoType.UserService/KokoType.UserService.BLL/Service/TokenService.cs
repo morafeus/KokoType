@@ -1,5 +1,6 @@
 ﻿using KokoType.UserService.BLL.DTO;
 using KokoType.UserService.BLL.Interfaces;
+using KokoType.UserService.DAL.ViewModels;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
