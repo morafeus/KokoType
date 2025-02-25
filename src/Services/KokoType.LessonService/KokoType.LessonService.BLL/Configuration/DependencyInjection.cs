@@ -1,4 +1,5 @@
 ﻿using KokoType.LessonService.BLL.Interfaces;
+using KokoType.LessonService.BLL.MapProfiles;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace KokoType.LessonService.BLL.Configuration
@@ -13,6 +14,8 @@ namespace KokoType.LessonService.BLL.Configuration
             {
                 options.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Admin"));
             });
+
+            services.AddAutoMapper(typeof(LessonModelProfile));
 
             return services;
         }

@@ -1,4 +1,5 @@
-﻿using KokoType.LessonService.BLL.DTO;
+﻿using AutoMapper;
+using KokoType.LessonService.BLL.DTO;
 using KokoType.LessonService.BLL.Interfaces;
 using KokoType.LessonService.DAL.Interfaces;
 using KokoType.LessonService.DAL.Models;
@@ -8,25 +9,19 @@ namespace KokoType.LessonService.BLL.Service
     public class LessonService : ILessonService
     {
         private IUnitOfWork _unitOfWork;
+        private IMapper _mapper;
 
-        public LessonService(IUnitOfWork unitOfWork)
+        public LessonService(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            _unitOfWork = unitOfWork;
+            this._unitOfWork = unitOfWork;
+            this._mapper = mapper;
         }
 
         public async Task<LessonModel> AddNewLesson(LessonModelDTO lesson)
         {
             try
             {
-                LessonModel model = new LessonModel()
-                {
-                    Id = Guid.NewGuid(),
-                    Name = lesson.Name,
-                    Description = lesson.Description,
-                    Pages = lesson.Pages,
-                    Language = lesson.Language,
-                    status = "available"
-                };
+                LessonModel model = _mapper.Map<LessonModel>(lesson);
                 foreach (var page in model.Pages)
                 {
                     page.Id = Guid.NewGuid();
@@ -46,7 +41,8 @@ namespace KokoType.LessonService.BLL.Service
             try
             {
                 LessonModel lesson = await _unitOfWork.LessonRepository.GetById(complete.Id);
-                LessonResult lessonResult = new LessonResult() { Id = Guid.NewGuid(), Lesson = lesson, UserId = complete.UserId };
+                LessonResult lessonResult = _mapper.Map<LessonResult>(complete);
+                lessonResult.Lesson = lesson;
                 bool check = await _unitOfWork.LessonResultRepository.CheckIsExist(lesson.Id, complete.UserId);
                 if (check)
                     await _unitOfWork.LessonResultRepository.Add(lessonResult);

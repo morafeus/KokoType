@@ -1,5 +1,6 @@
 ﻿
-namespace KokoType.UserService.BLL.DTO
+
+namespace KokoType.UserService.DAL.ViewModels
 {
     public class TokenModel
     {

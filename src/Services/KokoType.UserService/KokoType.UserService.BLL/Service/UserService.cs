@@ -1,7 +1,9 @@
-﻿using KokoType.UserService.BLL.DTO;
+﻿using AutoMapper;
+using KokoType.UserService.BLL.DTO;
 using KokoType.UserService.BLL.Interfaces;
 using KokoType.UserService.DAL.Interfaces;
 using KokoType.UserService.DAL.Models;
+using KokoType.UserService.DAL.ViewModels;
 
 namespace KokoType.UserService.BLL.Service
 {
@@ -10,31 +12,23 @@ namespace KokoType.UserService.BLL.Service
         private IUnitOfWork _unitOfWork;
         private IHashService _hashService;
         private ITokenService _tokenService;
+        private IMapper _mapper;
 
-        public UserService(IUnitOfWork unitOfWork, IHashService hashService, ITokenService tokenService)
+        public UserService(IUnitOfWork unitOfWork, IHashService hashService, ITokenService tokenService, IMapper mapper)
         {
             this._unitOfWork = unitOfWork;
             this._hashService = hashService;
-            _tokenService = tokenService;
+            this._tokenService = tokenService;
+            this._mapper = mapper;
         }
 
         public async Task CreateUserAsync(UserModelDTO userModel)
         {
+            UserModel user = _mapper.Map<UserModel>(userModel);
             var password = _hashService.HashPassword(userModel.Password, out var salt);
-            UserModel user = new UserModel()
-            {
-                Id = Guid.NewGuid(),
-                UserName = userModel.UserName,
-                Password = password,
-                Salt = salt,
-                Email = userModel.Email,
-                UserLvl = 0,
-                UserExp = 0,
-                RegistrateDate = DateTime.Now,
-                About = String.Empty,
-                ImageUrl = String.Empty,
-                RefreshToken = String.Empty
-            };
+
+            user.Password = password;
+            user.Salt = salt;
             try
             {
                 await _unitOfWork.UserRepository.Add(user);
@@ -55,7 +49,8 @@ namespace KokoType.UserService.BLL.Service
 
         public async Task DeleteUserAsync(DeleteUserModelDTO userModel)
         {
-            var user = await _unitOfWork.UserRepository.GetById(userModel.Id);
+
+            var user = _mapper.Map<UserModel>(userModel);
             await _unitOfWork.UserRepository.Delete(user);
         }
 
@@ -73,14 +68,11 @@ namespace KokoType.UserService.BLL.Service
             }
 
             Role role = await _unitOfWork.RoleRepository.GetRoleByUserAsync(user.Id);
-            TokenModel tokens = _tokenService.GenerateTokens(new TokenUserDTO()
-            {
-                Id = user.Id,
-                UserName = userModel.UserName,
-                UserLvl = user.UserLvl,
-                UserExp = user.UserExp,
-                Role = role.RoleName
-            });
+
+            TokenUserDTO tokenUserDTO = _mapper.Map<TokenUserDTO>(user);
+            tokenUserDTO.Role = role.RoleName;
+
+            TokenModel tokens = _tokenService.GenerateTokens(tokenUserDTO);
             user.RefreshToken = tokens.RefreshToken;
             await _unitOfWork.UserRepository.Update(user);
 
@@ -99,14 +91,11 @@ namespace KokoType.UserService.BLL.Service
             try
             {
                 var role = await _unitOfWork.RoleRepository.GetRoleByUserAsync(user.Id);
-                var tokens = _tokenService.GenerateTokens(new TokenUserDTO
-                {
-                    Id = user.Id,
-                    UserName = user.UserName,
-                    UserLvl = user.UserLvl,
-                    UserExp = user.UserExp,
-                    Role = role.RoleName
-                });
+
+                TokenUserDTO tokenUserDTO = _mapper.Map<TokenUserDTO>(user);
+                tokenUserDTO.Role = role.RoleName;
+
+                var tokens = _tokenService.GenerateTokens(tokenUserDTO);
 
                 user.RefreshToken = tokens.RefreshToken;
                 await _unitOfWork.UserRepository.Update(user);

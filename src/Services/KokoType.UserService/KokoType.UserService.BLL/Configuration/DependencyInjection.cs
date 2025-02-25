@@ -1,4 +1,5 @@
 ﻿using KokoType.UserService.BLL.Interfaces;
+using KokoType.UserService.BLL.MapProfiles;
 using KokoType.UserService.BLL.Service;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -17,6 +18,14 @@ namespace KokoType.UserService.BLL.Configuration
             {
                 options.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Admin"));
             });
+
+            services.AddAutoMapper(typeof(DeleteUserProfile));
+            services.AddAutoMapper(typeof(LoginUserProfile));
+            services.AddAutoMapper(typeof(RefreshProfile));
+            services.AddAutoMapper(typeof(TokenUserProfile));
+            services.AddAutoMapper(typeof(UpdateUserLvlProfile));
+            services.AddAutoMapper(typeof(UpdateUserProfile));
+            services.AddAutoMapper(typeof(UserModelProfile));
 
             return services;
         }

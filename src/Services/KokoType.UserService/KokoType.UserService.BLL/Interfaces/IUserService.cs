@@ -1,5 +1,6 @@
 ﻿using KokoType.UserService.BLL.DTO;
 using KokoType.UserService.DAL.Models;
+using KokoType.UserService.DAL.ViewModels;
 
 
 namespace KokoType.UserService.BLL.Interfaces

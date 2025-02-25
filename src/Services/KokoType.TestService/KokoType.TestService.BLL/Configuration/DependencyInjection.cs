@@ -1,4 +1,5 @@
 ﻿using KokoType.TestService.BLL.Interfaces;
+using KokoType.TestService.BLL.MapProfiles;
 using Microsoft.Extensions.DependencyInjection;
 
 
@@ -13,6 +14,8 @@ namespace KokoType.TestService.BLL.Configuration
             {
                 options.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Admin"));
             });
+
+            services.AddAutoMapper(typeof(SaveResultProfile));
 
             return services;
         }

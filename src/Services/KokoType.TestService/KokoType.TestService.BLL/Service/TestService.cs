@@ -1,4 +1,5 @@
-﻿using KokoType.TestService.BLL.DTO;
+﻿using AutoMapper;
+using KokoType.TestService.BLL.DTO;
 using KokoType.TestService.BLL.Interfaces;
 using KokoType.TestService.DAL.Interfaces;
 using KokoType.TestService.DAL.Models;
@@ -10,12 +11,14 @@ namespace KokoType.TestService.BLL.Service
     public class TestService : ITestService
     {
         private IUnitOfWork _unitOfWork;
+        private IMapper _mapper;
 
         static HttpClient httpClient = new HttpClient();
 
-        public TestService(IUnitOfWork unitOfWork)
+        public TestService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             this._unitOfWork = unitOfWork;
+            this._mapper = mapper;
         }
 
         public async Task<string> GetWordTest(TestParams testParams)
@@ -124,15 +127,7 @@ namespace KokoType.TestService.BLL.Service
         {
             try
             {
-                Statistic newStat = new Statistic()
-                {
-                    Id = Guid.NewGuid(),
-                    Accuracy = saveResult.Accuracy,
-                    Speed = saveResult.Speed,
-                    Description = saveResult.Description,
-                    Errors = saveResult.Errors,
-                    UserId = saveResult.UserId,
-                };
+                Statistic newStat = _mapper.Map<Statistic>(saveResult);
                 await _unitOfWork.StatisticRepository.Add(newStat);
                 return newStat;
             }
