@@ -1,6 +1,7 @@
 ﻿using KokoType.UserService.BLL.DTO;
 using KokoType.UserService.BLL.Interfaces;
 using KokoType.UserService.DAL.Models;
+using KokoType.UserService.DAL.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

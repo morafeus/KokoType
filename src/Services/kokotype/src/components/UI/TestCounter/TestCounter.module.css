@@ -1,0 +1,9 @@
+.counterContainer {
+    margin: 5px;
+    font-size: 26px;
+    color: var(--main-font-color);
+    align-self: flex-start;
+    visibility: visible;
+    min-height: 30px;
+    max-height: 30px;
+}

@@ -1,0 +1,55 @@
+.themeSelector {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .themesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .themeOption {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: rgba(141, 132, 132, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина для кнопки */
+  }
+  
+  .themeOption:hover {
+    background-color: rgba(141, 132, 132, 0.2);
+  }
+  
+  .selected {
+    background-color: #00fae9; /* Highlight color when selected */
+    color: white;
+    border-color: #00fae9;
+  }
+  
+  .colorCircles {
+    display: flex;
+    gap: 10px;
+    margin-right: 15px; /* Отступ между кружками и названием */
+  }
+  
+  .colorCircle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
+  .themeName {
+    font-size: 18px;
+    font-weight: 500;
+    color: #12141b; /* Цвет текста для названия */
+  }
+  

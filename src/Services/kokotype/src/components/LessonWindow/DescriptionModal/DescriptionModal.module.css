@@ -1,0 +1,40 @@
+/* Основной контейнер для окна описания */
+.descriptionContainer {
+    background-color: var(--second-color); /* Фон окна */
+    border-radius: 8px; /* Закругление углов */
+    padding: 20px; /* Отступы внутри окна */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для эффекта поднятия */
+    position: relative; /* Для позиционирования элементов внутри */
+    margin-top: 20px; /* Отступ сверху */
+    width: 100%;
+    height: 70vh; /* Высота окна */
+    overflow-y: auto; /* Прокрутка при переполнении */
+}
+
+
+/* Текст описания */
+.descriptionText {
+    font-size: 2rem; /* Размер шрифта текста */
+    color: var(--test-type-font-color); /* Цвет текста описания */
+    line-height: 1.5; /* Междустрочный интервал */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+/* Кнопка для закрытия окна описания */
+.closeButton {
+    background-color: var(--main-font-color); /* Цвет фона кнопки */
+    color: var(--second-color); /* Цвет текста кнопки */
+    border: none; /* Без границы */
+    padding: 10px 15px; /* Отступы кнопки */
+    border-radius: 5px; /* Закругление углов кнопки */
+    cursor: pointer; /* Указатель для курсора */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    position: absolute; /* Позиционирование кнопки */
+    bottom: 20px; /* Отступ от низа */
+    right: 20px; /* Отступ от правого края */
+}
+
+/* Эффект при наведении на кнопку закрытия */
+.closeButton:hover {
+    background-color: var(--test-font-color); /* Цвет при наведении */
+}

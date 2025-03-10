@@ -1,0 +1,24 @@
+.lesson-page {
+    padding: 20px;
+}
+
+.lesson-container {
+    display: flex; /* Выравнивание списка уроков и деталей в одной строке */
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.lessonList {
+    flex: 1; /* Занимает 1 часть пространства */
+    margin-right: 20px; /* Отступ справа для разделения */
+}
+
+.lessonDetails {
+    flex: 2; /* Занимает 2 части пространства */
+}
+
+/* Добавьте стили для подсветки выбранного урока */
+.listItem.selected {
+    background-color: #e0f7fa; /* Цвет фона для подсвеченного элемента */
+}

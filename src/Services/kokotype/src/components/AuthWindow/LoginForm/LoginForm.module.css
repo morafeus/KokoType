@@ -1,0 +1,41 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20 200 20 20; /* Отступы внутри формы */
+    border-radius: 8px; /* Скругления углов */
+}
+
+.formItem {
+    margin-bottom: 15px; /* Отступ между полями */
+}
+
+.input {
+    padding: 10px; /* Отступы внутри полей ввода */
+    width: 100%; /* Занимает всю ширину контейнера */
+    background-color: var(--second-color); /* Цвет фона для полей ввода */
+    color: var(--test-type-font-color); /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-bottom: 2px solid var(--second-color); /* Нижняя граница */
+    outline: none; /* Убираем стандартный контур */
+    transition: border-bottom-color 0.3s; /* Эффект перехода для цвета нижней границы */
+}
+
+
+.input:focus {
+    border-bottom: 2px solid var(--main-font-color); /* Цвет нижней границы при фокусе */
+}
+
+.button {
+    padding: 10px; /* Отступы внутри кнопки */
+    background-color: var(--highlight-color); /* Цвет фона кнопки */
+    color: var(--main-font-color); /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 4px; /* Скругление углов кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Эффект перехода для кнопки */
+}
+
+.button:hover {
+    background-color: var(--hover-color); /* Цвет фона при наведении */
+    color: var(--main-color); /* Цвет текста при наведении */
+}

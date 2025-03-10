@@ -3,33 +3,33 @@
     {
       "DownstreamPathTemplate": "/api/User/{everything}",
       "UpstreamPathTemplate": "/api/User/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5044
+          "Port": 7118
         }
       ]
     },
     {
       "DownstreamPathTemplate": "/api/Test/{everything}",
       "UpstreamPathTemplate": "/api/Test/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5289
+          "Port": 7271
         }
       ]
     },
     {
       "DownstreamPathTemplate": "/api/Lesson/{everything}",
       "UpstreamPathTemplate": "/api/Lesson/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost", 
-          "Port": 5123
+          "Port": 7176
         }
       ]
     }

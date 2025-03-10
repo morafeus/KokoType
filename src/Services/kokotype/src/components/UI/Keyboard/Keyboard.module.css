@@ -1,0 +1,154 @@
+/* Keyboard.module.css */
+
+.keyboardContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    margin-left: -70px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+/* Различные цвета для каждой группы клавиш */
+.row1 {
+    border: 2px solid #ffeb3b; /* Желтый для QAZ */
+    color: #ffeb3b;
+    --row-color: #ffeb3b; /* Создаем переменную для фона */
+}
+
+.row2 {
+    border: 3px solid #f44336; /* Красный для WSX */
+    color: #f44336;
+    --row-color: #f44336;
+}
+
+.row3 {
+    border: 3px solid #ff9800; /* Оранжевый для EDC */
+    color: #ff9800;
+    --row-color: #ff9800;
+}
+
+.row4 {
+    border: 3px solid #4caf50; /* Зеленый для RFVTGB */
+    color: #4caf50;
+    --row-color: #4caf50;
+}
+
+.row5 {
+    border: 3px solid #2196f3; /* Синий для YHNUJm */
+    color: #2196f3;
+    --row-color: #2196f3;
+}
+
+.row6 {
+    border: 3px solid #9c27b0; /* Фиолетовый для IK, */
+    color: #9c27b0;
+    --row-color: #9c27b0;
+}
+
+.row7 {
+    border: 3px solid #e91e63; /* Розовый для OL. */
+    color: #e91e63;
+    --row-color: #e91e63;
+}
+
+.row8 {
+    border: 3px solid #6ec38a; /* Коричневый для P;/][ */
+    color: #6ec38a;
+    --row-color: #6ec38a;
+}
+
+.row9 {
+    border: 3px solid #ffffff; /* Белый для пробела */
+    color: #ffffff;
+    --row-color: #ffffff;
+}
+
+
+/* Сдвигаем ряды */
+.row:nth-child(2) {
+    margin-left: 60px; /* Сдвиг второго ряда */
+}
+
+.row:nth-child(3) {
+    margin-left: -30px; /* Сдвиг третьего ряда */
+}
+
+.row:nth-child(4) {
+    margin-left: 60px; /* Сдвиг четвертого ряда */
+}
+
+/* Стиль для всех клавиш */
+.key {
+    padding: 15px;
+    margin: 3px;
+    border-radius: 5px;
+    width: 45px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+/* Увеличиваем размер клавиши пробела */
+.spaceKey {
+    width: 250px;
+    height: 45px;
+}
+
+/* Стиль для клавиши Shift */
+.shiftKey {
+    width: 90px;
+}
+
+
+/* Подсветка активной клавиши */
+.key.active {
+    color: var(--main-color);
+    background-color: var(--row-color); /* Используем переменную для фона */
+    border: 2px solid var(--row-color); /* Рамка в цвет текущего ряда */
+}
+
+/* Стиль подсказок */
+.fingerGuide {
+    margin-left: 20px;
+}
+
+.fingerGuide h3 {
+    margin-bottom: 10px;
+}
+
+.fingerColor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.colorBox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.fingerColor span {
+    font-size: 16px;
+}
+
+.modalTitle
+{
+    color: var(--main-font-color);
+}

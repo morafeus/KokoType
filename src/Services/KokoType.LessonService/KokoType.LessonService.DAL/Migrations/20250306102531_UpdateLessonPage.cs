@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace KokoType.LessonService.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class LessonDBMigraion : Migration
+    public partial class UpdateLessonPage : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -33,6 +33,7 @@ namespace KokoType.LessonService.DAL.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Text = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ErrorCount = table.Column<int>(type: "int", nullable: false),
                     lesson = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     LessonModelId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)

@@ -1,0 +1,70 @@
+/* TypingResults.module.css */
+.resultsContainer {
+    display: flex; /* Используем flex для расположения колонок */
+    justify-content: space-between; /* Разделяем колонки по сторонам */
+    border-radius: 10px; /* Скругление углов */
+    padding: 20px; /* Отступы внутри блока */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень для блока */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin: 10px 0; /* Отступы между блоками */
+    min-width: 700px;
+}
+
+.resultsColumn {
+    flex: 1; /* Каждая колонка занимает равное пространство */
+    margin-right: 20px; /* Отступ между колонками */
+}
+
+.resultsColumn:last-child {
+    margin-right: 0; /* Убираем правый отступ у последней колонки */
+}
+
+.result {
+    color: var(--main-font-color);
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.resultsItem {
+    font-size: 1.2rem; /* Размер шрифта для результатов */
+    margin: 5px 0; /* Отступы между элементами результатов */
+}
+
+.resultsValue { 
+    font-size: 28px;
+    color: var(--test-main-color); /* Цвет для значений */
+}
+
+.errorColumn {
+    flex: 2; /* Увеличиваем ширину колонки для ошибок */
+}
+
+.scrollContainer {
+    max-height: 160px; /* Максимальная высота контейнера для прокрутки */
+    overflow-y: auto; /* Включаем вертикальную прокрутку */
+    padding: 10px; /* Отступы внутри контейнера */
+    border-radius: 5px; /* Скругление углов */
+}
+
+.scrollContainer::-webkit-scrollbar {
+    width: 10px; /* Ширина скроллбара */
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Цвет фона дорожки скроллбара */
+    border-radius: 10px; /* Закругление дорожки */
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+    background: var(--test-type-font-color); /* Цвет ползунка скроллбара */
+    border-radius: 10px; /* Закругление ползунка */
+}
+
+.scrollContainer::-webkit-scrollbar-thumb:hover {
+    background: darken(var(--test-type-font-color), 10%); /* Цвет ползунка при наведении */
+}
+
+.errorText {
+    color: var(--test-invalid-font-color); 
+    font-size: 28px; /* Размер шрифта для ошибочных слов */
+}
