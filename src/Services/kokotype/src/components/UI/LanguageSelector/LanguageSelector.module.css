@@ -1,0 +1,87 @@
+.difficultyContainer {
+    display: flex; /* Используем flexbox для расположения элементов в строку */
+    align-items: center; /* Центрируем по вертикали */
+    width: 100%; /* Устанавливаем ширину 100% */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.label {
+    font-weight: bold; /* Жирный шрифт для метки */
+    margin-right: 10px; /* Отступ справа от метки */
+}
+
+.testSettingsSection {
+    flex-grow: 1; /* Позволяет элементу занимать оставшееся пространство */
+    width: 100%; /* Устанавливаем ширину 100% */
+}
+
+.searchInput {
+    width: 100%; /* Ширина инпута */
+    padding: 10px; /* Отступ внутри */
+    margin-bottom: 15px; /* Отступ снизу */
+    border: none; /* Убираем рамки */
+    border-radius: 0; /* Убираем закругление углов */
+    background: transparent; /* Фон прозрачный */
+    color: inherit; /* Цвет текста унаследован от родительского элемента */
+    outline: none; /* Убираем стандартный контур при фокусе */  
+    border-bottom: 2px solid var(--second-color); /* Нижняя рамка */
+    transition: border 0.3s, background 0.3s; /* Плавный переход для изменения рамки и фона */
+}
+
+/* Стили при фокусе */
+.searchInput:focus {
+    border-bottom: 2px solid var(--test-type-font-color); /* Изменяем цвет рамки при фокусе */
+}
+
+.languageList {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы */
+    max-height: 200px; /* Ограничение высоты списка */
+    overflow-y: auto; /* Включаем прокрутку */
+    scrollbar-width: thin; /* Устанавливаем тонкий скроллбар для Firefox */
+    scrollbar-color: var(--test-type-font-color) rgba(0, 0, 0, 0.1); /* Цвет ползунка и фона для Firefox */
+}
+
+/* Кастомизация скроллбара для WebKit-браузеров */
+.languageList::-webkit-scrollbar {
+    width: 10px; /* Ширина скроллбара */
+}
+
+.languageList::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Цвет фона дорожки скроллбара */
+    border-radius: 10px; /* Закругление дорожки */
+}
+
+.languageList::-webkit-scrollbar-thumb {
+    background: var(--test-type-font-color); /* Цвет ползунка скроллбара */
+    border-radius: 10px; /* Закругление ползунка */
+}
+
+.languageList::-webkit-scrollbar-thumb:hover {
+    background: darken(var(--test-type-font-color), 10%); /* Цвет ползунка при наведении */
+}
+
+.languageItem {
+    padding: 10px; /* Отступ внутри элемента списка */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background 0.3s; /* Плавный переход для фона */
+}
+
+/* Стили для мигания текста */
+.blink {
+    animation: blink-animation 4s steps(20, start) infinite; /* Анимация мигания */
+}
+
+@keyframes blink-animation {
+    from, to { 
+        color: var(--test-font-color); /* Скрыт в начале и конце */
+    }
+    50% { 
+        color: var(--main-font-color); /* Скрыт в начале и конце */
+    }
+}
+
+.languageItem:hover {
+    background: rgba(0, 0, 0, 0.1); /* Подсветка при наведении */
+}

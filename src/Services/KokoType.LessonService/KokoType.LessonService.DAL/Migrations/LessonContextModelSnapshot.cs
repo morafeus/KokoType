@@ -55,6 +55,10 @@ namespace KokoType.LessonService.DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("ErrorCount")
                         .HasColumnType("int");
 

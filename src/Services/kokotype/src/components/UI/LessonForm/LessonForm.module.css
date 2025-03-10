@@ -1,0 +1,167 @@
+.formContainer {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--main-color);
+    height: 75vh; /* Увеличиваем высоту контейнера */
+    overflow-y: auto; /* Добавляем вертикальную прокрутку */
+    display: flex; /* Используем flexbox для расположения элементов */
+}
+
+/* Левая секция */
+.leftSection {
+    flex: 1; /* Занимает 1 часть доступного пространства */
+    margin-right: 20px; /* Отступ справа */
+}
+
+/* Заголовок формы */
+.formHeader {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--main-font-color);
+}
+
+/* Стили для input, select и textarea */
+.input, .textarea, .select {
+    width: 100%; /* Поля занимают всю ширину */
+    padding: 10px;
+    font-size: 14px;
+    color: var(--test-type-font-color);
+    background-color: var(--second-color);
+    border: 1px solid var(--test-font-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Убираем ресайз для textarea */
+.textarea {
+    resize: none;
+    min-height: 100px;
+    color: var(--test-type-font-color);
+}
+
+/* Лейблы для input, select и textarea */
+.label {
+    font-size: 16px;
+    margin-bottom: 8px; /* Отступ снизу */
+    color: var(--test-type-font-color);
+    display: block; /* Лейбл будет на новой строке */
+}
+
+/* Стили для группы input */
+.inputGroup {
+    display: flex;
+    flex-direction: column; /* Изменяем на вертикальное расположение */
+    margin-bottom: 15px;
+}
+
+/* Поля формы для урока */
+.inputGroupFull {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+}
+
+/* Кнопки */
+.button {
+    background-color: #4caf50; /* Оставляем фиксированный цвет */
+    color: white; /* Оставляем фиксированный цвет */
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #45a049; /* Оставляем фиксированный цвет */
+}
+
+/* Кнопка возврата */
+.backButton {
+    background-color: #2196f3; /* Цвет кнопки "Назад" */
+    color: white; /* Цвет текста */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Отступ справа для разделения кнопок */
+}
+
+.backButton:hover {
+    background-color: #1976d2; /* Цвет при наведении */
+}
+
+/* Кнопка удаления страницы */
+.removePageButton {
+    background-color: #f44336; /* Оставляем фиксированный цвет */
+    margin-top: 10px;
+}
+
+.removePageButton:hover {
+    background-color: #d32f2f; /* Оставляем фиксированный цвет */
+}
+
+/* Контейнер страниц */
+.pagesContainerWrapper {
+    flex: 2; /* Занимает 1 часть доступного пространства */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+/* Заголовок для секции страниц */
+.pagesContainerHeader {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--main-font-color);
+}
+
+/* Стили для списка страниц */
+.pagesContainer {
+    max-height: 390px;
+    overflow-y: auto;
+    border: 1px solid var(--test-font-color);
+    border-radius: 8px;
+    background-color: var(--second-color);
+    padding: 15px;
+}
+
+/* Формы страниц */
+.pageForm {
+    margin-bottom: 20px;
+    border: 1px solid var(--test-font-color);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--second-color);
+}
+
+/* Кнопка добавления новой страницы */
+.addPageButton {
+    background-color: #2196f3; /* Оставляем фиксированный цвет */
+    color: white; /* Оставляем фиксированный цвет */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.addPageButton:hover {
+    background-color: #1976d2; /* Оставляем фиксированный цвет */
+}
+
+/* Контейнер для кнопок */
+.buttonContainer {
+    margin-top: 20px; /* Отступ сверху для кнопок */
+}

@@ -1,0 +1,115 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+  border-radius: 8px;
+  min-width: 250px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-font-color);
+  transition: color 0.3s ease;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  margin-bottom: 10px;
+  border: none;
+  background-color: var(--main-color); /* Фон элементов списка */
+  width: 100%;
+  position: relative; /* Для позиционирования описания */
+  overflow: hidden; /* Скрываем изначально описание */
+  cursor: pointer; /* Указываем, что элемент кликабельный */
+  min-width: 200px;
+  transition: background-color 0.3s ease; /* Плавный переход фона */
+}
+
+.button {
+  color: var(--main-font-color);
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background: none;
+  text-align: left;
+  width: calc(100%); /* Ширина кнопки с учетом кнопки удаления */
+  display: inline-block; /* Чтобы кнопка и текст были в одной строке */
+}
+
+.deleteButton {
+  color: var(--test-invalid-font-color);
+  padding: 5px 10px;
+  cursor: pointer;
+  display: inline-block; /* Чтобы кнопка и текст были в одной строке */
+  margin-left: 10px; /* Отступ слева для кнопки удаления */
+}
+
+.description {
+  font-size: 14px;
+  color: var(--test-type-font-color);
+  margin-top: 5px;
+  line-height: 1.5;
+  padding-left: 20px;
+  position: absolute; /* Позиционирование для выезжающего эффекта */
+  bottom: -30px; /* Начальное положение под элементом */
+  left: 0;
+  right: 0; /* Занимает всю ширину */
+  transition: bottom 0.3s ease, opacity 0.3s ease; /* Плавный переход */
+  background-color: var(--second-color); /* Фон описания */
+  padding: 10px; /* Отступы для описания */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+  z-index: 1; /* Обеспечиваем наложение на другие элементы */
+  pointer-events: none; /* Отключаем взаимодействие с описанием */
+  opacity: 0; /* Изначально скрыто */
+}
+
+.listItem:hover .description {
+  bottom: 0; /* Выезжает на место при наведении */
+  pointer-events: auto; /* Включаем взаимодействие с описанием */
+  opacity: 1; /* Появляется при наведении */
+}
+
+.listItem:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Затенение при наведении */
+}
+
+.selected {
+  background-color: var(--main-font-color) !important; /* Цвет для выбранного элемента */
+  color: var(--main-color) !important; /* Цвет текста для выбранного элемента */
+}
+
+.selected .button {
+  display: none; /* Скрываем текст кнопки для выбранного элемента */
+}
+
+.inactive {
+  opacity: 0.3; /* Затенение для неактивных элементов */
+  pointer-events: none; /* Отключаем взаимодействие с неактивными элементами */
+}
+
+.addButton {
+  color: var(--main-font-color);
+}
+
+/* Новый стиль для кнопки "Назад" */
+.backButton {
+  background-color: var(--test-invalid-font-color);
+  color: var(--main-color);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Занимает всю ширину */
+}

@@ -1,0 +1,62 @@
+.navBar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 25px 80px;
+}
+
+/* Стиль для иконок с подсказками */
+.navBarIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    position: relative; /* Чтобы разместить подсказку относительно иконки */
+    transition: transform 0.3s ease; /* Плавный эффект для иконки */
+}
+
+/* Иконка при наведении */
+.navBarIcon svg {
+    color: var(--test-font-color);
+    transition: color 0.3s ease; 
+}
+
+/* Эффект наведения для иконки */
+.navBarIcon:hover svg {
+    color: var(--main-font-color); /* Цвет при наведении */
+}
+
+/* Стили подсказки (tooltip) */
+.navBarIcon .tooltip {
+    visibility: hidden; /* Скрываем подсказку по умолчанию */
+    opacity: 0;
+    position: absolute;
+    bottom: 100%; /* Размещаем подсказку сверху */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75); /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap; /* Чтобы текст не переносился */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Плавное появление */
+    z-index: 10; /* Убедимся, что подсказка будет поверх других элементов */
+}
+
+/* Показываем подсказку при наведении */
+.navBarIcon:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Делаем подсказку видимой */
+}
+
+/* Увеличение кнопки при наведении */
+.navBarIcon:hover {
+    transform: scale(1.1); /* Увеличиваем кнопку */
+}
+
+/* Увеличение текста при наведении */
+.navBarIcon:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Делаем текст видимым */
+}

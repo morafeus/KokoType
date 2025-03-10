@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KokoType.LessonService.DAL.Migrations
 {
     [DbContext(typeof(LessonContext))]
-    [Migration("20250223104418_LessonDBMigraion")]
-    partial class LessonDBMigraion
+    [Migration("20250306102531_UpdateLessonPage")]
+    partial class UpdateLessonPage
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,6 +57,10 @@ namespace KokoType.LessonService.DAL.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ErrorCount")
                         .HasColumnType("int");

@@ -1,0 +1,37 @@
+/* src/components/StatisticSettings.module.css */
+.statisticsSettings {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем весь контейнер */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .settingsGrid {
+    display: grid; /* Используем grid для выравнивания столбцов */
+    grid-template-columns: 1fr 1fr; /* Два столбца: один для названий, второй для селекторов */
+    gap: 20px; /* Отступ между столбцами */
+    width: 100%; /* Ширина контейнера на всю доступную ширину */
+    max-width: 800px; /* Максимальная ширина для контейнера */
+  }
+  
+  .settingRow {
+    display: contents; /* Для использования grid, делаем этот элемент частью grid */
+  }
+  
+  .settingName {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    align-self: center; /* Выравниваем по центру внутри grid */
+    margin-right: 10px; /* Добавляем небольшой отступ между названием и селектором */
+  }
+  
+  .selectorContainer {
+    align-self: center; /* Выравниваем селектор по вертикали */
+    width: 100%; /* Устанавливаем ширину на всю строку */
+  }
+  
