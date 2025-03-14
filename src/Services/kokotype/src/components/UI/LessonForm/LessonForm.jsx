@@ -32,8 +32,8 @@ const LessonForm = ({ onSubmit, onClose }) => {
     e.preventDefault();
 
     // Проверяем, есть ли страницы
-    if (pages.length === 0 || pages.some(page => page.title === "" || page.text === "")) {
-      toastr.error("Please add at least one page with a title and text."); // Выводим ошибку через toastr
+    if (pages.length === 0 || pages.some(page => page.text === "")) {
+      toastr.error("Please add at least one page with text."); // Выводим ошибку через toastr
       return;
     }
 
@@ -42,7 +42,7 @@ const LessonForm = ({ onSubmit, onClose }) => {
       name: lessonName,
       description: description,
       language: language,
-      pages: pages,
+      pages: pages.map((page, index) => ({ ...page, title: (index + 1).toString() })), // Добавляем номер страницы как title
     };
 
     onSubmit(newLesson);
@@ -118,16 +118,8 @@ const LessonForm = ({ onSubmit, onClose }) => {
             <div key={index} className={styles.pageForm}>
               <div className={styles.inputGroupFull}>
                 <div className={styles.inputGroup}>
-                  <label className={styles.label}>Page Title:</label>
-                  <input
-                    type="text"
-                    value={page.title}
-                    onChange={(e) =>
-                      handlePageChange(index, "title", e.target.value)
-                    }
-                    className={styles.input}
-                    required
-                  />
+                  <label className={styles.label}>Page Number:</label>
+                  <span className={styles.pageNumber}>{index + 1}</span> {/* Отображаем номер страницы */}
                 </div>
 
                 <div className={styles.inputGroup}>

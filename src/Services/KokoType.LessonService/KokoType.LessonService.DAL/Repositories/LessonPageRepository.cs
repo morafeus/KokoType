@@ -1,18 +1,23 @@
-﻿using KokoType.LessonService.DAL.Models;
+﻿using KokoType.LessonService.DAL.Context;
+using KokoType.LessonService.DAL.Models;
 using Microsoft.EntityFrameworkCore;
 
 
 namespace KokoType.LessonService.DAL.Repositories
 {
     public class LessonPageRepository : BaseRepository<LessonPage>
-    {
-        public LessonPageRepository(DbContext context) : base(context)
-        {
-        }
+{
+    public LessonPageRepository(IDbContextFactory<LessonContext> _contextFactory) : base(_contextFactory) { }
 
-        public async Task<List<LessonPage>> GetPagesByLesson(LessonModel model)
+    public async Task<List<LessonPage>> GetPagesByLessonId(Guid lessonId)
+    {
+        using (var context = _contextFactory.CreateDbContext())
         {
-            return await _table.Where(x => x.lesson.Equals(model.Id)).ToListAsync();
+            return await context.Set<LessonPage>()
+                .Where(lp => lp.lesson == lessonId)
+                .OrderBy(lp => lp.Title)
+                .ToListAsync();
         }
     }
+}
 }

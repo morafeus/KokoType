@@ -1,51 +1,47 @@
-﻿using KokoType.LessonService.DAL.Interfaces;
+﻿using KokoType.LessonService.DAL.Context;
+using KokoType.LessonService.DAL.Interfaces;
 using KokoType.LessonService.DAL.Repositories;
+using Microsoft.EntityFrameworkCore;
 
-namespace KokoType.LessonService.DAL.Context
+public class UnitOfWork_Lesson : IUnitOfWork
 {
-    public class UnitOfWork_Lesson : IUnitOfWork
+    private readonly IDbContextFactory<LessonContext> _contextFactory;
+    private LessonRepository _lessonRepository;
+    private LessonPageRepository _lessonPageRepository;
+    private LessonResultRepository _lessonResultRepository;
+
+    public UnitOfWork_Lesson(IDbContextFactory<LessonContext> contextFactory)
     {
-        private LessonRepository lessonRepository;
-        private LessonPageRepository lessonPageRepository;
-        private LessonResultRepository lessonResultRepository;
+        _contextFactory = contextFactory;
+    }
 
-        private LessonContext _context;
-
-
-
-        public LessonRepository LessonRepository
+    public LessonRepository LessonRepository
+    {
+        get
         {
-            get
-            {
-                if (lessonRepository == null)
-                    lessonRepository = new LessonRepository(_context);
-                return lessonRepository;
-            }
+            if (_lessonRepository == null)
+                _lessonRepository = new LessonRepository(_contextFactory);
+            return _lessonRepository;
         }
+    }
 
-        public LessonPageRepository LessonPageRepository
+    public LessonPageRepository LessonPageRepository
+    {
+        get
         {
-            get
-            {
-                if (lessonPageRepository == null)
-                    lessonPageRepository = new LessonPageRepository(_context);
-                return lessonPageRepository;
-            }
+            if (_lessonPageRepository == null)
+                _lessonPageRepository = new LessonPageRepository(_contextFactory);
+            return _lessonPageRepository;
         }
+    }
 
-        public LessonResultRepository LessonResultRepository
+    public LessonResultRepository LessonResultRepository
+    {
+        get
         {
-            get
-            {
-                if (lessonResultRepository == null)
-                    lessonResultRepository = new LessonResultRepository(_context);
-                return lessonResultRepository;
-            }
-        }
-
-        public UnitOfWork_Lesson(LessonContext testContext)
-        {
-            _context = testContext;
+            if (_lessonResultRepository == null)
+                _lessonResultRepository = new LessonResultRepository(_contextFactory);
+            return _lessonResultRepository;
         }
     }
 }

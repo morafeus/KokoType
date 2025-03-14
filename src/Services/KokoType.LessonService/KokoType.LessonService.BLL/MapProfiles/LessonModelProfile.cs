@@ -14,7 +14,7 @@ namespace KokoType.LessonService.BLL.MapProfiles
                 .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description))
                 .ForMember(dest => dest.Language, opt => opt.MapFrom(src => src.Language))
                 .ForMember(dest => dest.Pages, opt => opt.MapFrom(src => src.Pages))
-                .ForMember(dest => dest.status, opt => opt.MapFrom(src => "available"));
+                .ForMember(dest => dest.status, opt => opt.MapFrom(src => "close"));
         }
     }
 }

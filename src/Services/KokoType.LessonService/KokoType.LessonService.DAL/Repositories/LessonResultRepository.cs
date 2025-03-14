@@ -1,30 +1,32 @@
-﻿using KokoType.LessonService.DAL.Models;
+﻿using KokoType.LessonService.DAL.Context;
+using KokoType.LessonService.DAL.Models;
 using Microsoft.EntityFrameworkCore;
-
 
 namespace KokoType.LessonService.DAL.Repositories
 {
     public class LessonResultRepository : BaseRepository<LessonResult>
     {
-        public LessonResultRepository(DbContext context) : base(context)
+        public LessonResultRepository(IDbContextFactory<LessonContext> context) : base(context)
         {
         }
 
         public async Task<bool> CheckIsExist(Guid lessonId, Guid userId)
         {
-            LessonResult result = _table.FirstOrDefault(x => x.Lesson.Id == lessonId && x.UserId == userId);
-            if (result != null)
-                return false;
-            else
-                return true;
+            using (var context = _contextFactory.CreateDbContext())
+            {
+                return !await context.Set<LessonResult>()
+                    .AnyAsync(x => x.LessonId == lessonId && x.UserId == userId);
+            }
         }
 
         public async Task<List<LessonResult>> GetByUser(Guid userId)
         {
-            return await _table
-                .Include(x => x.Lesson)
-                .Where(x => x.UserId.Equals(userId))
-                .ToListAsync();
+            using (var context = _contextFactory.CreateDbContext())
+            {
+                return await context.Set<LessonResult>()
+                    .Where(x => x.UserId == userId)
+                    .ToListAsync();
+            }
         }
     }
 }

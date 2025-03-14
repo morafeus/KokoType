@@ -14,9 +14,12 @@ namespace KokoType.LessonService.DAL.Configuration
             services.AddDbContext<LessonContext>(options =>
             {
                 options.UseSqlServer("Server=localhost,1433;Database=KokoType_LessonServiceDB;User Id=sa;Password=Password1234;TrustServerCertificate=True;");
-                //options.UseSqlServer("Server=KokoType.SqlServer,1433;Database=KokoType_LessonServiceDB;User Id=sa;Password=Password1234;TrustServerCertificate=True;");
-
             });
+
+            services.AddDbContextFactory<LessonContext>(options =>
+            {
+                options.UseSqlServer("Server=localhost,1433;Database=KokoType_LessonServiceDB;User Id=sa;Password=Password1234;TrustServerCertificate=True;");
+            }, ServiceLifetime.Scoped);
 
             return services;
         }

@@ -6,11 +6,25 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace KokoType.LessonService.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class UpdateLessonPage : Migration
+    public partial class UpdateLesson : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "LessonResults",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Details = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LessonId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_LessonResults", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Lessons",
                 columns: table => new
@@ -19,6 +33,8 @@ namespace KokoType.LessonService.DAL.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Language = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NextLessonId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    PreviousLessonId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     status = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -48,35 +64,10 @@ namespace KokoType.LessonService.DAL.Migrations
                         principalColumn: "Id");
                 });
 
-            migrationBuilder.CreateTable(
-                name: "LessonResults",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Details = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LessonId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_LessonResults", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_LessonResults_Lessons_LessonId",
-                        column: x => x.LessonId,
-                        principalTable: "Lessons",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_LessonPages_LessonModelId",
                 table: "LessonPages",
                 column: "LessonModelId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_LessonResults_LessonId",
-                table: "LessonResults",
-                column: "LessonId");
         }
 
         /// <inheritdoc />

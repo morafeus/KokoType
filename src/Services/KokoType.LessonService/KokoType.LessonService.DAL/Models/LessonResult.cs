@@ -7,6 +7,6 @@ namespace KokoType.LessonService.DAL.Models
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
         public string Details { get; set; }
-        public LessonModel Lesson { get; set; }
+        public Guid LessonId { get; set; }
     }
 }

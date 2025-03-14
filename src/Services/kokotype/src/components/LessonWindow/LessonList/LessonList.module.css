@@ -1,16 +1,34 @@
-.headerContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
 .container {
   padding: 20px;
   max-height: 500px;
   overflow-y: auto;
   border-radius: 8px;
   min-width: 250px;
+  direction: rtl; /* Перемещаем scrollbar влево */
+}
+
+.container * {
+  direction: ltr; /* Устанавливаем направление текста для всех дочерних элементов */
+}
+
+.container::-webkit-scrollbar {
+  width: 12px; /* Ширина полосы прокрутки */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: var(--test-font-color); /* Цвет ползунка */
+  border-radius: 6px; /* Закругление углов */
+}
+
+.container::-webkit-scrollbar-track {
+  background: var(--second-color); /* Цвет фона полосы прокрутки */
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .heading {
@@ -56,6 +74,7 @@
   margin-left: 10px; /* Отступ слева для кнопки удаления */
 }
 
+/* Стиль для описания */
 .description {
   font-size: 14px;
   color: var(--test-type-font-color);
@@ -75,10 +94,17 @@
   opacity: 0; /* Изначально скрыто */
 }
 
+/* Появление описания при наведении на список */
 .listItem:hover .description {
   bottom: 0; /* Выезжает на место при наведении */
   pointer-events: auto; /* Включаем взаимодействие с описанием */
   opacity: 1; /* Появляется при наведении */
+}
+
+/* Класс для исключения всплывающего описания при наведении на кнопку Back */
+.listItem.noHoverDescription:hover .description {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .listItem:hover {
@@ -112,4 +138,57 @@
   cursor: pointer;
   font-size: 16px;
   width: 100%; /* Занимает всю ширину */
+}
+
+@keyframes blink {
+  0% {
+    color: var(--main-font-color);
+    border-bottom: 2px solid var(--main-font-color);
+  }
+  50% {
+    color: var(--test-font-color);
+    border-bottom: 2px solid var(--test-font-color);
+  }
+  100% {
+    color: var(--main-font-color);
+    border-bottom: 2px solid var(--main-font-color);
+  }
+}
+
+.available {
+  background-color: var(--main-color);
+}
+
+.available *{
+  color: var(--font-main-color);
+  animation: blink 1s infinite; /* Анимация мерцания */
+}
+
+.done * {
+  color: var(--main-color);
+}
+
+.done {
+  background-color: var(--main-font-color); /* Зеленый для завершенных */
+  opacity: 0.7;
+}
+
+/* Эффект тряски */
+@keyframes shake {
+  0% { transform: translate(0); }
+  25% { transform: translate(-5px); }
+  50% { transform: translate(5px); }
+  75% { transform: translate(-5px); }
+  100% { transform: translate(0); }
+}
+
+/* Стиль для закрытых уроков */
+.close {
+  background-color: var(--main-color); /* Серый для закрытых */
+  opacity: 0.2;
+}
+
+.shake {
+  animation: shake 0.5s; /* Добавляем анимацию */
+  background-color: red; /* Красный при анимации */
 }
