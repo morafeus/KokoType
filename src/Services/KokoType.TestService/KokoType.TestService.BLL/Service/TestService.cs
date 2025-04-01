@@ -150,6 +150,62 @@ namespace KokoType.TestService.BLL.Service
             }
         }
 
+        public async Task<List<Statistic>> GetStatisticList(GetStatsDTO getStats)
+        {
+            try
+            {
+                List<Statistic> stats = await _unitOfWork.StatisticRepository.GetByUser(getStats.Id);
+                return stats;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
+        }
+
+        public async Task<List<Statistic>> GetAll()
+        {
+            try
+            {
+                var stats = await _unitOfWork.StatisticRepository.GetAll();
+                return stats.ToList<Statistic>();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
+        }
+
+        public async Task<List<Statistic>> GetToday()
+        {
+            try
+            {
+                var stats = await _unitOfWork.StatisticRepository.GetByDateToday();
+                return stats.ToList<Statistic>();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public async Task<List<Statistic>> GetClassic()
+        {
+            try
+            {
+                var stats = await _unitOfWork.StatisticRepository.GetClassic();
+                return stats.ToList<Statistic>();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
         public async Task<StatsModel> GetStatsById(GetStatsDTO getStats)
         {
             try

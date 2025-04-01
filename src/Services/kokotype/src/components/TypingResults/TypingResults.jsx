@@ -21,12 +21,14 @@ const TypingResults = ({ text, errors, time, errorWords }) => {
 
     const wordsCount = text.split(' ').length;
     let minutes;
+
     if (context.params.params.speed === 'WPM') {
         minutes = time / 60;
     } else if (context.params.params.speed === 'WPS') {
         minutes = time / 360;
     }
     const wpm = (wordsCount / minutes).toFixed(2); // Скорость печати в WPM
+    console.log(context);
 
     const totalCharacters = text.length; // Общее количество символов
     let accuracy;

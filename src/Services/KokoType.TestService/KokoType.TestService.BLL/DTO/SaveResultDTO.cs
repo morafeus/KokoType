@@ -8,5 +8,6 @@ namespace KokoType.TestService.BLL.DTO
         public float Speed { get; set; }
         public string Description { get; set; }
         public string Errors { get; set; }
+        public float ExpCount { get; set; }
     }
 }

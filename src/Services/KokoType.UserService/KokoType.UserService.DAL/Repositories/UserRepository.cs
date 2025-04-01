@@ -11,5 +11,12 @@ namespace KokoType.UserService.DAL.Repositories
         {
             return await _table.FirstOrDefaultAsync(x => x.UserName == name);
         }
+
+        public async Task<UserModel> GetByIdFull(Guid id)
+        {
+            return await _table
+                .Include(x => x.Achives)
+                .FirstOrDefaultAsync(x => x.Id == id);
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace KokoType.UserService.BLL.Configuration
         {
             services.AddScoped<IHashService, HashService>();
             services.AddScoped<IUserService, KokoType.UserService.BLL.Service.UserService>();
+            services.AddScoped<IAchivementService, AchivementService>();
             services.AddSingleton<ITokenService, TokenService>();
 
             services.AddAuthorization(options =>

@@ -1,0 +1,43 @@
+.userStats {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--second-color);
+    border-radius: 8px;
+}
+
+.userStats h3 {
+    margin-bottom: 10px;
+}
+
+.statContainer {
+    display: flex; /* Flexbox для двух колонок */
+    justify-content: space-between; /* Распределение пространства между колонками */
+}
+
+.leftColumn {
+    flex: 1; /* Занимает всю доступную ширину */
+    margin-right: 10px; /* Отступ между колонками */
+}
+
+.rightColumn {
+    flex: 1; /* Занимает всю доступную ширину */
+}
+
+.statItem {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.statItem strong {
+    font-weight: bold;
+}
+
+.statItem span {
+    margin-left: 5px;
+}
+
+/* Новый класс для выделения текста */
+.highlight {
+    color: var(--main-font-color); /* Замените цвет на желаемый */
+    font-weight: bold; /* Можно сделать текст жирным */
+}

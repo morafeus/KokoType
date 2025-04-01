@@ -1,0 +1,53 @@
+.calendarContainer {
+    position: relative; 
+    background-color: var(--second-color);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.opacityGuide {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание по правому краю */
+    margin: 10px; /* Отступ снизу */
+}
+
+.opacitySquare {
+    height: 20px; /* Высота квадратиков */
+    width: 20px; /* Ширина квадратиков */
+    margin-left: 5px; /* Отступ между квадратиками */
+    border-radius: 5px; /* Скругление углов */
+    background-color: var(--main-font-color); /* Задаем цвет квадратиков через CSS переменную */
+    transition: opacity 0.3s; /* Плавная анимация для изменения прозрачности */
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(48, 1fr); /* Устанавливаем 48 столбцов для дней */
+    grid-template-rows: repeat(7, 1fr); /* 7 строк для дней недели */
+    gap: 5px;
+    margin: 10px;
+}
+
+.daySquare {
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--main-font-color); /* Задаем цвет квадратиков через CSS переменную */
+    transition: background-color 0.3s, opacity 0.3s; /* Добавляем анимацию для opacity */
+}
+
+.dateTooltip {
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.75); 
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none; 
+    transform: translate(-50%, -100%); 
+    white-space: nowrap; 
+}

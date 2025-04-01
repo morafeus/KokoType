@@ -14,6 +14,28 @@ namespace KokoType.TestService.DAL.Repositories
             return _table.Where(x => x.UserId.Equals(userId) && x.Description.Equals(decription)).ToList<Statistic>();
         }
 
+        public async Task<List<Statistic>> GetByUser(Guid userId)
+        {
+            return _table.Where(x => x.UserId == userId).ToList<Statistic>();
+        }
+
+        public async Task<List<Statistic>> GetByDateToday()
+        {
+            var today = DateTime.Today;
+            return await Task.Run(() =>
+                _table.Where(x => x.DateTime.Date == today).ToList());
+        }
+
+        public async Task<List<Statistic>> GetClassic()
+        {
+            return await Task.Run(() =>
+                _table
+                    .Where(x => x.Description == "words,15,English,medium")
+                    .OrderBy(x => x.ExpCount)
+                    .ToList());
+        }
+
+
         public async Task<StatsModel> GetBestStats(Guid userId)
         {
             var statistics = await _table
@@ -27,6 +49,7 @@ namespace KokoType.TestService.DAL.Repositories
                 model.Accuracy = statistics.Max(x => x.Accuracy);
                 model.Speed = statistics.Max(x => x.Speed);
                 model.TestCount = statistics.Count;
+                model.ExpCount = statistics.Max(x=> x.ExpCount);
             }
             else
             {

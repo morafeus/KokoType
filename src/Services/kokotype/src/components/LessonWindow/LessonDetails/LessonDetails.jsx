@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from './LessonDetails.module.css';
 import MyModal from "../../UI/ModalWindow/MyModal";
 import Keyboard from "../../UI/Keyboard/Keyboard";
+import NumberKeyboard from "../../UI/NumberKeyboard/NumberKeyboard"; // Import your NumberKeyboard
 import DescriptionModal from "../DescriptionModal/DescriptionModal";
 
 const LessonDetails = ({ lesson, pages, onBackToList, onError, resetPageErrors, complete, userInput, setUserInput }) => {
@@ -11,8 +12,8 @@ const LessonDetails = ({ lesson, pages, onBackToList, onError, resetPageErrors, 
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
     const [currentPages, setCurrentPages] = useState(pages);
     const [completedPages, setCompletedPages] = useState([]);
-    const [showLesson, setShowLesson] = useState(false); // Состояние для показа урока
-    const [showDescription, setShowDescription] = useState(false); // Состояние для показа описания
+    const [showLesson, setShowLesson] = useState(false);
+    const [showDescription, setShowDescription] = useState(false);
 
     const currentPage = currentPages[currentPageIndex];
 
@@ -22,23 +23,21 @@ const LessonDetails = ({ lesson, pages, onBackToList, onError, resetPageErrors, 
         if (textarea) {
             textarea.focus();
         }
-
-      
     }, [pages, currentPageIndex]);
 
-    useEffect(()=> {
-          if (currentPage.description) {
-            setShowDescription(true); // Показываем описание, если оно есть
-            setShowLesson(false); // Скрываем урок
+    useEffect(() => {
+        if (currentPage.description) {
+            setShowDescription(true);
+            setShowLesson(false);
         } else {
-            setShowLesson(true); // Показываем урок, если описания нет
+            setShowLesson(true);
             setShowDescription(false);
         }
-    },[currentPageIndex])
+    }, [currentPageIndex]);
 
     const handleStartLesson = () => {
-        setShowLesson(true); // Показываем урок
-        setShowDescription(false); // Скрываем описание
+        setShowLesson(true);
+        setShowDescription(false);
     };
 
     const handleKeyDown = (e) => {
@@ -87,7 +86,7 @@ const LessonDetails = ({ lesson, pages, onBackToList, onError, resetPageErrors, 
         let userIndex = 0;
         return currentPage.text.split(" ").map((word, wordIndex) => {
             const wordWithSpace = wordIndex < currentPage.text.split(" ").length - 1 ? word + " " : word;
-            return wordWithSpace.split("").map((char, index) => {
+            return wordWithSpace.split("").map((char) => {
                 const isCorrect = userInput[userIndex] === char;
                 if (isCorrect) {
                     userIndex++;
@@ -113,7 +112,7 @@ const LessonDetails = ({ lesson, pages, onBackToList, onError, resetPageErrors, 
                         {letterData.char}
                     </span>
                 ))}
-                {(wordIndex < wordsWithStyles.length - 1) && (
+                {wordIndex < wordsWithStyles.length - 1 && (
                     <span className={styles.space}> </span>
                 )}
             </span>
@@ -162,7 +161,6 @@ const LessonDetails = ({ lesson, pages, onBackToList, onError, resetPageErrors, 
         <div className={styles.container}>
             {showDescription ? (
                 <DescriptionModal text={currentPage.description} onClose={handleStartLesson}/>
-          
             ) : (
                 <>
                     <div className={styles.sidebar}>
@@ -191,7 +189,19 @@ const LessonDetails = ({ lesson, pages, onBackToList, onError, resetPageErrors, 
                                 Errors Left: {currentPage.errorCount >= currentPage.currentErrors ? currentPage.errorCount - currentPage.currentErrors : 0}
                             </div>
                         </div>
-                        <Keyboard text={currentPage.text} currentIndex={cursorIndex} language={lesson.language} />
+
+                        {lesson.language === 'Numbers' ? (
+                            <NumberKeyboard
+                                text={currentPage.text} // Pass the text from the current page
+                                currentIndex={cursorIndex} // Pass the current index
+                                onNumberClick={(num) => {
+                                    setUserInput((prev) => prev + num);
+                                    setCursorIndex((prev) => prev + 1);
+                                }}
+                            />
+                        ) : (
+                            <Keyboard text={currentPage.text} currentIndex={cursorIndex} language={lesson.language} />
+                        )}
                     </div>
 
                     <MyModal

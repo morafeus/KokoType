@@ -21,8 +21,4 @@
     <ProjectReference Include="..\KokoType.UserService.DAL\KokoType.UserService.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
-
 </Project>

@@ -55,6 +55,27 @@ export const fetchResults = async(options, navigate) => {
     }
 }
 
+export const fetchAllResults = async(options, navigate) => {
+    try
+    { 
+        const {data} = await $authHost.post('api/Test/getAllUser', options).catch(async function  (err) {
+            const original = err.config;
+            if (err.response.status === 401) {
+                console.log('401');
+                await refreshToken();
+                $authHost.request(original).catch(() => {
+                    navigate(All_Routes.AUTH_PAGE);
+                });
+            
+            }
+        });
+        return data;
+    }
+    catch(e){
+        console.log(e);
+    }
+}
+
 export const getBest = async(options, navigate) => {
     try
     { 
@@ -75,3 +96,67 @@ export const getBest = async(options, navigate) => {
         console.log(e);
     }
 }
+
+export const fetchAll = async(navigate) => {
+    try
+    { 
+        const {data} = await $authHost.post('api/Test/getAll').catch(async function  (err) {
+            const original = err.config;
+            if (err.response.status === 401) {
+                console.log('401');
+                await refreshToken();
+                $authHost.request(original).catch(() => {
+                    navigate(All_Routes.AUTH_PAGE);
+                });
+            
+            }
+        });
+        return data;
+    }
+    catch(e){
+        console.log(e);
+    }
+}
+
+export const fetchToday = async(navigate) => {
+    try
+    { 
+        const {data} = await $authHost.post('api/Test/getToday').catch(async function  (err) {
+            const original = err.config;
+            if (err.response.status === 401) {
+                console.log('401');
+                await refreshToken();
+                $authHost.request(original).catch(() => {
+                    navigate(All_Routes.AUTH_PAGE);
+                });
+            
+            }
+        });
+        return data;
+    }
+    catch(e){
+        console.log(e);
+    }
+}
+
+export const fetchClassic = async(navigate) => {
+    try
+    { 
+        const {data} = await $authHost.post('api/Test/getClassic').catch(async function  (err) {
+            const original = err.config;
+            if (err.response.status === 401) {
+                console.log('401');
+                await refreshToken();
+                $authHost.request(original).catch(() => {
+                    navigate(All_Routes.AUTH_PAGE);
+                });
+            
+            }
+        });
+        return data;
+    }
+    catch(e){
+        console.log(e);
+    }
+}
+

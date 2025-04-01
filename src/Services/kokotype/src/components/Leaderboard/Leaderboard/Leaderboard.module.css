@@ -1,0 +1,118 @@
+.leaderboardContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовок страницы */
+.leaderboardContainer h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Контейнер для заголовков */
+.leaderboardHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--second-color);
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: var(--test-type-font-color);
+}
+
+/* Ячейки заголовка */
+.leaderboardColumn {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+/* Стили для списка пользователей */
+.leaderboardList {
+    max-height: 350px;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Стили для каждого элемента списка */
+.leaderboardItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--main-font-color);
+    color: var(--test-font-color);
+    background-color: var(--second-color);
+}
+
+/* Выделение при наведении */
+.leaderboardItem:hover {
+    background-color: var(--test-font-color);
+    color: var(--main-color);
+}
+
+/* Стили для первых трех мест */
+.gold {
+    color: gold; /* Золотой цвет для первого места */
+}
+
+.silver {
+    color: silver; /* Серебряный цвет для второго места */
+}
+
+.bronze {
+    color: #cd7f32; /* Бронзовый цвет для третьего места */
+}
+
+/* Контейнер для строк */
+.leaderboardRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Ячейки */
+.leaderboardCell {
+    flex: 1;
+    text-align: center;
+    padding: 5px 10px;
+    color: inherit; /* Используем цвет шрифта родительского элемента */
+}
+
+/* Дополнительный стиль для текста в ячейках */
+.leaderboardCell span {
+    font-weight: bold;
+}
+
+/* Дополнительный стиль только для уровня пользователя */
+.levelCell {
+    color: var(--main-font-color); /* Цвет текста уровня */
+    font-weight: bold; /* Выделяем уровень жирным шрифтом */
+}
+
+/* Стили для текущего пользователя */
+.currentUserRow {
+    position: sticky; /* Закрепляем строку */
+    bottom: 0; /* Выравниваем к низу контейнера */
+    background-color: rgba(0, 123, 255, 0.1); /* Легкий фон для выделения текущего пользователя */
+    display: flex; /* Стили для отображения */
+    justify-content: space-between;
+    padding: 10px; /* Отступы */
+    font-weight: bold; /* Жирный текст */
+    color: var(--main-font-color); /* Цвет текста */
+    border-top: 2px solid var(--main-font-color); /* Верхняя граница */
+}
+
+/* Ячейки текущего пользователя */
+.currentUserRow .leaderboardCell {
+    color: var(--main-font-color); /* Цвет текста в строке текущего пользователя */
+}

@@ -66,6 +66,22 @@ namespace KokoType.TestService.WebAPI.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("getAllUser")]
+        [Authorize]
+        public async Task<IActionResult> GetAllResultsAsync([FromBody] GetStatsDTO getResult)
+        {
+            try
+            {
+                List<Statistic> statistics = await _testService.GetStatisticList(getResult);
+                return Ok(statistics);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
 
         [HttpPost]
         [Route("getBest")]
@@ -75,6 +91,54 @@ namespace KokoType.TestService.WebAPI.Controllers
             try
             {
                 StatsModel statistics = await _testService.GetStatsById(getBest);
+                return Ok(statistics);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        [Route("getAll")]
+        [Authorize]
+        public async Task<IActionResult> GetAll()
+        {
+            try
+            {
+                List<Statistic> statistics = await _testService.GetAll();
+                return Ok(statistics);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        [Route("getToday")]
+        [Authorize]
+        public async Task<IActionResult> GetToday()
+        {
+            try
+            {
+                List<Statistic> statistics = await _testService.GetToday();
+                return Ok(statistics);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        [Route("getClassic")]
+        [Authorize]
+        public async Task<IActionResult> GetClassic()
+        {
+            try
+            {
+                List<Statistic> statistics = await _testService.GetClassic();
                 return Ok(statistics);
             }
             catch (Exception ex)

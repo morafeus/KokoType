@@ -14,6 +14,7 @@ namespace KokoType.UserService.BLL.Interfaces
         public Task LogoutUser(DeleteUserModelDTO user);
         public Task<UserModel> GetMe(DeleteUserModelDTO deleteUserModelDTO);
         public Task<UserModel> UpdateLvl(UpdateUserLvlDTO userModel);
+        public Task<UserModel> UpdateTestCount(Guid id);
         public Task<UserModel> UpdateUser(UpdateUserDTO userModel);
         public Task<List<UserModel>> GetUsers();
     }

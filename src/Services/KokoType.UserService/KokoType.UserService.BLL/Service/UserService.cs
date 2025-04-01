@@ -146,6 +146,14 @@ namespace KokoType.UserService.BLL.Service
             }
         }
 
+        public async Task<UserModel> UpdateTestCount(Guid id)
+        {
+            UserModel userModel = await _unitOfWork.UserRepository.GetById(id);
+            userModel.TestStarted += 1;
+            await _unitOfWork.UserRepository.Update(userModel);
+            return userModel;
+        }
+
         public async Task<UserModel> UpdateUser(UpdateUserDTO user)
         {
             UserModel userModel = await _unitOfWork.UserRepository.GetById(user.Id);
@@ -158,7 +166,20 @@ namespace KokoType.UserService.BLL.Service
         {
             try
             {
-                UserModel userModel = await _unitOfWork.UserRepository.GetById(user.Id);
+                UserModel userModel = await _unitOfWork.UserRepository.GetByIdFull(user.Id);
+
+                var users = await _unitOfWork.UserRepository.GetAll();
+                int count = users.Count();
+
+                if (userModel.Achives != null)
+                {
+                    foreach (Achivement achivement in userModel.Achives)
+                    {
+                        float percent = achivement.Users.Count() / count * 100;
+                        achivement.Description = "this achive has only " + percent + "% users";
+                    }
+                }
+
                 return userModel;
             }
             catch (Exception ex)
@@ -179,5 +200,7 @@ namespace KokoType.UserService.BLL.Service
                 throw new Exception("invalid user lvl");
             }
         }
+
+
     }
 }

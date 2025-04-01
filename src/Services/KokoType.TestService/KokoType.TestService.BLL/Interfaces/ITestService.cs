@@ -9,6 +9,10 @@ namespace KokoType.TestService.BLL.Interfaces
         public Task<string> GetWordTest(TestParams testParams);
         public Task<Statistic> SetResult(SaveResultDTO saveResult);
         public Task<List<Statistic>> GetStatisticList(GetResultDTO getResult);
+        public Task<List<Statistic>> GetStatisticList(GetStatsDTO getResult);
         public Task<StatsModel> GetStatsById(GetStatsDTO getStatsDTO);
+        public Task<List<Statistic>> GetAll();
+        public Task<List<Statistic>> GetToday();
+        public Task<List<Statistic>> GetClassic();
     }
 }

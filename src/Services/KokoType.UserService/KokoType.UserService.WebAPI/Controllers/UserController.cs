@@ -12,10 +12,12 @@ namespace KokoType.UserService.WebAPI.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly IAchivementService _achivementService;
 
-        public UserController(IUserService userService)
+        public UserController(IUserService userService, IAchivementService achivementService)
         {
             this._userService = userService;
+            this._achivementService = achivementService;
         }
 
         [HttpPost]
@@ -103,6 +105,22 @@ namespace KokoType.UserService.WebAPI.Controllers
         }
 
         [HttpPost]
+        [Route("updateTestCount")]
+        [Authorize]
+        public async Task<IActionResult> UpdateTestCountAsync(DeleteUserModelDTO userdto)
+        {
+            try
+            {
+                UserModel user = await _userService.UpdateTestCount(userdto.Id);
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
         [Route("updateUser")]
         [Authorize]
         public async Task<IActionResult> UpdateUserAsync(UpdateUserDTO userModel)
@@ -142,6 +160,39 @@ namespace KokoType.UserService.WebAPI.Controllers
             {
                 List<UserModel> user = await _userService.GetUsers();
                 return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        [Route("AddAchive")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> AddAchive(AchivementDTO achivement)
+        {
+            try
+            {
+                await _achivementService.AddAchivement(achivement);
+                return Ok(achivement);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        [HttpPost]
+        [Route("AddUserAchive")]
+        [Authorize]
+        public async Task<IActionResult> AddUserAchive(AchivementUserDTO achivement)
+        {
+            try
+            {
+                await _achivementService.AddUserAchivement(achivement);
+                return Ok(achivement);
             }
             catch (Exception ex)
             {
