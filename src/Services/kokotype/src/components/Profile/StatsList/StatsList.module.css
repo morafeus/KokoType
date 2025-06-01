@@ -1,0 +1,124 @@
+.statsList {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
+    background-color: var(--second-color);
+}
+
+.headerRow {
+    display: flex; /* Используем Flexbox для выравнивания заголовков в строку */
+    font-weight: bold; /* Жирный шрифт для заголовков */
+    border-bottom: 3px solid var(--main-font-color); /* Нижняя граница для визуального отделения */
+    padding: 10px; /* Отступы для заголовков */
+    margin-bottom: 10px; /* Отступ между заголовками и строками */
+}
+
+.headerItem {
+    padding: 5px; /* Отступы для элементов заголовков */
+    text-align: center; /* Выравнивание текста по центру */
+    flex-grow: 0; /* Запрет на растяжение */
+}
+
+/* Установка фиксированной ширины для разных заголовков */
+.headerItem:nth-child(1) {
+    flex: 0 0 10%; /* 10% ширины для Accuracy */
+}
+
+.headerItem:nth-child(2) {
+    flex: 0 0 10%; /* 10% ширины для Speed */
+}
+
+.headerItem:nth-child(3) {
+    flex: 0 0 40%; /* 35% ширины для Description */
+}
+
+.headerItem:nth-child(4) {
+    flex: 0 0 10%; /* 10% ширины для Experience Count */
+}
+
+.headerItem:nth-child(5) {
+    flex: 0 0 30%; /* 35% ширины для Date */
+}
+
+.statsContainer {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение блоков */
+    overflow-y: auto; /* Включает вертикальную прокрутку */
+    max-height: 300px; /* Максимальная высота для прокрутки */
+}
+
+.statBlock {
+    display: flex; /* Используем Flexbox для выравнивания в строку */
+    justify-content: space-between; /* Распределяем элементы по ширине */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Отступ между блоками */
+    border-bottom: 3px solid var(--main-color);
+}
+
+.statItem {
+    padding: 5px; /* Отступы для элементов внутри блока */
+    text-align: center; /* Выравнивание текста по центру */
+    flex-grow: 0; /* Запрет на растяжение */
+}
+
+/* Установка фиксированной ширины для элементов */
+.statItem:nth-child(1) {
+    flex: 0 0 10%; /* 10% ширины для Accuracy */
+}
+
+.statItem:nth-child(2) {
+    flex: 0 0 10%; /* 10% ширины для Speed */
+}
+
+.statItem:nth-child(3) {
+    flex: 0 0 40%; /* 35% ширины для Description */
+}
+
+.statItem:nth-child(4) {
+    flex: 0 0 10%; /* 10% ширины для Experience Count */
+}
+
+.statItem:nth-child(5) {
+    flex: 0 0 30%; /* 35% ширины для Date */
+}
+
+/* Отдельный стиль для столбца Experience Count */
+.statItem:nth-child(4) {
+    font-weight: bold; /* Жирный шрифт для Experience Count */
+    color: var(--main-font-color); /* Цвет текста для Experience Count */
+}
+
+.bestSpeed {
+    background: linear-gradient(45deg, #ffcc00, var(--main-font-color));
+    background-size: 400% 400%;  /* Увеличиваем размер градиента для плавного перемещения */
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(144, 171, 6, 0.6);
+    animation: blinkShadow 2s infinite, gradientMove 6s ease infinite;
+}
+
+
+@keyframes blinkShadow {
+    0% {
+        box-shadow: 0 0 8px rgba(144, 171, 6, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(144, 171, 6, 1);
+    }
+    100% {
+        box-shadow: 0 0 8px rgba(144, 171, 6, 0.6);
+    }
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

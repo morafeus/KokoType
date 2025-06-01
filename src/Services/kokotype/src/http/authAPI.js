@@ -105,6 +105,28 @@ export const updateLvl = async({id, exp}, navigate) => {
     return null;
 };
 
+export const updateTestCount = async({id, userName}, navigate) => {
+    try{
+        await $authHost.post('api/User/updateTestCount', {id, userName}).catch(async function  (err) {
+            const original = err.config;
+            if (err.response.status === 401) {
+                console.log('401');
+                await refreshToken();
+                $authHost.request(original).catch(() => {
+                    navigate(All_Routes.AUTH_PAGE);
+                });
+            
+            }
+        });
+        const access =await refreshToken();
+        return access;
+    }
+    catch(e) {
+        console.log('invalid user', e);
+    }
+    return null;
+};
+
 export const getMe = async ({id, userName}, navigate) => {
     const data = await $authHost.post('api/User/getMe', {id, userName}).catch(async function  (err) {
         const original = err.config;
@@ -136,7 +158,23 @@ export const logout = async ({id, userName}, navigate) => {
 }
 
 export const deleteUser = async ({id, userName}, navigate) => {
-    const data = await $authHost.post('KokoType.User/User/delete', {id, userName}).catch(async function  (err) {
+    const data = await $authHost.post('api/User/delete', {id, userName}).catch(async function  (err) {
+        const original = err.config;
+        if (err.response.status === 401) {
+            console.log('401');
+            await refreshToken();
+            $authHost.request(original).catch(() => {
+                navigate(All_Routes.AUTH_PAGE);
+            });
+        
+        }
+    });
+    return data;
+}
+
+
+export const addUserAchive = async ({userId, achiveName}, navigate) => {
+    const data = await $authHost.post('api/User/addUserAchive', {userId, achiveName}).catch(async function  (err) {
         const original = err.config;
         if (err.response.status === 401) {
             console.log('401');

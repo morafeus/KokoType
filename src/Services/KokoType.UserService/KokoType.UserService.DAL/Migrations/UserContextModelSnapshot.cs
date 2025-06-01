@@ -120,6 +120,9 @@ namespace KokoType.UserService.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
 
+                    b.Property<int>("TestStarted")
+                        .HasColumnType("int");
+
                     b.Property<int>("UserExp")
                         .HasColumnType("int");
 

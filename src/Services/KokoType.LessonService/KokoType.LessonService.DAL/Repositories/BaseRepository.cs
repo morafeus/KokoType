@@ -1,50 +1,62 @@
-﻿using KokoType.LessonService.DAL.Interfaces;
+﻿using KokoType.LessonService.DAL.Context;
+using KokoType.LessonService.DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
-
 
 namespace KokoType.LessonService.DAL.Repositories
 {
     public class BaseRepository<T> : IRepository<T> where T : class
     {
+        protected IDbContextFactory<LessonContext> _contextFactory;
 
-        private DbContext _context;
-        public DbSet<T> _table;
-
-        public BaseRepository(DbContext context)
+        public BaseRepository(IDbContextFactory<LessonContext> contextFactory)
         {
-            _context = context;
-            _table = this._context.Set<T>();
+            _contextFactory = contextFactory;
         }
 
         public async Task Add(T entity)
         {
-            await _table.AddAsync(entity);
-            await _context.SaveChangesAsync();
+            using (var context = _contextFactory.CreateDbContext())
+            {
+                context.Set<T>().Add(entity);
+                await context.SaveChangesAsync();
+            }
         }
 
         public async Task Delete(T entity)
         {
-            _table.Remove(entity);
-            await _context.SaveChangesAsync();
+            using (var context = _contextFactory.CreateDbContext())
+            {
+                context.Set<T>().Remove(entity);
+                await context.SaveChangesAsync();
+            }
         }
 
         public async Task<IEnumerable<T>> GetAll()
         {
-            return await _table.AsNoTracking().ToListAsync<T>();
+            using (var context = _contextFactory.CreateDbContext())
+            {
+                return await context.Set<T>().AsNoTracking().ToListAsync();
+            }
         }
 
         public async Task<T> GetById(Guid id)
         {
-            var item = await _table.FindAsync(id);
-            if (item == null)
-                throw new Exception("Element not found");
-            return item;
+            using (var context = _contextFactory.CreateDbContext())
+            {
+                var item = await context.Set<T>().FindAsync(id);
+                if (item == null)
+                    throw new Exception("Element not found");
+                return item;
+            }
         }
 
         public async Task Update(T entity)
         {
-            _table.Update(entity);
-            await _context.SaveChangesAsync();
+            using (var context = _contextFactory.CreateDbContext())
+            {
+                context.Set<T>().Update(entity);
+                await context.SaveChangesAsync();
+            }
         }
     }
 }

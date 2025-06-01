@@ -129,6 +129,9 @@ namespace KokoType.TestService.BLL.Service
             {
                 Statistic newStat = _mapper.Map<Statistic>(saveResult);
                 await _unitOfWork.StatisticRepository.Add(newStat);
+
+
+                List<Statistic> stats = await _unitOfWork.StatisticRepository.GetByUser(saveResult.UserId);
                 return newStat;
             }
             catch (Exception ex)
@@ -148,6 +151,62 @@ namespace KokoType.TestService.BLL.Service
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        public async Task<List<Statistic>> GetStatisticList(GetStatsDTO getStats)
+        {
+            try
+            {
+                List<Statistic> stats = await _unitOfWork.StatisticRepository.GetByUser(getStats.Id);
+                return stats;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
+        }
+
+        public async Task<List<Statistic>> GetAll()
+        {
+            try
+            {
+                var stats = await _unitOfWork.StatisticRepository.GetAll();
+                return stats.ToList<Statistic>();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
+        }
+
+        public async Task<List<Statistic>> GetToday()
+        {
+            try
+            {
+                var stats = await _unitOfWork.StatisticRepository.GetByDateToday();
+                return stats.ToList<Statistic>();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public async Task<List<Statistic>> GetClassic()
+        {
+            try
+            {
+                var stats = await _unitOfWork.StatisticRepository.GetClassic();
+                return stats.ToList<Statistic>();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
         }
 
         public async Task<StatsModel> GetStatsById(GetStatsDTO getStats)

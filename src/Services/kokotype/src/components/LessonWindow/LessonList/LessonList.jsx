@@ -1,27 +1,40 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import styles from "./LessonList.module.css"; // Импортируем модуль стилей
 import Context from "../../../context";
 
-const LessonList = ({ lessons, onSelectLesson, onDeleteLesson, onAddLesson, selectedLessonId, onBack, selectedCourse }) => {
+const LessonList = ({ lessons, onSelectLesson, onDeleteLesson, onAddLesson, selectedLessonId, onBack, selectedCourse}) => {
   const context = useContext(Context);
+  
+  // Создаем объект для хранения ссылок на уроки
+  const lessonRefs = useRef({});
 
   const handleDelete = (lessonId) => {
-    onDeleteLesson(lessonId); // Удаление урока
+    onDeleteLesson(lessonId);
   };
 
   const handleAddLesson = () => {
-    onAddLesson(); // Добавление нового урока
+    onAddLesson();
   };
 
   const handleSelect = (lessonId) => {
     if (selectedLessonId === lessonId) {
-      onBack(); // Вызов функции handleBack только если повторно нажали на выбранный урок
+      onBack();
     } else {
-      onSelectLesson(lessonId); // Выбор нового урока
+      onSelectLesson(lessonId);
     }
   };
 
-  // Фильтруем уроки по выбранному курсу
+  const handleCloseClick = (lessonId) => {
+    const lessonElement = lessonRefs.current[lessonId]; // Получаем элемент по ID
+    if (lessonElement) {
+      lessonElement.classList.add(styles.shake); // Добавляем класс анимации
+
+      setTimeout(() => {
+        lessonElement.classList.remove(styles.shake); // Убираем класс анимации
+      }, 500); // Время анимации должно совпадать с CSS
+    }
+  };
+
   const filteredLessons = selectedCourse
     ? lessons.filter(lesson => lesson.language === selectedCourse)
     : lessons;
@@ -40,17 +53,31 @@ const LessonList = ({ lessons, onSelectLesson, onDeleteLesson, onAddLesson, sele
         <>
           <ul className={styles.list}>
             {filteredLessons.map((lesson, index) => {
+              let lessonClass = styles.available; // По умолчанию доступный
+
+              if (lesson.status === 'done') {
+                lessonClass = styles.done; // Зеленый для завершенных
+              } else if (lesson.status === 'close') {
+                lessonClass = styles.close; // Серый для закрытых
+              }
+
               const selectedClass = selectedLessonId === lesson.id ? styles.selected : '';
               const inactiveClass = selectedLessonId && selectedLessonId !== lesson.id ? styles.inactive : '';
+              const noHoverDescriptionClass = selectedLessonId === lesson.id ? styles.noHoverDescription : ''; // Условие для исключения hover на описании
 
               return (
-                <li key={lesson.id} className={`${styles.listItem} ${selectedClass} ${inactiveClass}`} onClick={() => {
-                  // Блокируем выбор, если уже выбран урок
-                  if (selectedLessonId && selectedLessonId !== lesson.id) {
-                    return; // Не выполняем выбор, если уже выбран другой урок
-                  }
-                  handleSelect(lesson.id);
-                }}>
+                <li
+                  key={lesson.id}
+                  ref={(el) => (lessonRefs.current[lesson.id] = el)} // Сохраняем ссылку на элемент
+                  className={`${styles.listItem} ${lessonClass} ${selectedClass} ${inactiveClass} ${noHoverDescriptionClass}`} // Добавляем условный класс
+                  onClick={() => {
+                    if (lesson.status === 'close') {
+                      handleCloseClick(lesson.id); // Обрабатываем клик по закрытому уроку
+                    } else {
+                      handleSelect(lesson.id);
+                    }
+                  }}
+                >
                   <div>
                     {selectedLessonId === lesson.id ? (
                       <button className={styles.backButton} onClick={onBack}>
@@ -58,14 +85,14 @@ const LessonList = ({ lessons, onSelectLesson, onDeleteLesson, onAddLesson, sele
                       </button>
                     ) : (
                       <button className={styles.button}>
-                        {index + 1}. {lesson.name} {/* Нумерация уроков */}
+                        {index + 1}. {lesson.name}
                       </button>
                     )}
                     {context.user.user.Role === "Admin" && (
                       <button
                         className={styles.deleteButton}
-                        onClick={(e) => { 
-                          e.stopPropagation(); // Останавливаем всплытие события для кнопки удаления
+                        onClick={(e) => {
+                          e.stopPropagation();
                           handleDelete(lesson.id);
                         }}
                       >
@@ -73,17 +100,17 @@ const LessonList = ({ lessons, onSelectLesson, onDeleteLesson, onAddLesson, sele
                       </button>
                     )}
                   </div>
-                  {context.user.user.Role !== "Admin" && (
-                  <p className={styles.description}>{lesson.description}</p>
+                  {context.user.user.Role !== "Admin" && lesson.status !== 'close' && (
+                    <p className={styles.description}>{lesson.description}</p>
                   )}
                 </li>
               );
             })}
           </ul>
-          {filteredLessons.length === 0 && <p>No lessons available</p>} {/* Сообщение, если нет уроков */}
+          {filteredLessons.length === 0 && <p>No lessons available</p>}
         </>
       ) : (
-        <p>Please select a course.</p> // Сообщение, если курс не выбран
+        <p>Please select a course.</p>
       )}
     </div>
   );

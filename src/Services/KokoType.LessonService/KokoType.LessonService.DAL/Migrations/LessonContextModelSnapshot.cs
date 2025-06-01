@@ -40,6 +40,12 @@ namespace KokoType.LessonService.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid?>("NextLessonId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("PreviousLessonId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -101,8 +107,6 @@ namespace KokoType.LessonService.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LessonId");
-
                     b.ToTable("LessonResults");
                 });
 
@@ -111,17 +115,6 @@ namespace KokoType.LessonService.DAL.Migrations
                     b.HasOne("KokoType.LessonService.DAL.Models.LessonModel", null)
                         .WithMany("Pages")
                         .HasForeignKey("LessonModelId");
-                });
-
-            modelBuilder.Entity("KokoType.LessonService.DAL.Models.LessonResult", b =>
-                {
-                    b.HasOne("KokoType.LessonService.DAL.Models.LessonModel", "Lesson")
-                        .WithMany()
-                        .HasForeignKey("LessonId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Lesson");
                 });
 
             modelBuilder.Entity("KokoType.LessonService.DAL.Models.LessonModel", b =>

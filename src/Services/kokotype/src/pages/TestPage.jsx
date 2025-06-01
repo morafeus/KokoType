@@ -15,15 +15,14 @@ const TestPage = observer(() => {
         section2: "words",
         section3: "15",
         selectedLanguage: "English",
-        selectedDifficulty: "easy"
+        selectedDifficulty: "medium"
     });
 
-    const [isCookiesLoaded, setIsCookiesLoaded] = useState(false); // Флаг для отслеживания загрузки cookies
+    const [isCookiesLoaded, setIsCookiesLoaded] = useState(false); 
 
-    // Функция загрузки данных теста из API или из контекста
     const loadData = async () => {
         const options = {
-            Options: selectedItems.section1, // Пример передачи данных
+            Options: selectedItems.section1,
             TextType: selectedItems.section2,
             Limit: selectedItems.section3,
             Language: selectedItems.selectedLanguage,
@@ -32,53 +31,47 @@ const TestPage = observer(() => {
         let data;
         if (context.test.testStats.text != null) {
             data = context.test.testStats.text;
-            context.test.setTestStats({}); // Очищаем testStats, если текст был найден в контексте
+            context.test.setTestStats({});
         } else {
             data = await fetchTest(options); 
         }
 
-        // Проверяем, является ли data массивом, и объединяем его в строку
         if (Array.isArray(data)) {
-            const formattedText = data.join(' '); // Объединяем элементы массива в строку
+            const formattedText = data.join(' ');
             setText(formattedText); 
         } else {
             setText(data); 
         }
     };
 
-    // Загрузка состояния из cookies
     useEffect(() => {
         const savedSelectedItems = Cookies.get('selectedItems');
         if (savedSelectedItems) {
             const parsedItems = JSON.parse(savedSelectedItems);
-            // Проверяем, отличается ли сохраненное состояние от текущего состояния
             if (JSON.stringify(parsedItems) !== JSON.stringify(selectedItems)) {
                 setSelectedItems(parsedItems);
             }
         }
-        setIsCookiesLoaded(true); // Обновляем флаг после загрузки cookies
-    }, []); // Пустой массив зависимостей — этот effect выполнится только один раз
+        setIsCookiesLoaded(true); 
+    }, []);
 
-    // Сохраняем selectedItems в cookies при их изменении
     useEffect(() => {
         if (selectedItems) {
-            Cookies.set('selectedItems', JSON.stringify(selectedItems), { expires: 7 }); // Сохраняем на 7 дней
+            Cookies.set('selectedItems', JSON.stringify(selectedItems), { expires: 7 }); 
         }
-    }, [selectedItems]); // Этот effect выполнится только при изменении selectedItems
+    }, [selectedItems]); 
 
-    // Загружаем данные, если selectedItems изменились
     useEffect(() => {
-        if (isCookiesLoaded) {  // Проверяем, что cookies загружены
+        if (isCookiesLoaded) { 
             try {
-                setText(''); // Очищаем текст перед новой загрузкой
-                loadData(); // Загружаем данные
+                setText('');
+                loadData(); 
             } catch (e) {
                 console.log('Invalid network');
             }
         }
-    }, [selectedItems, isCookiesLoaded]); // Зависимость от selectedItems и флага cookiesLoaded
+    }, [selectedItems, isCookiesLoaded]); 
 
-    // Если cookies еще не загружены или текст не загружен, показываем анимацию загрузки
     if (!isCookiesLoaded || !text) {
         return (
             <LoadingAnimation>We are typing your test right now...</LoadingAnimation>

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace KokoType.TestService.DAL.ViewModels
 {
@@ -11,5 +7,6 @@ namespace KokoType.TestService.DAL.ViewModels
         public float Accuracy { get; set; }
         public float Speed { get; set; }
         public int TestCount { get; set; }
+        public float ExpCount { get; set; }
     }
 }

@@ -15,6 +15,7 @@ namespace KokoType.UserService.BLL.MapProfiles
                 .ForMember(dest => dest.Salt, opt => opt.Ignore()) 
                 .ForMember(dest => dest.UserLvl, opt => opt.MapFrom(src => 0))
                 .ForMember(dest => dest.UserExp, opt => opt.MapFrom(src => 0))
+                .ForMember(dest => dest.TestStarted, opt => opt.MapFrom(src => 0))
                 .ForMember(dest => dest.RegistrateDate, opt => opt.MapFrom(src => DateTime.Now))
                 .ForMember(dest => dest.About, opt => opt.MapFrom(src => string.Empty))
                 .ForMember(dest => dest.ImageUrl, opt => opt.MapFrom(src => string.Empty))

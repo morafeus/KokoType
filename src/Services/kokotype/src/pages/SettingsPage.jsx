@@ -13,7 +13,7 @@ const SettingsPage = observer(() => {
       light: {
         '--main-color': '#f0f0f0',
         '--second-color': '#ffffff',
-        '--main-font-color': '#FFD700',
+        '--main-font-color': '#9ACD32',
         '--test-font-color': '#285956',
         '--test-type-font-color': '#c5c6c7',
         '--test-invalid-font-color': '#f76c6c',

@@ -65,7 +65,7 @@ const StatisticSettings = () => {
         context.params.setParams(newParams);
 
         // Сохраняем в cookies
-        Cookies.set('statisticSettings', JSON.stringify(settings), { expires: 7 }); 
+        Cookies.set('statisticSettings', JSON.stringify(settings), { expires: 30 }); 
     }, [settings, context.params]); 
 
     return (

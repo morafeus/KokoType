@@ -16,6 +16,8 @@ namespace KokoType.UserService.DAL.Models
         public int UserExp { get; set; }
         public string RefreshToken { get; set; }
 
+        public int TestStarted { get; set; }
+
         public List<Role> Roles { get; set; }
         public List<Achivement> Achives { get; set; }
     }

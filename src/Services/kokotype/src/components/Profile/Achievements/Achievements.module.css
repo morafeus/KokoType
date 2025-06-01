@@ -1,0 +1,65 @@
+.achievementsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    background-color: var(--second-color);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.popup {
+    position: absolute; /* Расположение всплывающего окна */
+    transform: translateY(80px);
+    background-color: var(--main-color); /* Цвет фона */
+    border: 1px solid #ddd; /* Цвет границы */
+    border-radius: 5px; /* Скругление краев */
+    padding: 10px; /* Отступ внутри */
+    z-index: 10; /* Выше других элементов */
+    width: 300px; /* Ширина всплывающего окна */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); /* Тень для эффекта */
+    transition: opacity 0.2s; /* Плавный переход для отображения */
+}
+
+.achiveItem {
+    position: relative; /* Убедитесь, что контейнер является относительным, чтобы всплывающее окно позиционировалось относительно него */
+    width: calc(10% - 10px); /* Ширина элемента, чтобы влезало 10 в строку с учетом отступов */
+    margin: 5px; /* Отступ между элементами */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achiveImage {
+    width: 60px; /* Ширина изображения */
+    height: 60px; /* Высота изображения */
+    border-radius: 10px; /* Закругление углов изображения */
+    margin: 10px;
+    position: relative; /* Для поднятия над остальными элементами */
+    z-index: 1; /* Поднимаем изображение над другими элементами */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); /* Тень под изображением для эффекта приподнятости */
+}
+
+.lockedAchive {
+    width: 60px; /* Ширина заблокированного элемента */
+    height: 60px; /* Высота заблокированного элемента */
+    background-color: var(--second-color); /* Цвет фона для заблокированного элемента */
+    border-radius: 10px; /* Закругление углов */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--test-type-font-color); /* Цвет текста */
+    font-weight: bold;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5); /* Увеличенная внутренняя тень для более сильного эффекта впалости */
+}
+
+.lockedText {
+    text-align: center; /* Центрируем текст */
+}
+
+.achiveName {
+    color: var(--main-font-color)
+}
+
+.achiveDescription {
+    color: var(--test-type-font-color);
+}

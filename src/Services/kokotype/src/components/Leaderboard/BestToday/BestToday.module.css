@@ -1,0 +1,103 @@
+.bestTodayContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовок страницы */
+.bestTodayContainer h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Контейнер для заголовков таблицы */
+.bestTodayHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--second-color);
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: var(--test-type-font-color);
+}
+
+/* Ячейки заголовка */
+.bestTodayColumn {
+    flex: 1; /* Делаем все колонки равной ширины */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+/* Стили для списка тестов сегодня */
+.bestTodayList {
+    max-height: 280px;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Стили для каждого элемента списка */
+.bestTodayItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--main-font-color);
+    color: var(--test-font-color);
+    background-color: var(--second-color);
+}
+
+/* Выделение при наведении */
+.bestTodayItem:hover {
+    background-color: var(--test-font-color);
+    color: var(--main-color);
+}
+
+/* Контейнер для строк */
+.bestTodayRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Ячейки */
+.bestTodayCell {
+    flex: 1; /* Делаем все ячейки равной ширины */
+    text-align: center;
+    padding: 5px 10px;
+    color: inherit; /* Используем цвет шрифта родительского элемента */
+    white-space: nowrap; /* Запрещаем перенос слов */
+    overflow: hidden; /* Прячем лишний текст */
+    text-overflow: ellipsis; /* Добавляем многоточие для длинного текста */
+}
+
+/* Дополнительный стиль только для уровня пользователя (если нужно) */
+.levelCell {
+    color: var(--main-font-color); /* Цвет текста уровня */
+    font-weight: bold; /* Выделяем уровень жирным шрифтом */
+}
+
+/* Стили для текущего пользователя (если нужно) */
+.currentUserRow {
+    position: sticky; /* Закрепляем строку */
+    bottom: 0; /* Выравниваем к низу контейнера */
+    background-color: rgba(0, 123, 255, 0.1); /* Легкий фон для выделения текущего пользователя */
+    display: flex; /* Стили для отображения */
+    justify-content: space-between;
+    padding: 10px; /* Отступы */
+    font-weight: bold; /* Жирный текст */
+    color: var(--main-font-color); /* Цвет текста */
+    border-top: 2px solid var(--main-font-color); /* Верхняя граница */
+}
+
+/* Ячейки текущего пользователя */
+.currentUserRow .bestTodayCell {
+    color: var(--main-font-color); /* Цвет текста в строке текущего пользователя */
+}

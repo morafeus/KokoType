@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KokoType.LessonService.DAL.Migrations
 {
     [DbContext(typeof(LessonContext))]
-    [Migration("20250306102531_UpdateLessonPage")]
-    partial class UpdateLessonPage
+    [Migration("20250314090700_UpdateLesson")]
+    partial class UpdateLesson
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,6 +42,12 @@ namespace KokoType.LessonService.DAL.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("NextLessonId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("PreviousLessonId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("status")
                         .IsRequired()
@@ -104,8 +110,6 @@ namespace KokoType.LessonService.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LessonId");
-
                     b.ToTable("LessonResults");
                 });
 
@@ -114,17 +118,6 @@ namespace KokoType.LessonService.DAL.Migrations
                     b.HasOne("KokoType.LessonService.DAL.Models.LessonModel", null)
                         .WithMany("Pages")
                         .HasForeignKey("LessonModelId");
-                });
-
-            modelBuilder.Entity("KokoType.LessonService.DAL.Models.LessonResult", b =>
-                {
-                    b.HasOne("KokoType.LessonService.DAL.Models.LessonModel", "Lesson")
-                        .WithMany()
-                        .HasForeignKey("LessonId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Lesson");
                 });
 
             modelBuilder.Entity("KokoType.LessonService.DAL.Models.LessonModel", b =>

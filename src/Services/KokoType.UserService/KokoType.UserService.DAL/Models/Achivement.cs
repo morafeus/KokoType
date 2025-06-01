@@ -1,4 +1,6 @@
 ﻿
+using System.Text.Json.Serialization;
+
 namespace KokoType.UserService.DAL.Models
 {
     public class Achivement
@@ -9,6 +11,7 @@ namespace KokoType.UserService.DAL.Models
         public string Description { get; set; }
         public string Name { get; set; }
 
+        [JsonIgnore]
         public List<UserModel> Users { get; set; }
     }
 }

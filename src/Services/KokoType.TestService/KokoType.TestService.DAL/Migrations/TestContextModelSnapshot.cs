@@ -31,6 +31,9 @@ namespace KokoType.TestService.DAL.Migrations
                     b.Property<float>("Accuracy")
                         .HasColumnType("real");
 
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -38,6 +41,9 @@ namespace KokoType.TestService.DAL.Migrations
                     b.Property<string>("Errors")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("ExpCount")
+                        .HasColumnType("real");
 
                     b.Property<float>("Speed")
                         .HasColumnType("real");

@@ -29,7 +29,6 @@
 
 .selected {
     background-color: var(--second-color);
-    animation: pulse 3s infinite; /* Добавление анимации пульсации */
 }
 
 @keyframes pulse {
