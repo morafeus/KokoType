@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import LoadingAnimation from "../components/UI/LoadingAnimation/LoadingAnimation";
 import Context from "../context";
 import '../styles/page/LessonPage.css'; 
+import { addUserAchive } from "../http/authAPI";
 
 const LessonPage = observer(() => {
   const navigate = useNavigate();
@@ -54,9 +55,14 @@ const LessonPage = observer(() => {
     const id = selectedLesson.id;
     const userId = context.user.user.Id;
     const details = `${attempts}`;
+    const lesson = selectedLesson.last;
 
     // Завершаем урок
     await CompleteLesson({ id, userId, details }, navigate);
+    if(lesson == null)
+    {
+      await addUserAchive({userId, achiveName:"Qualified Typist"}, navigate);
+    }
 
     // После завершения обновляем статус урока и инициируем запрос
     setShouldFetch(true); // Устанавливаем флаг, чтобы запрос был выполнен
@@ -70,7 +76,7 @@ const LessonPage = observer(() => {
 
     const selectedLessonData = lessons.find((lesson) => lesson.id === lessonId);
     if (selectedLessonData) {
-      setSelectedLesson({ id: lessonId, language: selectedLessonData.language });
+      setSelectedLesson({ id: lessonId, language: selectedLessonData.language, last: selectedLessonData.nextLessonId});
       selectedLessonData.pages.forEach((page) => {
         resetPageErrors(selectedLessonData.id, page.id);
       });

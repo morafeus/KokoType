@@ -101,3 +101,15 @@
 .currentUserRow .bestClassicCell {
     color: var(--main-font-color); /* Цвет текста в строке текущего пользователя */
 }
+
+.gold {
+    color: gold; /* Золотой цвет для первого места */
+}
+
+.silver {
+    color: silver; /* Серебряный цвет для второго места */
+}
+
+.bronze {
+    color: #cd7f32; /* Бронзовый цвет для третьего места */
+}

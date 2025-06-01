@@ -33,7 +33,7 @@ namespace KokoType.UserService.BLL.Service
 
                 if (user.Achives == null)
                     user.Achives = new List<Achivement> { achive };
-                else
+                else if(!user.Achives.Contains(achive))
                     user.Achives.Add(achive); 
                 
                 await _unitOfWork.UserRepository.Update(user);

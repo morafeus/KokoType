@@ -8,6 +8,7 @@ import BestStats from '../BestStats/BestStats';
 import '../../../styles/page/ProfilePage.css';
 import LoadingAnimation from '../../UI/LoadingAnimation/LoadingAnimation';
 import StatsList from '../StatsList/StatsList';
+import Achievements from '../Achievements/Achievements';
 
 const UserProfilePage = ({ id, userName, onBackClick }) => {
     const navigate = useNavigate();
@@ -75,6 +76,7 @@ const UserProfilePage = ({ id, userName, onBackClick }) => {
                         my={false}
                     />
                 </div>
+                <Achievements achives={userData.achives} />
 
                 {/* Контейнер для статистики */}
                 <div className="statsContainer">

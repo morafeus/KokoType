@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Context from "../../context";
-import { updateLvl, updateTestCount } from "../../http/authAPI";
+import { addUserAchive, updateLvl, updateTestCount } from "../../http/authAPI";
 import { setResult } from "../../http/testAPI";
 import './TestWindow.css';
 import All_Routes from "../../utils/consts";
 import TestSettings from "../TestSettings/TestSettings";
 import ResetButton from '../UI/ResetButton/ResetButton';
+import { fetchClassicData } from "../Leaderboard/BestClassic/fetchClassicData";
 
 const TestWindow = ({ template }) => {
     const context = useContext(Context);
@@ -273,7 +274,6 @@ const TestWindow = ({ template }) => {
         if (context.user.isAuth) {
             const id = context.user.user.Id;
             const value = template.text.length * 3 - errorCount * 7 - elapsedTimeRef.current / 1000;
-            console.log(`Calculated Value: ${value} = ${template.text.length} * 3 - ${errorCount} * 7 - ${elapsedTimeRef.current/1000}`);
             let exp;
             if (value < 1) {
                 exp = 0;
@@ -301,8 +301,18 @@ const TestWindow = ({ template }) => {
             const errors = errorWords.join(' ');
             const expCount = exp
             await setResult({ userid: id, accuracy, speed, description, errors, expCount }, navigate);
+
+            if(description == "words,15,English,medium")
+            {
+                const { finalScores, currentUserScore } = await fetchClassicData(navigate, id);
+                await addUserAchive({userId: finalScores[0].userId, achiveName:"Champion"});
+                await addUserAchive({userId: finalScores[1].userId, achiveName:"Silver Keycap"});
+                await addUserAchive({userId: finalScores[2].userId, achiveName:"Best Tree"});
+            }
         }
         navigate(All_Routes.RESULT_PAGE);
+        
+        
         await refreshText();
     };
 

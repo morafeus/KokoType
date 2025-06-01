@@ -171,3 +171,19 @@ export const deleteUser = async ({id, userName}, navigate) => {
     });
     return data;
 }
+
+
+export const addUserAchive = async ({userId, achiveName}, navigate) => {
+    const data = await $authHost.post('api/User/addUserAchive', {userId, achiveName}).catch(async function  (err) {
+        const original = err.config;
+        if (err.response.status === 401) {
+            console.log('401');
+            await refreshToken();
+            $authHost.request(original).catch(() => {
+                navigate(All_Routes.AUTH_PAGE);
+            });
+        
+        }
+    });
+    return data;
+}

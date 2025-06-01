@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { observer } from 'mobx-react-lite';
 import { useNavigate } from 'react-router-dom';
 import Context from '../context';
-import { getMe, logout } from '../http/authAPI';
+import { addUserAchive, getMe, logout } from '../http/authAPI';
 import { fetchAllResults, getBest } from '../http/testAPI';
 import UserInfo from '../components/Profile/UserInfo/UserInfo';
 import UserStats from '../components/Profile/UserStats/UserStats';
@@ -13,6 +13,7 @@ import '../styles/page/ProfilePage.css';
 import LoadingAnimation from '../components/UI/LoadingAnimation/LoadingAnimation';
 import All_Routes from '../utils/consts';
 import Cookies from 'js-cookie';
+import Achievements from '../components/Profile/Achievements/Achievements';
 
 const ProfilePage = observer(() => {
     const context = useContext(Context);
@@ -34,6 +35,7 @@ const ProfilePage = observer(() => {
 
                 const best = await getBest({ id }, navigate);
                 setBestStats(best); 
+               
 
                 const stats = await fetchAllResults({id}, navigate);
                 console.log(stats);
@@ -78,6 +80,7 @@ const ProfilePage = observer(() => {
                         my={true}
                     />
                 </div>
+                <Achievements achives={userData.achives} />
 
                 <div className="statsContainer">
                     <div className="userStats">

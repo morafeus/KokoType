@@ -169,7 +169,7 @@ namespace KokoType.UserService.WebAPI.Controllers
 
         [HttpPost]
         [Route("AddAchive")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddAchive(AchivementDTO achivement)
         {
             try

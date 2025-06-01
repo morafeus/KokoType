@@ -129,6 +129,9 @@ namespace KokoType.TestService.BLL.Service
             {
                 Statistic newStat = _mapper.Map<Statistic>(saveResult);
                 await _unitOfWork.StatisticRepository.Add(newStat);
+
+
+                List<Statistic> stats = await _unitOfWork.StatisticRepository.GetByUser(saveResult.UserId);
                 return newStat;
             }
             catch (Exception ex)
